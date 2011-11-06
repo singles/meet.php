@@ -1,0 +1,26 @@
+{% extends '_layout.twig' %}
+
+{% block content %}
+{% include '_top.twig' %}
+{% if events|length > 0 %}
+<div id="paper-background">
+    <section id="events">
+        <ul>
+            {% for e in events %}
+            <li>
+                <hgroup>
+                    <h1>meet.<span>php</span> <em>#{{ e.id }}</em></h1>
+                    <h3>{{ e.date }}</h3>
+                    <a href="{{ WEBROOT }}/events/{{ e.id }}" class="button">szczegóły</a>
+                </hgroup>
+                <p>
+                    {{ e.description }}
+                </p>
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
+</div>
+{% endif %}
+{% endblock %}
+

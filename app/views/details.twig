@@ -1,0 +1,36 @@
+{% extends '_layout.twig' %}
+
+{% block content %}
+<div id="paper-background">
+		<article>
+            <hgroup>
+                <h1>meet.<span>php</span> <em>#{{ event.id }}</em></h1>
+                <h3>{{ event.date }} o godzinie {{event.time}}</h3>
+            </hgroup>
+
+            <section id="description">
+                <h2>Opis:</h2>
+                <p>{{ event.description }}</p>
+            </section>
+
+            <section id="map">
+                <h2>Lokalizacja:</h2>
+                <iframe src='http://maps.google.pl/maps?f=q&amp;source=s_q&amp;hl=pl&amp;geocode=&amp;q=zwierzyniecka+20&amp;aq=&amp;sll=52.187405,19.204102&amp;sspn=7.478761,19.753418&amp;vpsrc=6&amp;ie=UTF8&amp;ll=52.408438,16.908426&amp;spn=0.003789,0.009645&amp;t=m&amp;z=14&amp;output=embed'></iframe>
+                <p>{{ event.venue.address }}</p>
+            </section>
+
+            <section id="speakers">
+                <h2>Prelegenci:</h2>
+                <ul>
+                    {% for talk in event.talks %}
+                    <li>
+                        <img src="{{ talk.speaker_avatar }}" alt="avatar">
+                        <h5>{{ talk.topic }}</h5>
+                        <a href="{{ talk.speaker_www}}">{{ talk.speaker_name}}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </section>
+		</article>
+    </div>
+{% endblock %}

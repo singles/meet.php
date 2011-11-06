@@ -1,0 +1,15 @@
+<div id="welcome-background">
+    <section id="welcome">
+        <img src="{{ WEBROOT }}/img/welcome-flash.png" id="flash" width="468" height="297" alt="Welcome">
+        <img src="{{ WEBROOT }}/img/box.png" id="box" alt="meet.php" width="528" height="422">
+        <img src="{{ WEBROOT }}/img/badge.png" id="badge" alt="Spotkania otwarte bezpłatne" width="113" height="114">
+        <hgroup>
+            <h1>meet.<span>php</span> <em>#{{ last.id }}</em></h1>
+            <h3>{{ last.date }}</h3>
+        </hgroup>
+        <p>
+            {{ last.description }}<br>
+            <a href="{{ WEBROOT }}/events/next" class="button">szczegóły</a>
+        </p>
+    </section>
+</div>

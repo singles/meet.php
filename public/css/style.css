@@ -1,0 +1,866 @@
+/* 
+ * HTML5 ✰ Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling. 
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ *
+ * Detailed information about this CSS: h5bp.com/css
+ * 
+ * ==|== normalize ==========================================================
+ */
+
+
+/* =============================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+/* =============================================================================
+   Base
+   ========================================================================== */
+
+/*
+ * 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
+ * 2. Force vertical scrollbar in non-IE
+ * 3. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g
+ */
+
+html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+
+body { margin: 0; font-size: 13px; line-height: 1.231; }
+
+body, button, input, select, textarea { font-family: sans-serif; color: #222; }
+
+/* 
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate
+ * Also: hot pink! (or customize the background color to match your design)
+ */
+
+::-moz-selection { background: #5a9ffa; color: #fff; text-shadow: none; }
+::selection { background: #5a9ffa; color: #fff; text-shadow: none; }
+
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+
+/* Improve readability when focused and hovered in all browsers: h5bp.com/h */
+a:hover, a:active { outline: 0; }
+
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+
+abbr[title] { border-bottom: 1px dotted; }
+
+b, strong { font-weight: bold; }
+
+blockquote { margin: 1em 40px; }
+
+dfn { font-style: italic; }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+ins { background: #ff9; color: #000; text-decoration: none; }
+
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+
+/* Redeclare monospace font family: h5bp.com/j */
+pre, code, kbd, samp { font-family: monospace, monospace; _font-family: 'courier new', monospace; font-size: 1em; }
+
+/* Improve readability of pre-formatted text in all browsers */
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+
+small { font-size: 85%; }
+
+/* Position subscript and superscript content without affecting line-height: h5bp.com/k */
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+
+ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+dd { margin: 0 0 0 40px; }
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+
+
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+
+/*
+ * 1. Improve image quality when scaled in IE7: h5bp.com/d
+ * 2. Remove the gap between images and borders on image containers: h5bp.com/e 
+ */
+
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+
+/*
+ * Correct overflow not hidden in IE9 
+ */
+
+svg:not(:root) { overflow: hidden; }
+
+
+/* =============================================================================
+   Figures
+   ========================================================================== */
+
+figure { margin: 0; }
+
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
+
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+
+/* Indicate that 'label' will shift focus to the associated form element */
+label { cursor: pointer; }
+
+/* 
+ * 1. Correct color not inheriting in IE6/7/8/9 
+ * 2. Correct alignment displayed oddly in IE6/7 
+ */
+
+legend { border: 0; *margin-left: -7px; padding: 0; }
+
+/*
+ * 1. Correct font-size not inheriting in all browsers
+ * 2. Remove margins in FF3/4 S5 Chrome
+ * 3. Define consistent vertical alignment display in all browsers
+ */
+
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+
+/*
+ * 1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
+ * 2. Correct inner spacing displayed oddly in IE6/7
+ */
+
+button, input { line-height: normal; *overflow: visible; }
+
+/*
+ * Reintroduce inner spacing in 'table' to avoid overlap and whitespace issues in IE6/7
+ */
+
+table button, table input { *overflow: auto; }
+
+/*
+ * 1. Display hand cursor for clickable form elements
+ * 2. Allow styling of clickable form elements in iOS
+ */
+
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; }
+
+/*
+ * Consistent box sizing and appearance
+ */
+
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+
+/* 
+ * Remove inner padding and border in FF3/4: h5bp.com/l 
+ */
+
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+
+/* 
+ * 1. Remove default vertical scrollbar in IE6/7/8/9 
+ * 2. Allow only vertical resizing
+ */
+
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+
+/* Colors for form validity */
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+
+
+/* =============================================================================
+   Tables
+   ========================================================================== */
+
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+
+
+/* ==|== primary styles =================================================== */
+
+body {
+    background-color: #2F2F2F;
+}
+
+h1, h2, h3, h4, h5, h6, hgroup {
+    font-weight: normal;
+}
+
+/* general */
+header, #welcome, #info, footer, #events, article {
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+}
+
+.button {
+    font-family: "TitilliumMaps Bold", TrebuchetMS;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    text-shadow: #000 0px 0px 1px;
+    width: 106px;
+    height: 25px;
+    display: inline-block;
+    background: transparent url(../img/button2.png) no-repeat 0 0;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-position: 0 100%;
+}
+
+/* general end */
+
+
+/* fonts */
+@font-face {
+    font-family: "TitilliumMaps Thin";
+    src: url(../fonts/TitilliumMaps29L.otf);    
+}
+
+@font-face {
+    font-family: "TitilliumMaps Medium";
+    src: url(../fonts/TitilliumMaps29L001.otf); 
+}
+
+@font-face {
+    font-family: "TitilliumMaps Bold";
+    src: url(../fonts/TitilliumMaps29L002.otf); 
+}
+
+@font-face {
+    font-family: "Segoe Script Regular";
+    src: url(../fonts/segoesc.ttf); 
+}
+
+@font-face {
+    font-family: "Segoe Script Bold";
+    src: url(../fonts/segoescb.ttf);    
+}
+
+/* fonts end */
+
+/* header */
+
+header #logo {
+    position: absolute;
+    top: 7px;
+    height: 40px;
+    width: 210px;
+    background: transparent url(../img/logo.png) no-repeat 0 0;
+    text-indent: -9999px;
+}
+
+header nav ul {  
+    display: block;
+    position: absolute;
+    top: 16px;
+    height: 18px;
+    right: 15px;
+    width: 350px;
+}
+
+header nav li {
+    display: block;
+    float: right;
+    border-left: 2px solid #f0f0f0;
+    width: 80px;
+    text-align: center;
+}
+
+header nav a {
+    font: 14px Arial;
+    color: #f0f0f0;
+    text-shadow: #fff 0px 0px 1px;
+    width: 60px;
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul li:last-child {
+    border-left: 0;
+}
+
+header nav a:hover {
+    color: #008fff;    
+}
+
+#header-background {
+    background: black url(../img/header_background.gif) repeat-x 0 0;
+    height: 55px;
+}
+/* header end */
+
+/* welcome bar */
+#welcome-background {
+    background: black url(../img/blue_background.png) repeat-x 0 0;
+    height: 423px;
+}
+
+#welcome-small-background {
+    background: black url(../img/blue_background_small.png) repeat-x 0 0;
+    height:59px;
+}
+
+
+#welcome #flash {
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    z-index: 0;
+}
+
+#welcome #box {
+    margin-left: -35px;
+}
+
+#welcome #badge {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+#welcome hgroup, #welcome p, #welcome a {
+    position: absolute;
+    color: #fff;
+    z-index: 1;
+}
+
+#welcome hgroup {
+    top: 110px;
+    left: 500px;
+    text-shadow: #052a56 1px 1px 1px;   
+    font-family: "TitilliumMaps Medium";
+    border-bottom: 1px solid #fff;
+    width: 430px;
+}
+
+#welcome hgroup h1, #welcome hgroup h3 {
+    display: inline;
+}
+
+#welcome hgroup h1 {
+    font-family: "TitilliumMaps Thin";
+    font-size: 53px;
+    margin-left: -6px;
+}
+
+#welcome hgroup h3 {
+    font-size: 24px;
+    float :right;
+}
+
+#welcome hgroup h1 span {
+    font-family: "TitilliumMaps Bold";
+}
+
+#welcome p {
+    font-family: "TitilliumMaps Medium";
+    font-size: 13px;
+    width: 428px;
+    left: 500px;
+    top: 200px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+#welcome .button {
+    margin: 30px 0 0 323px;
+}
+
+/* welcom bar end */
+
+/* info */
+
+#info-background, #paper-background {
+    background: transparent url(../img/paper_pattern.gif) repeat 0 0;
+}
+
+#info-background {
+    height: 420px;
+}
+
+#info {
+    position: relative;
+    z-index: 5;
+}
+
+#info ul, #events ul {
+    margin: 0;
+}
+
+#info ul li {
+    display: block;
+    font-family: 'TitilliumMaps Medium';  
+    font-size: 18px;
+    color: #4b4a4a;
+    line-height: 1;
+}
+
+#info #info-why, #info #info-learn, #info #info-share, #info #info-meet {
+    position: absolute;
+}
+
+#info #info-learn p, #info #info-share p, #info #info-meet p {  
+}
+
+#info #info-learn span, #info #info-share span, #info #info-meet span {
+    font-family: 'Segoe Script Regular';  
+    font-size: 32px;
+    margin-bottom: 15px;
+    display: block;    
+}
+
+#info #info-why {
+    font-family: 'Segoe Script Regular';  
+    top: -20px;
+    left: 10px;
+    font-size: 32px;
+    background: transparent url(../img/postit_1.png) no-repeat 0 0;
+    width: 348px; 
+    height: 149px;  
+    padding: 40px 0 0 80px;
+}
+
+#info #info-learn { 
+    top: -25px;
+    left: 490px;
+    background: transparent url(../img/postit_2.png) no-repeat 0 0;
+    width: 308px; 
+    height: 190px;  
+    padding: 20px 50px 0 80px;
+}
+
+#info #info-meet { 
+    top: 180px;
+    left: 20px;
+    background: transparent url(../img/postit_3.png) no-repeat 0 0;
+    width: 310px; 
+    height: 193px;  
+    padding: 50px 50px 0 80px;
+}
+
+
+#info #info-share { 
+    top: 190px;
+    left: 500px;
+    background: transparent url(../img/postit_4.png) no-repeat 0 0;
+    width: 303px; 
+    height: 180px;  
+    padding: 30px 50px 0 80px;
+}
+
+
+#info h2, #info span {
+    margin: 0;
+}
+
+#info #info-meet p { 
+    transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+}
+
+#info #info-share p { 
+    transform: rotate(4deg);
+    -webkit-transform: rotate(4deg);
+    -o-transform: rotate(4deg);
+    -moz-transform: rotate(4deg);
+}
+
+#info #info-learn p { 
+    transform: rotate(3deg);
+    -webkit-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+}
+
+#info-background {
+    position: relative;
+}
+
+#info-background #background-image-info-corner {
+     background: transparent url(../img/code_corner.png) repeat-x 0 0;
+     position: absolute;
+     display: block;
+     width: 353px;
+     height: 339px;
+     right: 0;
+     bottom: 0;
+     z-index: 2;
+}
+
+#info-background #background-image-info-corner a {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.code-drawing { position: absolute; z-index: 1; display: block;}
+
+.code-drawing.mvc {
+    background: transparent url(../img/code_mvc.png) no-repeat 0 0 ; 
+    width: 355px; 
+    height: 124px;
+    top: 12px;
+    left: 824px;
+}
+
+.code-drawing.mvp {
+    background: transparent url(../img/code_mvp.png) no-repeat 0 0;
+    left: 12px;
+    top: 145px;
+    width: 328px;
+    height: 144px;
+}
+
+.code-drawing.sql {
+    background: transparent url(../img/code_sql.png) no-repeat 0 0;
+    left: 730px;
+    top: 200px;
+    width: 401px;
+    height: 61px;
+} 
+
+.code-drawing.db {
+    background: transparent url(../img/code_db.png) no-repeat 0 0;
+    left: 400px;
+    top: 44px;
+    width: 298px;
+    height: 235px;
+}
+
+/* info end*/
+
+#footer-background {
+    background: #000 url(../img/footer_background.gif) repeat-x 0 0;
+    height: 56px;
+    position: relative;
+}
+
+footer #social, footer #copyright {
+    z-index: 2;
+    position: relative;
+}
+
+footer #social span {
+    font-family: 'Segoe Script Regular';
+    font-size: 19px;
+    color: #f4f4f4; 
+    display: block;
+    margin-top: 15px;
+    float: left;
+}
+
+footer #social a {
+    width: 32px;
+    height: 32px;
+    display: block;
+    float: left;
+    text-indent: -9999px;
+    margin: 10px 0 0 10px;
+}
+
+footer #social #facebook    { background: transparent url(../img/fb-icon.png) no-repeat 0 0 }
+footer #social #twitter     { background: transparent url(../img/tw-icon.png) no-repeat 0 0 }
+footer #social #rss         { background: transparent url(../img/rss-icon.png) no-repeat 0 0 }
+
+footer #copyright {
+    font-family: 'TitilliumMaps Medium', TrebuchetMS; 
+    font-size: 13px;
+    float: right;
+    color: #f4f4f4; 
+    display: block;
+    margin-top: 18px;
+}
+
+#footer-background  #background-image-cont {
+     background: black url(../img/footer_background_end.gif) repeat-x 0 0;
+     position: absolute;
+     display: block;
+     width: 260px;
+     height: 56px;
+     right: 0;
+     top: 0;
+     z-index: 1;
+}
+
+/* footer end */
+
+/* events */
+
+#events ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#events ul li, article {
+    display: block;
+    background: transparent url(../img/tab.png) no-repeat 0 0;
+    width: 822px;
+    padding: 25px 35px 30px 35px;
+    text-align: justify;
+    font-family: "TitilliumMaps Medium";
+    color: #6f6f6f;
+    text-shadow: #fff 1px 1px 1px;
+    line-height: 1.5;
+}
+
+#events ul li {
+    margin: 0 auto;
+}
+
+#events hgroup, article hgroup {
+    color: #6f6f6f;
+    text-shadow: #fff 1px 1px 1px;
+    padding-bottom: 0;
+    border-bottom: 1px solid #6f6f6f;
+    position: relative;
+}
+
+#events hgroup h1, #events hgroup h3, article hgroup h1, article hgroup h3 {
+    display: inline;
+}
+
+#events hgroup h1, article hgroup h1 {
+    font-family: "TitilliumMaps Thin";
+    font-size: 36px;
+    margin-left: -3px;
+}
+
+#events hgroup h3 {
+    position: absolute;
+    top: -8px;
+    right: 125px;
+    font-size: 24px;
+}
+
+#events hgroup h1 span, article hgroup h1 span {
+    font-family: "TitilliumMaps Bold";
+}
+
+#events .button {
+    position: absolute;
+    top: 13px;
+    right: 0;
+}
+
+#events p {
+    margin-bottom: 0;
+}
+
+/* events end */
+
+/* event details */
+
+article {
+    overflow: auto;
+}
+
+article hgroup h3 {
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    font-size: 24px;
+    height: 20px;
+    margin: 0;
+}
+
+article hgroup {
+    height: 50px;
+}
+
+article #map {
+    float: left;
+    margin: 0 20px 10px 0;
+}
+
+article #map p {
+    font-weight: bold;
+    font-family: "TitilliumMaps Bold";
+}
+
+article #speakers {
+    float: left;
+    width: 48%;
+}
+
+article #map iframe {
+    width: 350px;
+    height: 270px;
+    border: 2px solid #fff;
+    border-top-color: #A0A09E;
+    border-left-color: #C7CDBF;
+    margin-right: 50px;
+}
+
+article #speakers ul {
+    list-style-type: none;
+    padding: 0;
+    margin: -5px;
+}
+
+article #speakers ul a {
+    color: #6f6f6f;
+    text-decoration: none;
+}
+
+article #speakers ul li {
+    display: block;
+    font-size: 15px;
+    font-family: "TitilliumMaps Medium";
+    line-height: 1.5;
+    height: 60px;
+    margin: 0 0 15px 0;
+}
+
+article #speakers ul li a {
+    font-size: 13px;
+}
+
+article #speakers ul img {
+    float: left;
+    margin: 5px 8px 0 0;
+    border: 1px solid #fff;
+    border-top-color: #A0A09E;
+    border-left-color: #C7CDBF;
+}
+
+article h2 {
+    font-size: 24px;
+    margin: 15px 0 0 0;
+    line-height: 1.2;
+}
+
+article #map h2, article #speakers h2 {
+    margin-bottom: 10px;
+}
+
+article p {
+    margin-top: 10px;
+}
+
+article #speakers a, article #speakers h5 {
+    font-family: "TitilliumMaps Bold";
+}
+
+article #speakers h5 {
+    margin: 0px 0 0 0;
+    font-size: 25px;
+}
+
+article #topics li {
+    margin: 8px 0;
+    font-size: 14px;
+    line-height: 1.3;
+}
+
+code {
+    background-color: #ededed;
+    border: 1px solid black;
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+    line-height: 1.2;
+    text-shadow: none;
+}
+
+/* event details end */
+
+/* ==|== non-semantic helper classes ========================================
+   Please define your styles before this section.
+   ========================================================================== */
+
+/* For image replacement */
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-comor: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.ir br { display: none; }
+
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+.hidden { display: none !important; visibility: hidden; }
+
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible { visibility: hidden; }
+
+/* Contain floats: h5bp.com/q */ 
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+
+
+/* ==|== media queries ======================================================
+   PLACEHOLDER Media Queries for Responsive Design.
+   These override the primary ('mobile first') styles
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+  /* Style adjustments for viewports 480px and over go here */
+
+}
+
+@media only screen and (min-width: 768px) {
+  /* Style adjustments for viewports 768px and over go here */
+
+}
+
+
+
+/* ==|== print styles =======================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+ 
+@media print {
+  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* h5bp.com/t */
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}
