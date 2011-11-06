@@ -569,7 +569,7 @@ header nav a:hover {
     position: relative;
 }
 
-footer #social, footer #copyright {
+footer #social, footer #credits {
     z-index: 2;
     position: relative;
 }
@@ -583,7 +583,7 @@ footer #social span {
     float: left;
 }
 
-footer #social a {
+footer #social a, footer #credits #zoo, footer #credits #akai {
     width: 32px;
     height: 32px;
     display: block;
@@ -596,14 +596,41 @@ footer #social #facebook    { background: transparent url(../img/fb-icon.png) no
 footer #social #twitter     { background: transparent url(../img/tw-icon.png) no-repeat 0 0 }
 footer #social #rss         { background: transparent url(../img/rss-icon.png) no-repeat 0 0 }
 
-footer #copyright {
+footer #credits {
     font-family: 'TitilliumMaps Medium', TrebuchetMS; 
     font-size: 13px;
     float: right;
     color: #f4f4f4; 
     display: block;
-    margin-top: 18px;
+    position: relative;
 }
+
+footer #credits span {
+    display: block;
+    float: right;
+    height: 32px;
+    line-height: 32px;
+    margin-top: 10px;
+}
+
+footer #credits a {
+    color: #f4f4f4;
+    text-decoration: none;
+}
+
+footer #credits a:hover {
+    text-decoration: underline;
+}
+
+
+footer #credits #zoo, footer #credits #akai {
+    float: right;
+    margin: 10px 0 0 10px;
+}
+
+footer #credits #akai     { background: transparent url(../img/logo_akai.png) no-repeat 0 0 }
+footer #credits #zoo      { background: transparent url(../img/logo_zoo.png) no-repeat 0 1px; width: 101px; }
+
 
 #footer-background  #background-image-cont {
      background: black url(../img/footer_background_end.gif) repeat-x 0 0;
