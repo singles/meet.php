@@ -574,6 +574,9 @@ footer #social, footer #credits {
     position: relative;
 }
 
+footer #social { width: 300px}
+footer #credits {width: 560px}
+
 footer #social span {
     font-family: 'Segoe Script Regular';
     font-size: 19px;
@@ -628,8 +631,8 @@ footer #credits #zoo, footer #credits #akai {
     margin: 10px 0 0 10px;
 }
 
-footer #credits #akai     { background: transparent url(../img/logo_akai.png) no-repeat 0 0 }
-footer #credits #zoo      { background: transparent url(../img/logo_zoo.png) no-repeat 0 1px; width: 101px; }
+footer #credits #akai     { background: transparent url(../img/logo_akai.png) no-repeat 0 0; width: 32px;}
+footer #credits #zoo      { background: transparent url(../img/logo_zoo.png) no-repeat 0 2px; width: 101px; margin-right: 30px}
 
 
 #footer-background  #background-image-cont {
