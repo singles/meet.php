@@ -839,6 +839,10 @@ code {
     font-size: 15px;
 }
 
+#faq a {
+    color: #4b4a4a;    
+}
+
 /* faq end */
 
 /* ==|== non-semantic helper classes ========================================
