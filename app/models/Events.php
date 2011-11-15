@@ -34,6 +34,13 @@ class Events
                     'speaker_avatar'            => 'https://twimg0-a.akamaihd.net/profile_images/1605720400/304109_265882293444507_100000682142964_858395_2624703_n_normal.jpg',
                     'speaker_www'               => 'http://blog.rbenkel.me',
                 ),
+                array(
+                    'topic'                     => 'Zend Framework',
+                    'description'               => 'Dlaczego w PHP dobry framework do podstawa. Kilka informacji o tym jak szybko nauczyć się korzystać z Zenda. Dobre praktyki w Zend. Co nowego w Zend Framework 2.',
+                    'speaker_name'              => 'Kasper Warguła',
+                    'speaker_avatar'            => 'https://lh6.googleusercontent.com/-H8h0EZ63K0g/AAAAAAAAAAI/AAAAAAAABw8/JTb4jtL68Sc/photo.jpg?sz=48',
+                    'speaker_www'               => 'https://plus.google.com/109930207969125341657/posts',
+                )
             )
         )
     );
