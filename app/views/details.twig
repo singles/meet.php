@@ -11,6 +11,16 @@
             <section id="description">
                 <h2>Opis:</h2>
                 <p>{{ event.description }}</p>
+
+                <h2>Prezentacje:</h2>
+                <ul>
+                    {% for talk in event.talks %}
+                        <li>
+                            <h4>{{ talk.topic }}</h4>
+                            {{ talk.description }}
+                        </li>
+                    {% endfor %}
+                </ul>
             </section>
 
             <section id="map">

@@ -738,7 +738,7 @@ article #map {
 }
 
 article #map p {
-    font-weight: bold;
+    font-weight: normal;
     font-family: "TitilliumMaps Bold";
     font-size: 14px;
 }
@@ -793,6 +793,7 @@ article h2 {
     font-size: 24px;
     margin: 15px 0 0 0;
     line-height: 1.2;
+    font-weight: normal;
 }
 
 article #map h2, article #speakers h2 {
@@ -804,8 +805,18 @@ article p {
     font-size: 15px;
 }
 
-article #speakers a, article #speakers h5 {
+article #description li {
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+article #description h4 {
+    margin: 0;
+}
+
+article #speakers a, article #speakers h5, article #description h4 {
     font-family: "TitilliumMaps Bold";
+    font-weight: normal;
 }
 
 article #speakers h5 {
@@ -817,17 +828,6 @@ article #topics li {
     margin: 8px 0;
     font-size: 14px;
     line-height: 1.3;
-}
-
-code {
-    background-color: #ededed;
-    border: 1px solid black;
-    display: block;
-    width: 400px;
-    margin: 0 auto;
-    padding: 10px;
-    line-height: 1.2;
-    text-shadow: none;
 }
 
 /* event details end */
@@ -844,6 +844,27 @@ code {
 }
 
 /* faq end */
+
+/* contact */
+
+
+code {
+    background-color: #ededed;
+    border: 1px solid black;
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+    line-height: 1.2;
+    text-shadow: none;
+    margin-top: 20px;
+}
+
+#contact p {
+    text-align: center;
+}
+
+/* contact end */
 
 /* ==|== non-semantic helper classes ========================================
    Please define your styles before this section.
