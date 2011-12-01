@@ -569,24 +569,25 @@ header nav a:hover {
     position: relative;
 }
 
-footer #social, footer #credits {
+footer #social, footer #credits, footer #cooperation {
     z-index: 2;
     position: relative;
 }
 
-footer #social { width: 300px}
 footer #credits {width: 560px}
 
-footer #social span {
+footer #social span, footer #cooperation span {
     font-family: 'Segoe Script Regular';
     font-size: 19px;
     color: #f4f4f4; 
     display: block;
     margin-top: 15px;
     float: left;
+    clear: left;
+    width: 170px;
 }
 
-footer #social a, footer #credits #zoo, footer #credits #akai {
+footer #social a, footer #cooperation #zoo, footer #cooperation #akai {
     width: 32px;
     height: 32px;
     display: block;
@@ -625,14 +626,8 @@ footer #credits a:hover {
     text-decoration: underline;
 }
 
-
-footer #credits #zoo, footer #credits #akai {
-    float: right;
-    margin: 10px 0 0 10px;
-}
-
-footer #credits #akai     { background: transparent url(../img/logo_akai.png) no-repeat 0 0; width: 32px;}
-footer #credits #zoo      { background: transparent url(../img/logo_zoo.png) no-repeat 0 2px; width: 101px; margin-right: 30px}
+footer #cooperation #akai     { background: transparent url(../img/logo_akai.png) no-repeat 0 0; width: 32px;}
+footer #cooperation #zoo      { background: transparent url(../img/logo_zoo.png) no-repeat 0 2px; width: 101px; }
 
 
 #footer-background  #background-image-cont {
