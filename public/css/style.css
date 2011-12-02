@@ -576,6 +576,14 @@ footer #social, footer #credits, footer #cooperation {
 
 footer #credits {width: 560px}
 
+footer aside {
+    overflow: auto;
+}
+
+footer aside:last-child {
+    padding-bottom: 15px;
+}
+
 footer #social span, footer #cooperation span {
     font-family: 'Segoe Script Regular';
     font-size: 19px;
