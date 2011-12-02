@@ -47,4 +47,11 @@ $app->get('/contact/', function() use ($app) {
     $app->render('contact.twig');
 });
 
+$errNotFoundFunction = function() use ($app) {
+    return $app->render('error.twig');
+};
+
+$app->notFound($errNotFoundFunction);
+$app->error($errNotFoundFunction);
+
 $app->run();
