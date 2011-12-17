@@ -817,6 +817,18 @@ article #description h4 {
     margin: 0;
 }
 
+article #description p {
+    margin: 0;
+}
+
+article #description strong {
+    font-family: "TitilliumMaps Bold";
+}
+
+article #description a {
+    color: #4b4a4a;
+}
+
 article #speakers a, article #speakers h5, article #description h4 {
     font-family: "TitilliumMaps Bold";
     font-weight: normal;
