@@ -3,7 +3,7 @@
 class Events
 {
     protected static $_events = array(
-        array(
+        1 => array(
             'id'    => 1,
             'date'  => '17.12.2011',
             'time'  => '17:12',
