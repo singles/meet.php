@@ -37,7 +37,7 @@
                 <ul>
                     {% for talk in event.talks %}
                     <li>
-                        <img src="{{ talk.speaker_avatar }}" alt="avatar">
+                        <img src="{{ talk.speaker_avatar }}" alt="avatar" width="48" height="48">
                         <h5>{{ talk.topic }}</h5>
                         <a href="{{ talk.speaker_www}}">{{ talk.speaker_name}}</a>
                     </li>
