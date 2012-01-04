@@ -576,7 +576,7 @@ footer #social, footer #credits, footer #cooperation {
     position: relative;
 }
 
-footer #credits {width: 560px}
+footer #credits {width: 500px}
 
 footer aside {
     overflow: auto;
@@ -609,6 +609,7 @@ footer #social a, footer #cooperation #zoo, footer #cooperation #akai {
 footer #social #facebook    { background: transparent url(../img/fb-icon.png) no-repeat 0 0 }
 footer #social #twitter     { background: transparent url(../img/tw-icon.png) no-repeat 0 0 }
 footer #social #lanyrd      { background: transparent url(../img/lr-icon.png) no-repeat 0 0 }
+footer #social #eventbrite  { background: transparent url(../img/eb-icon.png) no-repeat 0 0; width: 107px }
 footer #social #rss         { background: transparent url(../img/rss-icon.png) no-repeat 0 0 }
 
 footer #credits {
