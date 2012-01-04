@@ -1,8 +1,8 @@
 {% extends '_layout.twig' %}
 
 {% block content %}
-<div id="paper-background">
-		<article>
+    <div id="paper-background">
+        <article>
             <hgroup>
                 <h1>meet.<span>php</span> <em>#{{ event.id }}</em></h1>
                 <h3>{{ event.date }} o godzinie {{event.time}}</h3>
@@ -44,6 +44,12 @@
                     {% endfor %}
                 </ul>
             </section>
-		</article>
+            
+            {% if event.eventbrite is defined %}
+                <section id="eventbrite">
+                    <iframe  src="http://www.eventbrite.com/tickets-external?eid={{ event.eventbrite }}&ref=etckt" frameborder="0" height="192" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
+                </section>
+            {% endif %}
+        </article>
     </div>
 {% endblock %}
