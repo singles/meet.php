@@ -45,10 +45,11 @@
                 </ul>
             </section>
             
-            {% if event.eventbrite is defined %}
-                <section id="eventbrite">
-                    <iframe  src="http://www.eventbrite.com/tickets-external?eid={{ event.eventbrite }}&ref=etckt" frameborder="0" height="192" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
-                </section>
+            {% if event.online.eventbrite is defined %}
+            <section id="registration">
+                <h2>Prosimy - daj znam znać, że przyjdziesz ;-)</h2>
+                <iframe  src="http://www.eventbrite.com/tickets-external?eid={{ event.online.eventbrite }}&ref=etckt" frameborder="0" height="192" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
+            </section>
             {% endif %}
         </article>
     </div>
