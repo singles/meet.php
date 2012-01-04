@@ -46,7 +46,27 @@ class Events
                     'slides_link'               => 'http://www.slideshare.net/singlespl/php-tips-tricks',
                 )                
             )
-        )
+        ),
+        2 => array(
+                    'id'    => 2,
+                    'date'  => '21.01.2012',
+                    'time'  => '17:00',
+                    'description' => 'Początek nowego roku, a my kontynuujemy inicjatywę meet.php! Kolejne prezentacje, kolejni prelegenci, ale ta sama świetna atmosfera, która udzieliła się na pierwszym spotkaniu :) Zapraszamy!',
+                    'venue' => array(
+                        'address'   => 'Coworking ZOO, Zwierzyniecka 20 (2 piętro), 61-001 Poznań',
+                        'map_link'  => 'http://maps.google.pl/maps?f=q&amp;source=s_q&amp;hl=pl&amp;geocode=&amp;q=zwierzyniecka+20&amp;aq=&amp;sll=52.187405,19.204102&amp;sspn=7.478761,19.753418&amp;vpsrc=6&amp;ie=UTF8&amp;hq=&amp;hnear=Zwierzyniecka+20,+Pozna%C5%84,+Wielkopolskie&amp;ll=52.408438,16.908426&amp;spn=0.003789,0.009645&amp;t=m&amp;z=14&amp;output=embed'
+                    ),
+                    'talks' => array(
+                        array(
+                            'topic'                     => 'Memcached + PHP i nie tylko.',
+                            'description'               => 'Jak to działa od strony PHP i troszkę głębiej. Jakie są rozszerzenia php i czym się różnią. Jak i kiedy interesować się cachowaniem. To i trochę więcej o memcached postaram się przedstawić w mojej prezentacji.',
+                            'speaker_name'              => 'Rafał Malinowski',
+                            'speaker_avatar'            => 'http://dl.dropbox.com/u/719636/avatar/avatar_120.jpg',
+                            'speaker_www'               => 'http://about.me/after.design',
+                            'slides_link'               => null,
+                        ),
+                    )
+                )
     );
 
     public static function fetch()
