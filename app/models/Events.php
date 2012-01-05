@@ -69,8 +69,8 @@ class Events
                             'slides_link'               => null,
                         ),
                         array(
-                            'topic'                     => 'Mikrostrona w mikroframeworku w mikroczasie.',
-                            'description'               => 'Mikroframeowrki w praktyce na przykładzie SlimFramework. Możliwy livecoding :).',
+                            'topic'                     => 'Małe jest piękne?',
+                            'description'               => 'Mikrostrona w mikroframeworku w mikroczasie czyli SlimFramework w praktyce. Możliwy livecoding :).',
                             'speaker_name'              => 'Radosław Benkel',
                             'speaker_avatar'            => 'https://twimg0-a.akamaihd.net/profile_images/1605720400/304109_265882293444507_100000682142964_858395_2624703_n_normal.jpg',
                             'speaker_www'               => 'http://www.rbenkel.me',
