@@ -78,6 +78,15 @@ class Events
                             'slides_link'               => null,
                             'skill_level'               => 3
                         ),
+                        array(
+                            'topic'                     => 'OAuth + GoogleAPI.',
+                            'description'               => 'Czym jest OAuth? Jakie problemy rozwiązuje? Rodzaje uwierzytelniania. Przykładowa implementacja na przykładze Google API.',
+                            'speaker_name'              => 'Benedykt Dryl',
+                            'speaker_avatar'            => 'https://twimg0-a.akamaihd.net/profile_images/1586173262/282501_1993971206624_1163753013_2014212_2628494_n_normal.jpg',
+                            'speaker_www'               => 'http://twitter.com/cypherq',
+                            'slides_link'               => null,
+                            'skill_level'               => 3
+                        ),
                     )
                 )
     );
