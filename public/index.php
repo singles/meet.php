@@ -15,6 +15,17 @@ $app = new Slim(array(
 //RB init Twig and base variables
 Slim_View_Twig::$twigDirectory = LIB_PATH . 'Twig';
 Slim_View_Twig::$twigOptions = array('strict_variables' => true, 'debug' => true);
+
+//force setting templates, to register and extension
+function stars($active, $max = 5) {
+    $txt = '';
+    for ($i = 0; $i < $max; ++$i) {
+        $txt .= ($i < $active) ? '&#9733;' : '&#9734;';
+    }
+    return $txt;
+}
+$app->view()->setTemplatesDirectory(APP_PATH . 'views/');
+$app->view()->getEnvironment()->addFunction('stars', new Twig_Function_Function('stars'));
 $app->view()->appendData(array('WEBROOT' => $app->request()->getRootUri()));
 
 //RB routes

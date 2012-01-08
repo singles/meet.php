@@ -16,10 +16,18 @@
                 <ul>
                     {% for talk in event.talks %}
                         <li>
-                            <h4>{{ talk.topic }}</h4>
+                            <h4>
+                                {{ talk.topic }} 
+                            </h4>
                             <p>{{ talk.description }}</p>
                             {% if talk.slides_link %}
                                 <p><strong>Prezentacja:</strong> <a href="{{talk.slides_link}}">{{talk.slides_link}}</a></p>
+                            {% endif %}
+                            {% if talk.skill_level is defined %}
+                                <p><strong>Poziom trudności: </strong>
+                                {% autoescape false %}
+                                {{ stars(talk.skill_level) }}
+                                {% endautoescape %}
                             {% endif %}
                         </li>
                     {% endfor %}

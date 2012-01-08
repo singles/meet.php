@@ -61,20 +61,22 @@ class Events
                     ),
                     'talks' => array(
                         array(
+                            'topic'                     => 'Małe jest piękne?',
+                            'description'               => 'Mikrostrona w mikroframeworku w mikroczasie czyli SlimFramework w praktyce. Możliwy livecoding :).',
+                            'speaker_name'              => 'Radosław Benkel',
+                            'speaker_avatar'            => 'https://twimg0-a.akamaihd.net/profile_images/1605720400/304109_265882293444507_100000682142964_858395_2624703_n_normal.jpg',
+                            'speaker_www'               => 'http://www.rbenkel.me',
+                            'slides_link'               => null,
+                            'skill_level'               => 2
+                        ),
+                        array(
                             'topic'                     => 'Memcached + PHP i nie tylko.',
                             'description'               => 'Jak to działa od strony PHP i troszkę głębiej. Jakie są rozszerzenia php i czym się różnią. Jak i kiedy interesować się cachowaniem. To i trochę więcej o memcached będzie tematem prezentacji.',
                             'speaker_name'              => 'Rafał Malinowski',
                             'speaker_avatar'            => 'http://dl.dropbox.com/u/719636/avatar/avatar_120.jpg',
                             'speaker_www'               => 'http://about.me/after.design',
                             'slides_link'               => null,
-                        ),
-                        array(
-                            'topic'                     => 'Małe jest piękne?',
-                            'description'               => 'Mikrostrona w mikroframeworku w mikroczasie czyli SlimFramework w praktyce. Możliwy livecoding :).',
-                            'speaker_name'              => 'Radosław Benkel',
-                            'speaker_avatar'            => 'https://twimg0-a.akamaihd.net/profile_images/1605720400/304109_265882293444507_100000682142964_858395_2624703_n_normal.jpg',
-                            'speaker_www'               => 'http://www.rbenkel.me',
-                            'slides_link'               => null
+                            'skill_level'               => 3
                         ),
                     )
                 )
