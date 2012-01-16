@@ -15,5 +15,10 @@ class Sponsors extends Base
             'logo'  =>  'sponsor_allegro.png',
             'url'   =>  'http://www.allegro.pl'
         ),
+        'jetbrains' =>  array(
+            'name'  =>  'JetBrains',
+            'logo'  =>  'sponsor_jetbrains.gif',
+            'url'   =>  'http://www.jetbrains.com/'
+        ),
     );
 }

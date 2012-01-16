@@ -57,7 +57,7 @@
             <section id="sponsors">
                 <h2>Sponsorzy: </h2>
                 {% for name in event.sponsors %}
-                    <a href="{{sponsors[name].url}}"><img src="{{WEBROOT}}/img/{{sponsors[name].logo}}" alt="{{sponsors[name].name}}"></a>
+                    <a href="{{sponsors[name].url}}"><img src="{{WEBROOT}}/img/{{sponsors[name].logo}}" alt="{{sponsors[name].name}}" height="60"></a>
                 {% endfor %}
             </section>
             {% endif %}
