@@ -47,6 +47,11 @@ $app->get('/events/:id/', function($id) use ($app) {
     } else {
         $event = Events::fetchOne((int)$id);
     }
+
+    if (is_null($event)) {
+        $app->notFound();
+    }
+
     $data = array(
         'event' => $event
     );
