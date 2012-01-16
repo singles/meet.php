@@ -62,7 +62,6 @@ class Events extends Base
                     'online' => array(
                         'eventbrite' => '2718185165',
                     ),
-                    'sponsors' => array('allegro'),
                     'talks' => array(
                         array(
                             'topic'                     => 'Małe jest piękne?',
