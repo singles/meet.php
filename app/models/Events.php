@@ -1,8 +1,10 @@
 <?php
 
-class Events
+require_once 'Base.php';
+
+class Events extends Base
 {
-    protected static $_events = array(
+    protected static $_data = array(
         1 => array(
             'id'    => 1,
             'date'  => '17.12.2011',
@@ -12,6 +14,7 @@ class Events
                 'address'   => 'Coworking ZOO, Zwierzyniecka 20 (2 piętro), 61-001 Poznań',
                 'map_link'  => 'http://maps.google.pl/maps?f=q&amp;source=s_q&amp;hl=pl&amp;geocode=&amp;q=zwierzyniecka+20&amp;aq=&amp;sll=52.187405,19.204102&amp;sspn=7.478761,19.753418&amp;vpsrc=6&amp;ie=UTF8&amp;hq=&amp;hnear=Zwierzyniecka+20,+Pozna%C5%84,+Wielkopolskie&amp;ll=52.408438,16.908426&amp;spn=0.003789,0.009645&amp;t=m&amp;z=14&amp;output=embed'
             ),
+            'sponsors' => array('ioki'),
             'talks' => array(
                 array(
                     'topic'                     => 'Iteratory',
@@ -59,6 +62,7 @@ class Events
                     'online' => array(
                         'eventbrite' => '2718185165',
                     ),
+                    'sponsors' => array('allegro'),
                     'talks' => array(
                         array(
                             'topic'                     => 'Małe jest piękne?',
@@ -91,21 +95,8 @@ class Events
                 )
     );
 
-    public static function fetch()
-    {
-        return self::$_events;
-    }
-
-    public static function fetchOne($id)
-    {
-        if (array_key_exists($id, self::$_events)) {
-            return self::$_events[$id];
-        }
-        return null;
-    }
-
     public static function fetchLast()
     {
-        return array_pop(self::$_events);
+        return array_pop(self::$_data);
     }
 }

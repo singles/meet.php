@@ -47,7 +47,14 @@ $app->get('/events/:id/', function($id) use ($app) {
     } else {
         $event = Events::fetchOne((int)$id);
     }
-    $app->render('details.twig', array('event' => $event));
+    $data = array(
+        'event' => $event
+    );
+    if (array_key_exists('sponsors', $event)) {
+        require_once APP_PATH . 'models/Sponsors.php';
+        $data['sponsors'] = Sponsors::fetch();
+    }
+    $app->render('details.twig', $data);
 });
 
 $app->get('/faq/', function() use ($app) {

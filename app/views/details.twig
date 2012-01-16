@@ -52,7 +52,16 @@
                     {% endfor %}
                 </ul>
             </section>
-            
+
+            {% if event.sponsors is defined %}
+            <section id="sponsors">
+                <h2>Sponsorzy: </h2>
+                {% for name in event.sponsors %}
+                    <a href="{{sponsors[name].url}}"><img src="{{WEBROOT}}/img/{{sponsors[name].logo}}" alt="{{sponsors[name].name}}"></a>
+                {% endfor %}
+            </section>
+            {% endif %}
+
             {% if event.online.eventbrite is defined %}
             <section id="registration">
                 <h2>Daj nam znać, że przyjdziesz ;-) </h2>
