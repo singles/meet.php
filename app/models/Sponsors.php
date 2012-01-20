@@ -13,7 +13,7 @@ class Sponsors extends Base
         'allegro' =>  array(
             'name'  =>  'Allegro',
             'logo'  =>  'sponsor_allegro.png',
-            'url'   =>  'http://www.allegro.pl'
+            'url'   =>  'http://kariera.allegro.pl'
         ),
         'jetbrains' =>  array(
             'name'  =>  'JetBrains',
