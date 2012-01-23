@@ -70,7 +70,7 @@ class Events extends Base
                             'speaker_name'              => 'Radosław Benkel',
                             'speaker_avatar'            => 'https://twimg0-a.akamaihd.net/profile_images/1605720400/304109_265882293444507_100000682142964_858395_2624703_n_normal.jpg',
                             'speaker_www'               => 'http://www.rbenkel.me',
-                            'slides_link'               => null,
+                            'slides_link'               => 'http://www.slideshare.net/singlespl/micropage-in-microtime-using-microframework',
                             'skill_level'               => 2
                         ),
                         array(
@@ -79,7 +79,7 @@ class Events extends Base
                             'speaker_name'              => 'Rafał Malinowski',
                             'speaker_avatar'            => 'http://dl.dropbox.com/u/719636/avatar/avatar_120.jpg',
                             'speaker_www'               => 'http://about.me/after.design',
-                            'slides_link'               => null,
+                            'slides_link'               => 'http://malinowski.be/meetphp/#/',
                             'skill_level'               => 3
                         ),
                         array(
@@ -88,7 +88,7 @@ class Events extends Base
                             'speaker_name'              => 'Benedykt Dryl',
                             'speaker_avatar'            => 'https://twimg0-a.akamaihd.net/profile_images/1586173262/282501_1993971206624_1163753013_2014212_2628494_n_normal.jpg',
                             'speaker_www'               => 'http://twitter.com/cypherq',
-                            'slides_link'               => null,
+                            'slides_link'               => 'https://github.com/cypherq/meet.php---OAuth-and-Google-API',
                             'skill_level'               => 4
                         ),
                     )
