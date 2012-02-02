@@ -51,48 +51,73 @@ class Events extends Base
             )
         ),
         2 => array(
-                    'id'    => 2,
-                    'date'  => '21.01.2012',
-                    'time'  => '17:00',
-                    'description' => 'Początek nowego roku, a my kontynuujemy inicjatywę meet.php! Kolejne prezentacje, kolejni prelegenci, ale ta sama świetna atmosfera, która udzieliła się na pierwszym spotkaniu :) Zapraszamy!',
-                    'venue' => array(
-                        'address'   => 'Coworking ZOO, Zwierzyniecka 20 (2 piętro), 61-001 Poznań',
-                        'map_link'  => 'http://maps.google.pl/maps?f=q&amp;source=s_q&amp;hl=pl&amp;geocode=&amp;q=zwierzyniecka+20&amp;aq=&amp;sll=52.187405,19.204102&amp;sspn=7.478761,19.753418&amp;vpsrc=6&amp;ie=UTF8&amp;hq=&amp;hnear=Zwierzyniecka+20,+Pozna%C5%84,+Wielkopolskie&amp;ll=52.408438,16.908426&amp;spn=0.003789,0.009645&amp;t=m&amp;z=14&amp;output=embed'
-                    ),
-                    'online' => array(
-                        'eventbrite' => '2718185165',
-                    ),
-                    'sponsors' => array('jetbrains', 'allegro'),
-                    'talks' => array(
-                        array(
-                            'topic'                     => 'Małe jest piękne?',
-                            'description'               => 'Mikrostrona w mikroframeworku w mikroczasie czyli SlimFramework w praktyce. Możliwy livecoding :).',
-                            'speaker_name'              => 'Radosław Benkel',
-                            'speaker_avatar'            => 'https://twimg0-a.akamaihd.net/profile_images/1605720400/304109_265882293444507_100000682142964_858395_2624703_n_normal.jpg',
-                            'speaker_www'               => 'http://www.rbenkel.me',
-                            'slides_link'               => 'http://www.slideshare.net/singlespl/micropage-in-microtime-using-microframework',
-                            'skill_level'               => 2
-                        ),
-                        array(
-                            'topic'                     => 'Memcached + PHP i nie tylko.',
-                            'description'               => 'Jak to działa od strony PHP i troszkę głębiej. Jakie są rozszerzenia php i czym się różnią. Jak i kiedy interesować się cachowaniem. To i trochę więcej o memcached będzie tematem prezentacji.',
-                            'speaker_name'              => 'Rafał Malinowski',
-                            'speaker_avatar'            => 'http://dl.dropbox.com/u/719636/avatar/avatar_120.jpg',
-                            'speaker_www'               => 'http://about.me/after.design',
-                            'slides_link'               => 'http://malinowski.be/meetphp/#/',
-                            'skill_level'               => 3
-                        ),
-                        array(
-                            'topic'                     => 'OAuth + GoogleAPI.',
-                            'description'               => 'Czym jest OAuth? Jakie problemy rozwiązuje? Rodzaje uwierzytelniania. Przykładowa implementacja na przykładze Google API.',
-                            'speaker_name'              => 'Benedykt Dryl',
-                            'speaker_avatar'            => 'https://twimg0-a.akamaihd.net/profile_images/1586173262/282501_1993971206624_1163753013_2014212_2628494_n_normal.jpg',
-                            'speaker_www'               => 'http://twitter.com/cypherq',
-                            'slides_link'               => 'http://cypherq.github.com/meet.php---OAuth-and-Google-API/',
-                            'skill_level'               => 4
-                        ),
-                    )
-                )
+            'id'    => 2,
+            'date'  => '21.01.2012',
+            'time'  => '17:00',
+            'description' => 'Początek nowego roku, a my kontynuujemy inicjatywę meet.php! Kolejne prezentacje, kolejni prelegenci, ale ta sama świetna atmosfera, która udzieliła się na pierwszym spotkaniu :) Zapraszamy!',
+            'venue' => array(
+                'address'   => 'Coworking ZOO, Zwierzyniecka 20 (2 piętro), 61-001 Poznań',
+                'map_link'  => 'http://maps.google.pl/maps?f=q&amp;source=s_q&amp;hl=pl&amp;geocode=&amp;q=zwierzyniecka+20&amp;aq=&amp;sll=52.187405,19.204102&amp;sspn=7.478761,19.753418&amp;vpsrc=6&amp;ie=UTF8&amp;hq=&amp;hnear=Zwierzyniecka+20,+Pozna%C5%84,+Wielkopolskie&amp;ll=52.408438,16.908426&amp;spn=0.003789,0.009645&amp;t=m&amp;z=14&amp;output=embed'
+            ),
+            'online' => array(
+                'eventbrite' => '2718185165',
+            ),
+            'sponsors' => array('jetbrains', 'allegro'),
+            'talks' => array(
+                array(
+                    'topic'                     => 'Małe jest piękne?',
+                    'description'               => 'Mikrostrona w mikroframeworku w mikroczasie czyli SlimFramework w praktyce. Możliwy livecoding :).',
+                    'speaker_name'              => 'Radosław Benkel',
+                    'speaker_avatar'            => 'https://twimg0-a.akamaihd.net/profile_images/1605720400/304109_265882293444507_100000682142964_858395_2624703_n_normal.jpg',
+                    'speaker_www'               => 'http://www.rbenkel.me',
+                    'slides_link'               => 'http://www.slideshare.net/singlespl/micropage-in-microtime-using-microframework',
+                    'skill_level'               => 2
+                ),
+                array(
+                    'topic'                     => 'Memcached + PHP i nie tylko.',
+                    'description'               => 'Jak to działa od strony PHP i troszkę głębiej. Jakie są rozszerzenia php i czym się różnią. Jak i kiedy interesować się cachowaniem. To i trochę więcej o memcached będzie tematem prezentacji.',
+                    'speaker_name'              => 'Rafał Malinowski',
+                    'speaker_avatar'            => 'http://dl.dropbox.com/u/719636/avatar/avatar_120.jpg',
+                    'speaker_www'               => 'http://about.me/after.design',
+                    'slides_link'               => 'http://malinowski.be/meetphp/#/',
+                    'skill_level'               => 3
+                ),
+                array(
+                    'topic'                     => 'OAuth + GoogleAPI.',
+                    'description'               => 'Czym jest OAuth? Jakie problemy rozwiązuje? Rodzaje uwierzytelniania. Przykładowa implementacja na przykładze Google API.',
+                    'speaker_name'              => 'Benedykt Dryl',
+                    'speaker_avatar'            => 'https://twimg0-a.akamaihd.net/profile_images/1586173262/282501_1993971206624_1163753013_2014212_2628494_n_normal.jpg',
+                    'speaker_www'               => 'http://twitter.com/cypherq',
+                    'slides_link'               => 'http://cypherq.github.com/meet.php---OAuth-and-Google-API/',
+                    'skill_level'               => 4
+                ),
+            )
+        ),
+        3 => array(
+            'id'    => 3,
+            'date'  => '25.02.2012',
+            'time'  => '17:00',
+            'description' => 'Nie zwalniamy tempa - zapraszamy na trzecie spotkanie. Tym razem będzie m.in o Symfony2 czy też o testowaniu wg metodytki BDD. A na koniec oczywiście after party ;)',
+            'venue' => array(
+                'address'   => 'Coworking ZOO, Zwierzyniecka 20 (2 piętro), 61-001 Poznań',
+                'map_link'  => 'http://maps.google.pl/maps?f=q&amp;source=s_q&amp;hl=pl&amp;geocode=&amp;q=zwierzyniecka+20&amp;aq=&amp;sll=52.187405,19.204102&amp;sspn=7.478761,19.753418&amp;vpsrc=6&amp;ie=UTF8&amp;hq=&amp;hnear=Zwierzyniecka+20,+Pozna%C5%84,+Wielkopolskie&amp;ll=52.408438,16.908426&amp;spn=0.003789,0.009645&amp;t=m&amp;z=14&amp;output=embed'
+            ),
+            'online' => array(
+                'eventbrite' => 2891537667
+            ),
+            'sponsors' => array('allegro', 'jetbrains'),
+            'talks' => array(
+                array(
+                    'topic'                     => 'Ogromny, prosty, przejrzysty.',
+                    'description'               => 'Wprowadzenie do elementów frameworka Symfony2. Omówienie jego architektury, zalet i przykład prostej aplikacji wykorzystującej standardowe komponenty Symfony2.',
+                    'speaker_name'              => 'Mateusz Angulski',
+                    'speaker_avatar'            => 'https://twimg0-a.akamaihd.net/profile_images/1460171853/angul_reasonably_small.jpg',
+                    'speaker_www'               => 'http://www.twitter.com/matiangul',
+                    'slides_link'               => null,
+                    'skill_level'               => 2
+                )             
+            )
+        )
     );
 
     public static function fetchLast()
