@@ -117,6 +117,15 @@ class Events extends Base
                     'skill_level'               => 2
                 ),
                 array(
+                    'topic'                     => 'Are you Redis?',
+                    'description'               => 'Wprowadzenie do Redis\'a. O tym, czym jest Redis, jako go używać i dlaczego warto go używać nie tylko jako mechanizm cachowania.',
+                    'speaker_name'              => 'Maciej Winnicki',
+                    'speaker_avatar'            => 'https://twimg0-a.akamaihd.net/profile_images/1115951820/macias_reasonably_small.png',
+                    'speaker_www'               => 'http://www.twitter.com/mthenw',
+                    'slides_link'               => null,
+                    'skill_level'               => 3
+                ),   
+                array(
                     'topic'                     => 'BDD + PHP = Behat',
                     'description'               => 'Behavior Driven Development - kiedy i jak używac, omówienie najważniejszych zagadnień BDD oraz narzędzia Behat, porównanie do zwyczajnych testów jednostkowych.',
                     'speaker_name'              => 'Łukasz Kużyński',
