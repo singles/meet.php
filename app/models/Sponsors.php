@@ -22,7 +22,7 @@ class Sponsors extends Base
         ),
         'helion'    => array(
             'name'  => 'Helion',
-            'logo'  => 'sponsor_helion.gifv',
+            'logo'  => 'sponsor_helion.gif',
             'url'   => 'http://www.helion.pl'
         )
     );
