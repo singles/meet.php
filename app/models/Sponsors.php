@@ -20,5 +20,10 @@ class Sponsors extends Base
             'logo'  =>  'sponsor_jetbrains.gif',
             'url'   =>  'http://www.jetbrains.com/'
         ),
+        'helion'    => array(
+            'name'  => 'Helion',
+            'logo'  => 'sponsor_helion.gifv',
+            'url'   => 'http://www.helion.pl'
+        )
     );
 }
