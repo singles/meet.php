@@ -571,7 +571,7 @@ header nav a:hover {
     position: relative;
 }
 
-footer #social, footer #credits, footer #cooperation {
+footer #social, footer #credits, footer #cooperation, footer #partners {
     z-index: 2;
     position: relative;
 }
@@ -586,7 +586,7 @@ footer aside:last-child {
     padding-bottom: 15px;
 }
 
-footer #social span, footer #cooperation span {
+footer #social span, footer #cooperation span, footer #partners span {
     font-family: 'Segoe Script Regular';
     font-size: 19px;
     color: #f4f4f4; 
@@ -597,7 +597,7 @@ footer #social span, footer #cooperation span {
     width: 180px;
 }
 
-footer #social a, footer #cooperation #zoo, footer #cooperation #akai {
+footer #social a, footer #cooperation #zoo, footer #cooperation #akai, footer #partners a {
     width: 32px;
     height: 32px;
     display: block;
@@ -641,6 +641,7 @@ footer #credits a:hover {
 footer #cooperation #akai     { background: transparent url(../img/logo_akai.png) no-repeat 0 0; width: 32px;}
 footer #cooperation #zoo      { background: transparent url(../img/logo_zoo.png) no-repeat 0 2px; width: 101px; }
 
+footer #partners #webclusters { background: transparent url(../img/logo_webclusters.png) no-repeat 0 0; width: 100px }
 
 #footer-background  #background-image-cont {
      background: black url(../img/footer_background_end.gif) repeat-x 0 0;
