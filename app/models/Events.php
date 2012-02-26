@@ -122,7 +122,7 @@ class Events extends Base
                     'speaker_name'              => 'Maciej Winnicki',
                     'speaker_avatar'            => 'https://twimg0-a.akamaihd.net/profile_images/1115951820/macias_reasonably_small.png',
                     'speaker_www'               => 'http://www.twitter.com/mthenw',
-                    'slides_link'               => null,
+                    'slides_link'               => 'http://speakerdeck.com/u/mthenw/p/are-you-redis-introduction-to-redis',
                     'skill_level'               => 3
                 ),   
                 array(
