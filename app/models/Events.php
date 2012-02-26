@@ -127,11 +127,11 @@ class Events extends Base
                 ),   
                 array(
                     'topic'                     => 'BDD + PHP = Behat',
-                    'description'               => 'Behavior Driven Development - kiedy i jak używac, omówienie najważniejszych zagadnień BDD oraz narzędzia Behat, porównanie do zwyczajnych testów jednostkowych.',
+                    'description'               => 'Behavior Driven Development - kiedy i jak używać, omówienie najważniejszych zagadnień BDD oraz narzędzia Behat, porównanie do zwyczajnych testów jednostkowych.',
                     'speaker_name'              => 'Łukasz Kużyński',
                     'speaker_avatar'            => 'https://twimg0-a.akamaihd.net/profile_images/1448595217/24daa83cd30cf8185048483f4e915e88_normal.jpeg',
                     'speaker_www'               => 'http://www.twitter.com/wookiebpl',
-                    'slides_link'               => null,
+                    'slides_link'               => 'http://www.slideshare.net/wookieb/bdd-11756856',
                     'skill_level'               => 4
                 ),             
             )
