@@ -113,7 +113,7 @@ class Events extends Base
                     'speaker_name'              => 'Mateusz Angulski',
                     'speaker_avatar'            => 'https://twimg0-a.akamaihd.net/profile_images/1460171853/angul_reasonably_small.jpg',
                     'speaker_www'               => 'http://www.twitter.com/matiangul',
-                    'slides_link'               => null,
+                    'slides_link'               => 'https://github.com/mangulski-neducatio/meetphp-symfony2',
                     'skill_level'               => 2
                 ),
                 array(
