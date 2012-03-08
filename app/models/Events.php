@@ -30,7 +30,7 @@ class Events extends Base
                     'speaker_name'              => 'Krzysztof Hasiński',
                     'speaker_avatar'            => 'https://lh3.googleusercontent.com/-j2-fvP6eQb8/AAAAAAAAAAI/AAAAAAAAAes/w7aeGL-HlGE/photo.jpg?sz=48',
                     'speaker_www'               => 'https://plus.google.com/104190162645211265692/posts',
-                    'slides_link'               => '',
+                    'slides_link'               => 'http://meetphp.pl/media/hiphop/hiphopforphp.html',
                 ),
                 array(
                     'topic'                     => 'Zend Framework',

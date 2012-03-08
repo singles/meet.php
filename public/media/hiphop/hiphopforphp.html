@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<!--
+  Google HTML5 slide template
+
+  Authors: Luke Mahé (code)
+           Marcin Wichary (code and design)
+           
+           Dominic Mazzoni (browser compatibility)
+           Charles Chen (ChromeVox support)
+
+  URL: http://code.google.com/p/html5slides/
+-->
+
+<html>
+  <head>
+    <title>Presentation</title>
+
+    <meta charset='utf-8'>
+    <script
+      src='http://html5slides.googlecode.com/svn/trunk/slides.js'></script>
+  </head>
+  
+  <style>
+.slides.template-default > article:not(.nobackground):not(.biglogo) { background-image:none !important; }    
+    
+  </style>
+
+  <body style='display: none'>
+
+    <section class='slides layout-regular template-default'>
+      
+      <article>
+        <h1>
+          HipHop for PHP
+          <br>
+          <h2>Transformator kodu PHP do C++<h2>
+        </h1>
+        <p>
+          Krzysztof Hasiński
+          <br>
+          17 grudnia 2011
+        </p>
+      </article>
+      
+      <article>
+        <h3>
+          PHP
+        </h3>
+        <ul>
+			<li>Weak typing (zval...)
+			<li>Dynamiczne odwołania
+			<li>Redeklarowane stałe, zmienne, funkcje
+			<li>Interpretowany
+		</ul>
+		<p>Łatwy do pisania, niewydajny przy uruchomieniu</p>
+      </article>
+
+	  <article>
+		<h3>Rozwiązania</h3>
+		<ul class="build">
+			<li>Cache, op-code, ...
+			<li>Pisanie w rozszerzeniach PHP
+			<li>Więcej sprzętu
+		</ul>
+	  </article>
+	
+      <article>
+        <h2>Co jeszcze można zrobić?</h2>
+      </article>
+
+      <article class='smaller'>
+        <h3>HipHop for PHP
+        </h3>
+        <p>HipHop for PHP to transformator kodu PHP do C++<br><small>I docelowo do natywnego kodu x86-64</small>
+        </p>
+        <img src="hiphop_scheme.png" />
+      </article>
+
+	  <article>
+		<h3>The Social Network</h3><p>
+		<img src="socialnetwork.png" /></p>
+	  </article>
+
+      <article>
+        <h3>Transformacja
+        </h3>
+        <p>Funkcjonalność magiczna</p>
+		<ul>
+			<li><code>$$x=$$y;</code>
+			<li><code>eval($x);</code> (tylko w HPHPi)
+			<li><code>$$$foo();</code>
+			<li><code>function foo($x) { include $x; }</code>
+		</ul>
+      </article>
+
+      <article>
+        <h3>Pozostałe braki</h3>
+        <ul class="build">
+          <li><code>create_function()</code></li>
+          <li>"/e" dla <code>preg_replace</code></li>
+          <li>Kolejność deklaracji w ścieżce wykonania</li>
+		  <li>Fragmenty <code>spl_*</code>, <code>ob_*</code></li>
+		  <li>opcje php.ini</li>
+		  <li>bazy danych poza MySQL przez PDO</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Inne wady</h3>
+        <ul class="build">
+          <li>Problemy z typami o rosnącym rozmiarze (konieczność implementacji String Builder)
+          <li>Nie zmienia szybkości modułów zewnętrznych
+          <li>Konieczność konwersji istniejących projektów
+        </ul>
+      </article>
+
+	  <article>
+ 		 <h3>To gdzie te plusy?</h3>
+		<ul>
+			<li>Benchmarki istniejących systemów pokazują nawet do <strong>6x</strong> przyspieszenie*
+			<li>Zmiany są czesto i tak konieczne w PHP ze względu na wydajność
+		</ul>
+		<footer style="font-size:18px; position:absolute; bottom:15px;">* Drupal oraz Wordpress, mierzone w liczbie wyświetleń na minutę, porównanie przy PHP5 + APC</footer>
+	  </article>
+	
+	  <article class="smaller">
+		 <h3>Tryby działania HipHop for PHP</h3>
+		<ol class="build">
+			<li>Compile &amp; run - dobre do programów CLI
+			<li>Compile to tmp dir &amp; run - dobre do testów kompilacji
+			<li>Compile to tmp dir &amp; run as web server - Tryb do testów i produkcji
+			<li>Start an interpreter (HPHPi) - Tryb do pisania oprogramowania dla CLI
+			<li>Start an interpreter and a web server - Tryb do pisania oprogramowania
+		</ol>
+	  </article>
+
+      <article >
+        <h3>Jak zacząć pisać w HipHopie?
+        </h3>
+        <ol class="build">
+        	<li>Pisz w PHP
+			<li>Uruchamiaj w HPHPi (interpreter HipHop, pozwala na pracę modyfikując kod w locie)
+			<li>Stwórz listę plików do kompilacji (np. używając <code>find</code>)
+			<li>Skompiluj kod
+			<li>????
+			<li>Profit!
+        </ol>
+      </article>
+      
+      <article class='smaller'>
+        <h3>Talk is cheap, show me the code
+        </h3><p>Kompilacja</p><section><pre>
+~/hiphop-php/src/hphp/hphp\
+ --keep-tempdir=1 \
+ --log=3 \
+ --input-list=files.list \ # Lista plików do kompilacji
+ --include-path="." \
+ --force=1 \ # Nie zatrzymuj się nad nieobsługiwanymi funkcjami
+ --cluster-count=8 \ # Stwórz osiem plików do kompilacji
+</pre></section><p>Wywołanie</p>
+        <section><pre>
+/tmp/hphp_ASp2PJ/Moj_Skompilowany_Program -m server -p 8080 
+ -v "Server.SourceRoot=`pwd`" \ # Ważne, gdyż skompilowany program 
+ \                              # zawiera się w innym katalogu
+ -v "Server.DefaultDocument=index.php" \
+ -v "Log.Level=Verbose" \ 
+ -c $HPHP_HOME/bin/mime.hdf &amp; # Bez tego nie załadujemy w 
+                              # serwerze plików CSS czy JS
+		</pre></section>
+      </article>
+      
+      <article class='smaller'>
+        <h3>Popularne WTF
+        </h3>
+		<table>
+			<thead>
+				<tr><th>WTF?!</th><th>Oh, ok</th></tr>
+			</thead>
+			<tbody class="build">
+				<tr><td>Nie mogę uruchomić kompilatora</td><td>Obecny kompilator działa tylko na Linuksie i BSD (bez OSX), na początek ściągnij VM</td></tr>
+				<tr><td>Błędy z file_exists()</td><td>Ustaw root dir na ścieżkę z nieskompilowanym kodem</td></tr>
+				<tr><td>Po kompilacji kod chodzi wolniej i zajmuje więcej pamięci</td><td>Optymalizuj pod HipHop (np. alokuj pamięc na tablice)</td></tr>
+				<tr><td>Czy naprawdę potrzebuję HipHop?</td><td>Nie (ale to ciekawa zabawka)</td></tr>
+			</tbody>
+		</table>
+      </article>
+      
+      <article>
+       <h1>Pytania?</h1>
+      </article>
+
+  </body>
+</html>
