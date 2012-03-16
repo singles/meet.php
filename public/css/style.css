@@ -786,7 +786,7 @@ article #speakers ul li {
 }
 
 article #speakers ul li a {
-    font-size: 13px;
+    font-size: 16px;
 }
 
 article #speakers ul img {
@@ -840,8 +840,8 @@ article #speakers a, article #speakers h5, article #description h4 {
 }
 
 article #speakers h5 {
-    margin: 0px 0 0 0;
-    font-size: 25px;
+    margin: 0px 0 6px 0;
+    font-size: 20px;
 }
 
 article #topics li {
