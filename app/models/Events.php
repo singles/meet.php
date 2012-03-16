@@ -105,7 +105,7 @@ class Events extends Base
             'online' => array(
                 'eventbrite' => 2891537667
             ),
-            'sponsors' => array('allegro', 'jetbrains', 'helion'),
+            'sponsors' => array('allegro', 'jetbrains'),
             'talks' => array(
                 array(
                     'topic'                     => 'Ogromny, prosty, przejrzysty.',
