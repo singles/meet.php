@@ -140,7 +140,7 @@ class Events extends Base
             'id'    => 4,
             'date'  => '07.04.2012',
             'time'  => '17:00',
-            'description' => 'Czwarty miesiąc roku. Cztery prezentacje. Czwórka prelegentów. PHP 5.4 wśród tematów. W skrócie - czas na meet.php#(...sami wiecie który...;)',
+            'description' => 'Czwarty miesiąc roku. Cztery prezentacje. Czwórka prelegentów. W skrócie - czas na meet.php#(...sami wiecie który...;)',
             'venue' => array(
                 'address'   => 'Coworking ZOO, Zwierzyniecka 20 (2 piętro), 61-001 Poznań',
                 'map_link'  => 'http://maps.google.pl/maps?f=q&amp;source=s_q&amp;hl=pl&amp;geocode=&amp;q=zwierzyniecka+20&amp;aq=&amp;sll=52.187405,19.204102&amp;sspn=7.478761,19.753418&amp;vpsrc=6&amp;ie=UTF8&amp;hq=&amp;hnear=Zwierzyniecka+20,+Pozna%C5%84,+Wielkopolskie&amp;ll=52.408438,16.908426&amp;spn=0.003789,0.009645&amp;t=m&amp;z=14&amp;output=embed'
@@ -148,8 +148,18 @@ class Events extends Base
             'online' => array(
                 'eventbrite' => 3169571273
             ),
-            'sponsors' => array('allegro', 'jetbrains', 'helion'),
-            'talks' => array()
+            'sponsors' => array('allegro', 'jetbrains'),
+            'talks' => array(
+                array(
+                    'topic'                     => 'NoSQL i dlaczego go nie potrzebujesz?',
+                    'description'               => 'Krótkie wprowadzenie do baz NoSQL - czym są, jakie są ich wady i zalety, i kiedy warto po nie sięgnąć.',
+                    'speaker_name'              => 'Filip Tepper',
+                    'speaker_avatar'            => 'http://d.gethopper.com/0c2GuQnBxHa5FrpVpP_0EmFsvy5T/filiptepper.jpg',
+                    'speaker_www'               => 'http://about.me/filiptepper',
+                    'slides_link'               => null,
+                    'skill_level'               => 3
+                ),    
+            )
         )   
     );
             
