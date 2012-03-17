@@ -151,7 +151,7 @@ class Events extends Base
             'sponsors' => array('allegro', 'jetbrains'),
             'talks' => array(
                 array(
-                    'topic'                     => 'PHP5.4',
+                    'topic'                     => 'PHP 5.4',
                     'description'               => 'Ewolucja czy rewolucja? Na co pozwala PHP5.4, a na co nie? Przegląd nowości.',
                     'speaker_name'              => 'Dorian Sarnowski',
                     'speaker_avatar'            => 'http://pl.gravatar.com/userimage/10620678/23e72f2f32ce75c1fd874fd7b8a9b033.jpeg',
