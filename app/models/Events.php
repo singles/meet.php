@@ -138,7 +138,7 @@ class Events extends Base
         ),
         4 => array(
             'id'    => 4,
-            'date'  => '07.04.2012',
+            'date'  => '14.04.2012',
             'time'  => '17:00',
             'description' => 'Czwarty miesiąc roku. Cztery prezentacje. Czwórka prelegentów. W skrócie - czas na meet.php#(...sami wiecie który...;)',
             'venue' => array(
@@ -151,13 +151,13 @@ class Events extends Base
             'sponsors' => array('allegro', 'jetbrains'),
             'talks' => array(
                 array(
-                    'topic'                     => 'NoSQL i dlaczego go nie potrzebujesz?',
-                    'description'               => 'Krótkie wprowadzenie do baz NoSQL - czym są, jakie są ich wady i zalety, i kiedy warto po nie sięgnąć.',
-                    'speaker_name'              => 'Filip Tepper',
-                    'speaker_avatar'            => 'http://d.gethopper.com/0c2GuQnBxHa5FrpVpP_0EmFsvy5T/filiptepper.jpg',
-                    'speaker_www'               => 'http://about.me/filiptepper',
+                    'topic'                     => 'PHP5.4',
+                    'description'               => 'Ewolucja czy rewolucja? Na co pozwala PHP5.4, a na co nie? Przegląd nowości.',
+                    'speaker_name'              => 'Dorian Sarnowski',
+                    'speaker_avatar'            => 'http://pl.gravatar.com/userimage/10620678/23e72f2f32ce75c1fd874fd7b8a9b033.jpeg',
+                    'speaker_www'               => null,
                     'slides_link'               => null,
-                    'skill_level'               => 3
+                    'skill_level'               => 2
                 ),    
             )
         )   
