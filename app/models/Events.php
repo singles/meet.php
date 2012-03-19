@@ -47,7 +47,7 @@ class Events extends Base
                     'speaker_avatar'            => 'https://twimg0-a.akamaihd.net/profile_images/1605720400/304109_265882293444507_100000682142964_858395_2624703_n_normal.jpg',
                     'speaker_www'               => 'http://www.rbenkel.me',
                     'slides_link'               => 'http://www.slideshare.net/singlespl/php-tips-tricks',
-                )                
+                )
             )
         ),
         2 => array(
@@ -124,7 +124,7 @@ class Events extends Base
                     'speaker_www'               => 'http://www.twitter.com/mthenw',
                     'slides_link'               => 'http://speakerdeck.com/u/mthenw/p/are-you-redis-introduction-to-redis',
                     'skill_level'               => 3
-                ),   
+                ),
                 array(
                     'topic'                     => 'BDD + PHP = Behat',
                     'description'               => 'Behavior Driven Development - kiedy i jak używać, omówienie najważniejszych zagadnień BDD oraz narzędzia Behat, porównanie do zwyczajnych testów jednostkowych.',
@@ -133,7 +133,7 @@ class Events extends Base
                     'speaker_www'               => 'http://www.twitter.com/wookiebpl',
                     'slides_link'               => 'http://www.slideshare.net/wookieb/bdd-11756856',
                     'skill_level'               => 4
-                ),             
+                ),
             ),
         ),
         4 => array(
@@ -158,11 +158,20 @@ class Events extends Base
                     'speaker_www'               => null,
                     'slides_link'               => null,
                     'skill_level'               => 2
-                ),    
+                ),
+                array(
+                    'topic'                     => 'PHPStorm',
+                    'description'               => 'Prezentacja zintegrowanego środowiska developerskiego PHPStorm.',
+                    'speaker_name'              => 'Benedykt Dryl',
+                    'speaker_avatar'            => 'https://twimg0-a.akamaihd.net/profile_images/1586173262/282501_1993971206624_1163753013_2014212_2628494_n_normal.jpg',
+                    'speaker_www'               => 'http://twitter.com/cypherq',
+                    'slides_link'               => null,
+                    'skill_level'               => 2
+                )
             )
-        )   
+        )
     );
-            
+
     public static function fetchLast()
     {
         return array_pop(self::$_data);
