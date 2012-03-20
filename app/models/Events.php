@@ -167,6 +167,15 @@ class Events extends Base
                     'speaker_www'               => 'http://twitter.com/cypherq',
                     'slides_link'               => null,
                     'skill_level'               => 2
+                ),
+                array(
+                    'topic'                     => 'Wieloprocesowe przetwarzanie w PHP',
+                    'description'               => 'Autorskie spojrzenie na przetwarzanie wieloprocesowe w przypadku ograniczonych zasobów i czasu oraz specyficznych wymagań.',
+                    'speaker_name'              => 'Grzegorz Nowicki',
+                    'speaker_avatar'            => 'https://twimg0-a.akamaihd.net/profile_images/1909582304/Gregor_reasonably_small.jpg',
+                    'speaker_www'               => 'http://twitter.com/sp3esu',
+                    'slides_link'               => null,
+                    'skill_level'               => 4
                 )
             )
         )
