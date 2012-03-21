@@ -1,12 +1,12 @@
-/* 
+/*
  * HTML5 ✰ Boilerplate
  *
- * What follows is the result of much research on cross-browser styling. 
+ * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  *
  * Detailed information about this CSS: h5bp.com/css
- * 
+ *
  * ==|== normalize ==========================================================
  */
 
@@ -36,7 +36,7 @@ body { margin: 0; font-size: 13px; line-height: 1.231; }
 
 body, button, input, select, textarea { font-family: sans-serif; color: #222; }
 
-/* 
+/*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection declarations have to be separate
  * Also: hot pink! (or customize the background color to match your design)
@@ -104,13 +104,13 @@ nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0
 
 /*
  * 1. Improve image quality when scaled in IE7: h5bp.com/d
- * 2. Remove the gap between images and borders on image containers: h5bp.com/e 
+ * 2. Remove the gap between images and borders on image containers: h5bp.com/e
  */
 
 img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
 
 /*
- * Correct overflow not hidden in IE9 
+ * Correct overflow not hidden in IE9
  */
 
 svg:not(:root) { overflow: hidden; }
@@ -133,9 +133,9 @@ fieldset { border: 0; margin: 0; padding: 0; }
 /* Indicate that 'label' will shift focus to the associated form element */
 label { cursor: pointer; }
 
-/* 
- * 1. Correct color not inheriting in IE6/7/8/9 
- * 2. Correct alignment displayed oddly in IE6/7 
+/*
+ * 1. Correct color not inheriting in IE6/7/8/9
+ * 2. Correct alignment displayed oddly in IE6/7
  */
 
 legend { border: 0; *margin-left: -7px; padding: 0; }
@@ -176,14 +176,14 @@ input[type="checkbox"], input[type="radio"] { box-sizing: border-box; }
 input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
 input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
 
-/* 
- * Remove inner padding and border in FF3/4: h5bp.com/l 
+/*
+ * Remove inner padding and border in FF3/4: h5bp.com/l
  */
 
 button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
 
-/* 
- * 1. Remove default vertical scrollbar in IE6/7/8/9 
+/*
+ * 1. Remove default vertical scrollbar in IE6/7/8/9
  * 2. Allow only vertical resizing
  */
 
@@ -243,27 +243,27 @@ header, #welcome, #info, footer, #events, article {
 /* fonts */
 @font-face {
     font-family: "TitilliumMaps Thin";
-    src: url(../fonts/TitilliumMaps29L.otf);    
+    src: url(../fonts/TitilliumMaps29L.otf);
 }
 
 @font-face {
     font-family: "TitilliumMaps Medium";
-    src: url(../fonts/TitilliumMaps29L001.otf); 
+    src: url(../fonts/TitilliumMaps29L001.otf);
 }
 
 @font-face {
     font-family: "TitilliumMaps Bold";
-    src: url(../fonts/TitilliumMaps29L002.otf); 
+    src: url(../fonts/TitilliumMaps29L002.otf);
 }
 
 @font-face {
     font-family: "Segoe Script Regular";
-    src: url(../fonts/segoesc.ttf); 
+    src: url(../fonts/segoesc.ttf);
 }
 
 @font-face {
     font-family: "Segoe Script Bold";
-    src: url(../fonts/segoescb.ttf);    
+    src: url(../fonts/segoescb.ttf);
 }
 
 /* fonts end */
@@ -279,7 +279,7 @@ header #logo {
     text-indent: -9999px;
 }
 
-header nav ul {  
+header nav ul {
     display: block;
     position: absolute;
     top: 16px;
@@ -310,7 +310,7 @@ header nav ul li:last-child {
 }
 
 header nav a:hover {
-    color: #008fff;    
+    color: #008fff;
 }
 
 #header-background {
@@ -357,7 +357,7 @@ header nav a:hover {
 #welcome hgroup {
     top: 110px;
     left: 500px;
-    text-shadow: #052a56 1px 1px 1px;   
+    text-shadow: #052a56 1px 1px 1px;
     font-family: "TitilliumMaps Medium";
     border-bottom: 1px solid #fff;
     width: 430px;
@@ -421,7 +421,7 @@ header nav a:hover {
 
 #info ul li {
     display: block;
-    font-family: 'TitilliumMaps Medium';  
+    font-family: 'TitilliumMaps Medium';
     font-size: 18px;
     color: #4b4a4a;
     line-height: 1;
@@ -431,52 +431,52 @@ header nav a:hover {
     position: absolute;
 }
 
-#info #info-learn p, #info #info-share p, #info #info-meet p {  
+#info #info-learn p, #info #info-share p, #info #info-meet p {
 }
 
 #info #info-learn span, #info #info-share span, #info #info-meet span {
-    font-family: 'Segoe Script Regular';  
+    font-family: 'Segoe Script Regular';
     font-size: 32px;
     margin-bottom: 15px;
-    display: block;    
+    display: block;
 }
 
 #info #info-why {
-    font-family: 'Segoe Script Regular';  
+    font-family: 'Segoe Script Regular';
     top: -20px;
     left: 10px;
     font-size: 32px;
     background: transparent url(../img/postit_1.png) no-repeat 0 0;
-    width: 348px; 
-    height: 149px;  
+    width: 348px;
+    height: 149px;
     padding: 40px 0 0 80px;
 }
 
-#info #info-learn { 
+#info #info-learn {
     top: -25px;
     left: 490px;
     background: transparent url(../img/postit_2.png) no-repeat 0 0;
-    width: 308px; 
-    height: 190px;  
+    width: 308px;
+    height: 190px;
     padding: 20px 50px 0 80px;
 }
 
-#info #info-meet { 
+#info #info-meet {
     top: 180px;
     left: 20px;
     background: transparent url(../img/postit_3.png) no-repeat 0 0;
-    width: 310px; 
-    height: 193px;  
+    width: 310px;
+    height: 193px;
     padding: 50px 50px 0 80px;
 }
 
 
-#info #info-share { 
+#info #info-share {
     top: 190px;
     left: 500px;
     background: transparent url(../img/postit_4.png) no-repeat 0 0;
-    width: 303px; 
-    height: 180px;  
+    width: 303px;
+    height: 180px;
     padding: 30px 50px 0 80px;
 }
 
@@ -485,21 +485,21 @@ header nav a:hover {
     margin: 0;
 }
 
-#info #info-meet p { 
+#info #info-meet p {
     transform: rotate(-5deg);
     -webkit-transform: rotate(-5deg);
     -o-transform: rotate(-5deg);
     -moz-transform: rotate(-5deg);
 }
 
-#info #info-share p { 
+#info #info-share p {
     transform: rotate(4deg);
     -webkit-transform: rotate(4deg);
     -o-transform: rotate(4deg);
     -moz-transform: rotate(4deg);
 }
 
-#info #info-learn p { 
+#info #info-learn p {
     transform: rotate(3deg);
     -webkit-transform: rotate(3deg);
     -o-transform: rotate(3deg);
@@ -532,8 +532,8 @@ header nav a:hover {
 .code-drawing { position: absolute; z-index: 1; display: block;}
 
 .code-drawing.mvc {
-    background: transparent url(../img/code_mvc.png) no-repeat 0 0 ; 
-    width: 355px; 
+    background: transparent url(../img/code_mvc.png) no-repeat 0 0 ;
+    width: 355px;
     height: 124px;
     top: 12px;
     left: 824px;
@@ -553,7 +553,7 @@ header nav a:hover {
     top: 200px;
     width: 401px;
     height: 61px;
-} 
+}
 
 .code-drawing.db {
     background: transparent url(../img/code_db.png) no-repeat 0 0;
@@ -589,7 +589,7 @@ footer aside:last-child {
 footer #social span, footer #cooperation span, footer #partners span {
     font-family: 'Segoe Script Regular';
     font-size: 19px;
-    color: #f4f4f4; 
+    color: #f4f4f4;
     display: block;
     margin-top: 15px;
     float: left;
@@ -613,10 +613,10 @@ footer #social #eventbrite  { background: transparent url(../img/eb-icon.png) no
 footer #social #rss         { background: transparent url(../img/rss-icon.png) no-repeat 0 0 }
 
 footer #credits {
-    font-family: 'TitilliumMaps Medium', TrebuchetMS; 
+    font-family: 'TitilliumMaps Medium', TrebuchetMS;
     font-size: 13px;
     float: right;
-    color: #f4f4f4; 
+    color: #f4f4f4;
     display: block;
     position: relative;
 }
@@ -642,6 +642,7 @@ footer #cooperation #akai     { background: transparent url(../img/logo_akai.png
 footer #cooperation #zoo      { background: transparent url(../img/logo_zoo.png) no-repeat 0 2px; width: 101px; }
 
 footer #partners #webclusters { background: transparent url(../img/logo_webclusters.png) no-repeat 0 0; width: 100px }
+footer #partners #fordevelopers { background: transparent url(../img/logo_4dev.png) no-repeat 0 0; width:32px; height: 32px }
 
 #footer-background  #background-image-cont {
      background: black url(../img/footer_background_end.gif) repeat-x 0 0;
@@ -880,7 +881,7 @@ article #registration iframe {
 }
 
 #faq a {
-    color: #4b4a4a;    
+    color: #4b4a4a;
 }
 
 /* faq end */
@@ -926,7 +927,7 @@ code {
 /* Hide visually and from screenreaders, but maintain layout */
 .invisible { visibility: hidden; }
 
-/* Contain floats: h5bp.com/q */ 
+/* Contain floats: h5bp.com/q */
 .clearfix:before, .clearfix:after { content: ""; display: table; }
 .clearfix:after { clear: both; }
 .clearfix { zoom: 1; }
@@ -955,7 +956,7 @@ code {
    Print styles.
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
- 
+
 @media print {
   * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
   a, a:visited { text-decoration: underline; }

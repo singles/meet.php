@@ -148,7 +148,7 @@ class Events extends Base
             'online' => array(
                 'eventbrite' => 3169571273
             ),
-            'sponsors' => array('allegro', 'jetbrains'),
+            'sponsors' => array('allegro', 'jetbrains', '4developers'),
             'talks' => array(
                 array(
                     'topic'                     => 'PHP 5.4',

@@ -17,7 +17,7 @@
                     {% for talk in event.talks %}
                         <li>
                             <h4>
-                                {{ talk.topic }} 
+                                {{ talk.topic }}
                             </h4>
                             <p>{{ talk.description }}</p>
                             {% if talk.skill_level is defined %}
@@ -28,7 +28,7 @@
                             {% endif %}
                             {% if talk.slides_link %}
                                 <p><strong>Prezentacja:</strong> <a href="{{talk.slides_link}}">{{talk.slides_link}}</a></p>
-                            {% endif %}                            
+                            {% endif %}
                         </li>
                     {% endfor %}
                 </ul>

@@ -24,6 +24,11 @@ class Sponsors extends Base
             'name'  => 'Helion',
             'logo'  => 'sponsor_helion.gif',
             'url'   => 'http://www.helion.pl'
+        ),
+        '4developers' => array(
+            'name'  => '4developers',
+            'logo'  => 'sponsor_4dev.png',
+            'url'   => 'http://4developers.org.pl/'
         )
     );
 }
