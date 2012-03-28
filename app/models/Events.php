@@ -169,6 +169,15 @@ class Events extends Base
                     'skill_level'               => 2
                 ),
                 array(
+                    'topic'                     => 'Lithium - framework przyszłości',
+                    'description'               => '"Jako developer z ponad 10 letnim doświadczeniem pokażę dlaczego decyduję się wykorzystać Lithium jako szkielet webaplikacji klasy Enterprise które projektuję, porzucając takie alternatywy jak CakePHP czy RoR, zaprezentuję wszystkie nowości jakie zostały zaczerpnięte wraz z nadejściem PHP 5.3 i wykorzystane do budowy frameworka oraz dobre praktyki przeniesione z frameworków RoR czy CakePHP. Przy okazji poruszony zostanie temat AOP.',
+                    'speaker_name'              => 'Andrzej Borkowski',
+                    'speaker_avatar'            => 'http://www.gravatar.com/avatar/ebc48525201d5c5d608cc11ced4dc7b4.png',
+                    'speaker_www'               => 'http://blog.aeonmedia.eu/about',
+                    'slides_link'               => null,
+                    'skill_level'               => 3
+                ),
+                array(
                     'topic'                     => 'Wieloprocesowe przetwarzanie w PHP',
                     'description'               => 'Autorskie spojrzenie na przetwarzanie wieloprocesowe w przypadku ograniczonych zasobów i czasu oraz specyficznych wymagań.',
                     'speaker_name'              => 'Grzegorz Nowicki',
