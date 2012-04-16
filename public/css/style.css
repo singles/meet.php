@@ -237,6 +237,12 @@ header, #welcome, #info, footer, #events, article {
     background-position: 0 100%;
 }
 
+.smaller {
+    padding-top: 25px;
+    font-size: 13px;
+}
+
+
 /* general end */
 
 
