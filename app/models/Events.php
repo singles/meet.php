@@ -140,8 +140,8 @@ class Events extends Base
             'id'    => 4,
             'date'  => '14.04.2012',
             'time'  => '17:00',
-            'description' => '<p>Czwarty miesiąc roku. Cztery prezentacje. Czwórka prelegentów. W skrócie - czas na meet.php#(...sami wiecie który...;)</p>
-            <p class="smaller">Książkę <a href="http://helion.pl/ksiazki/php-obiekty-wzorce-narzedzia-wydanie-iii-matt-zandstra,phpob3.htm">PHP. Obiekty, wzorce, narzędzia. Wydanie III</a> ufundowało wydawnictwo Helion S.A (pobierz przykładowy <a href="http://pdf.helion.pl/phpob3/phpob3.pdf">rodział</a>).</p>',
+            'description' => 'Czwarty miesiąc roku. Cztery prezentacje. Czwórka prelegentów. W skrócie - czas na meet.php#(...sami wiecie który...;)',
+            'additional_description' => 'Książkę <a href="http://helion.pl/ksiazki/php-obiekty-wzorce-narzedzia-wydanie-iii-matt-zandstra,phpob3.htm">PHP. Obiekty, wzorce, narzędzia. Wydanie III</a> ufundowało wydawnictwo Helion S.A (pobierz przykładowy <a href="http://pdf.helion.pl/phpob3/phpob3.pdf">rodział</a>).',
             'venue' => array(
                 'address'   => 'Coworking ZOO, Zwierzyniecka 20 (2 piętro), 61-001 Poznań',
                 'map_link'  => 'http://maps.google.pl/maps?f=q&amp;source=s_q&amp;hl=pl&amp;geocode=&amp;q=zwierzyniecka+20&amp;aq=&amp;sll=52.187405,19.204102&amp;sspn=7.478761,19.753418&amp;vpsrc=6&amp;ie=UTF8&amp;hq=&amp;hnear=Zwierzyniecka+20,+Pozna%C5%84,+Wielkopolskie&amp;ll=52.408438,16.908426&amp;spn=0.003789,0.009645&amp;t=m&amp;z=14&amp;output=embed'

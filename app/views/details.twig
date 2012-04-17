@@ -10,8 +10,10 @@
 
             <section id="description">
                 <h2>Opis:</h2>
-                <p>{{ event.description|raw}}</p>
-
+                <p>{{ event.description}}</p>
+                {% if event.additional_description is defined %}
+                <p class="additional-info">{{ event.additional_description|raw }}
+                {% endif %}
                 <h2>Prezentacje:</h2>
                 <ul>
                     {% for talk in event.talks %}

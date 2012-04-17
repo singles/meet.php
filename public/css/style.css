@@ -237,12 +237,6 @@ header, #welcome, #info, footer, #events, article {
     background-position: 0 100%;
 }
 
-.smaller {
-    padding-top: 25px;
-    font-size: 13px;
-}
-
-
 /* general end */
 
 
@@ -839,6 +833,11 @@ article #description strong {
 
 article #description a {
     color: #4b4a4a;
+}
+
+article #description .additional-info {
+    padding-top: 25px;
+    font-size: 13px;
 }
 
 article #speakers a, article #speakers h5, article #description h4 {
