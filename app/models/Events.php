@@ -157,7 +157,7 @@ class Events extends Base
                     'speaker_name'              => 'Dorian Sarnowski',
                     'speaker_avatar'            => 'http://pl.gravatar.com/userimage/10620678/23e72f2f32ce75c1fd874fd7b8a9b033.jpeg',
                     'speaker_www'               => null,
-                    'slides_link'               => null,
+                    'slides_link'               => 'http://meetphp.pl/media/php54/index.html',
                     'skill_level'               => 2
                 ),
                 array(
@@ -166,7 +166,7 @@ class Events extends Base
                     'speaker_name'              => 'Benedykt Dryl',
                     'speaker_avatar'            => 'https://twimg0-a.akamaihd.net/profile_images/1586173262/282501_1993971206624_1163753013_2014212_2628494_n_normal.jpg',
                     'speaker_www'               => 'http://twitter.com/cypherq',
-                    'slides_link'               => null,
+                    'slides_link'               => 'http://cypherq.github.com/meet.php-phpStorm/',
                     'skill_level'               => 2
                 ),
                 array(
@@ -175,7 +175,7 @@ class Events extends Base
                     'speaker_name'              => 'Andrzej Borkowski',
                     'speaker_avatar'            => 'http://www.gravatar.com/avatar/ebc48525201d5c5d608cc11ced4dc7b4.png',
                     'speaker_www'               => 'http://blog.aeonmedia.eu/about',
-                    'slides_link'               => null,
+                    'slides_link'               => 'http://www.slideshare.net/gwoo/li3-ocphp',
                     'skill_level'               => 3
                 ),
                 array(
@@ -184,7 +184,7 @@ class Events extends Base
                     'speaker_name'              => 'Grzegorz Nowicki',
                     'speaker_avatar'            => 'https://twimg0-a.akamaihd.net/profile_images/1909582304/Gregor_reasonably_small.jpg',
                     'speaker_www'               => 'http://twitter.com/sp3esu',
-                    'slides_link'               => null,
+                    'slides_link'               => 'https://github.com/sp3esu/PHPMultiProcessing-Examples',
                     'skill_level'               => 4
                 )
             )

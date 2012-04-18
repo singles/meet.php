@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+
+<!--
+  Google HTML5 slide template
+
+  Authors: Luke Mahé (code)
+           Marcin Wichary (code and design)
+
+           Dominic Mazzoni (browser compatibility)
+           Charles Chen (ChromeVox support)
+
+  URL: http://code.google.com/p/html5slides/
+-->
+
+<html>
+	<head>
+		<title>Presentation</title>
+
+		<meta charset='utf-8'>
+		<script src='slides.js'></script>
+	</head>
+
+	<style>
+		/* Your individual styles here, or just use inline styles if that’s
+		   what you want. */
+
+
+	</style>
+
+	<body style='display: none'>
+
+		<section class='slides layout-regular template-io2011'>
+
+			<!-- Your slides (<article>s) go here. Delete or comment out the
+				 slides below. -->
+
+			<article>
+				<h1>
+					PHP 5.4
+				</h1>
+				<p>
+					Dorian Sarnowski
+					<br>
+					April 14, 2012
+				</p>
+			</article>
+
+			<article>
+				<h3>PHP 5.4? Why not 6.0?</h3>
+				<ul class="build">
+					<li class="fragment">first official mention about PHP 6 was in 2005</li>
+					<li class="fragment">project was suspended on March 2010</li>
+					<li class="fragment">some bunch of new features and changes that were intended for PHP 6 were added to PHP 5.3 (30.06.2009) and 5.4 (1.03.2012)</li>
+				</ul>
+			</article>
+
+			<article>
+				<h2>New features (syntactic sugar actually)</h2>
+			</article>
+
+			<article>
+				<h3>Class member access on instantiation</h3>
+
+				<section class="build">
+					<pre>
+class Thumbnailer {
+    public static function factory() {
+        return new self;
+    }
+
+    public function doSomeWeirdStuff() {}
+}
+
+// PHP 5.3
+Thumbnailer::factory()->doSomeWeirdStuff();</pre>
+
+					<pre>
+// PHP 5.4 (method <code>factory()</code> isn't needed anymore)
+(new Thumbnailer())->doSomeWeirdStuff();</pre>
+				</section>
+			</article>
+
+			<article>
+				<h3>Short array syntax</h3>
+				<section>
+					<pre>
+// PHP 5.3
+$speakers = array(
+    'Dorian Sarnowski',
+    'Benedykt Dryl',
+    'Andrzej Borkowski',
+    'Grzegorz Nowicki'
+);</pre>
+				</section>
+				<section class="build">
+					<pre>
+// PHP 5.4
+$speakers = [
+    'Dorian Sarnowski',
+    'Benedykt Dryl',
+    'Andrzej Borkowski',
+    'Grzegorz Nowicki'
+];</pre>
+				</section>
+			</article>
+
+			<article>
+				<h3>Function array dereferencing</h3>
+				<section>
+					<pre>
+function getSpeakers() {
+    return [
+        'Dorian Sarnowski', 'Benedykt Dryl', 
+        'Andrzej Borkowski', 'Grzegorz Nowicki'
+    ];
+}</pre>
+
+</section>
+				<section class="build">
+
+<pre>
+// PHP 5.3
+$speakers = getSpeakers();
+$currentSpeaker = $speakers[0];</pre>
+
+<pre>
+// PHP 5.4
+$currentSpeaker = getSpeakers()[0];</pre>
+
+				</section>
+			</article>
+
+			<article>
+				<h3>
+					&lt;?= is now always available
+				</h3>
+				<section>
+					<pre>
+&lt;ul>
+    &lt;?php foreach ($this->speakers as $speaker) : ?>
+        &lt;li>
+            <del>&lt;?php echo $speaker ?></del>
+            &lt;?= $speaker ?>
+        &lt;li>
+    &lt;?php endforeach ?>
+&lt;/ul></pre>
+
+			<p>
+				Now, this one works everywhere, regardless of the <code>short_open_tag</code> option in <code>php.ini</code>.
+			</p>
+
+
+			</article>
+
+			<article>
+				<h3>
+					Binary number format
+				</h3>
+				<section class="build">
+					<pre>echo 123    // 123</pre>
+					<pre>echo 0x123; // 291</pre>
+					<pre>echo 0123;  // 83</pre>
+					<pre>// PHP 5.3
+echo bindec('110'); // 6</pre>
+					<pre>// PHP 5.4
+echo 0b110;         // 6</pre>
+				</section>
+			</article>
+
+			<article>
+				<h3>JsonSerializable interface</h3>
+				<pre>class Data implements JsonSerializable{
+
+    public function jsonSerialize() {
+        return ['what' => 'meet.php', 'when' => 'today'];
+    }
+
+};
+
+$data = new Data;
+echo json_encode($data);</pre>
+</article>
+
+			<article>
+				<h3>How long did your script take to execute?</h3>
+				<pre>
+$_SERVER['REQUEST_TIME_FLOAT'];</pre>
+
+				<section class="build">
+					<h3>Callable Typehint</h3>
+					<pre>function test(callable $x) {}</pre>
+				</section>
+			</article>
+
+
+			<article>
+				<h2>New features (the real ones)</h2>
+			</article>
+
+
+			<article>
+				<h3>Built-in web server</h3>
+
+				<section class="build">
+					<pre>// Start server on port 8000
+php -S localhost:8000 -t /path/to/folder</pre>
+					<pre>// Start server on port 8000 using router.
+// Check <code>$_SERVER["REQUEST_URI"]</code> in <code>router.php</code> for process routing
+php -S localhost:8000 router.php</pre>
+
+					<section>
+						<h4>Limitations:</h4>
+						<ul class="build">
+							<li>no .htaccess (no mod-rewrite)</li>
+							<li>developing environment only</li>
+						</ul>
+					</section>
+
+				</section>
+			</article>
+
+
+			<article class="smaller">
+				<q>
+					DON'T use this server in anything resembling a production environment. It's intended only for use while developing. (We're in the business of making Web frameworks, not Web servers.)
+				</q>
+				<div class='author'>
+					<a href="https://docs.djangoproject.com/en/1.4/intro/tutorial01/">Django documentation</a>
+				</div>
+			</article>
+
+			<article>
+				<h3>
+					<code>$this</code> support in closures
+				</h3>
+
+				<pre>
+class Adder {
+
+    private $value = 5;
+
+    public function calculate(array $values) {
+        return array_map(function($value) {
+            return $value + <strong>$this->value</strong>;
+        }, $values);
+    }
+
+}
+
+$values = [0, 5, 10];
+$calculatedValues = (new Adder)->calculate($values); // [5, 10, 15]</pre>
+
+			</article>
+
+			<article class="smaller">
+				<h3>
+					Session Upload Progress
+				</h3>
+				
+				<section class="build">
+					<pre>
+# php.ini
+session.upload_progress.enabled = 1;
+session.upload_progress.prefix = upload_progress_;
+session.upload_progress.name = PHP_SESSION_UPLOAD_PROGRESS;</pre>
+
+					<pre>
+&lt;form action="upload.php" method="POST" enctype="multipart/form-data">
+    &lt;input type="hidden" name="PHP_SESSION_UPLOAD_PROGRESS" value="123" />
+    &lt;input type="file" name="file1" />
+    &lt;input type="file" name="file2" />
+    &lt;input type="submit" />
+&lt;/form></pre>
+
+					<pre>
+// you must send post with valid id
+// only in this case $_SESSION will be populated with upload data
+&lt;form action="check.php" method="POST">
+    &lt;input type="hidden" name="PHP_SESSION_UPLOAD_PROGRESS" value="123" />
+    &lt;input type="submit" />
+&lt;/form></pre>
+
+				</section>
+
+			</article>
+
+			<article class='smaller'>
+				<section style="margin-top: -45px;">
+					<pre>
+$_SESSION["upload_progress_123"] = array(
+    "start_time" => 1234567890,
+    "content_length" => 57343257,
+    "bytes_processed" => 453489,
+    "done" => false,
+    "files" => array(
+        0 => array(
+            "field_name" => "file1",
+            "name" => "foo.avi",
+            "tmp_name" => "/tmp/phpxxxxxx",
+            "error" => 0,
+            "done" => true,
+            "start_time" => 1234567890,
+            "bytes_processed" => 57343250,
+        ),
+        1 => array(
+            "field_name" => "file2",
+            "name" => "bar.avi",
+            "tmp_name" => NULL,
+            "error" => 0,
+            "done" => false,
+            "start_time" => 1234567899,
+            "bytes_processed" => 54554,
+        )
+    )
+);					</pre>
+				</section>
+			</article>
+
+			<article class="smaller">
+				<h3>
+					Traits
+				</h3>
+
+				<pre>
+trait funnyTrait {
+    private $name = 'meet.php';
+
+    public function saySomething() {
+        echo 'say ' . $this->name;
+    }
+};
+
+trait weirdTrait {
+    public function isThisEasternTime() {
+        return true;
+    }
+}
+
+class Test {
+    use funnyTrait;
+    use weirdTrait;
+};
+
+$test = new Test;
+$test->saySomething(); // say meet.php
+echo (int) $test->isThisEasternTime(); // 1</pre>
+
+			</article>
+
+			<article class="smaller">
+				<h3>Example:</h3>
+				<pre>
+class Model {
+
+    private static $_instance;
+
+    public static function instance() {
+        if (is_null(self::$_instance)) {
+            self::$_instance = new self;
+        }
+
+        return self::$_instance;
+    }
+
+    public $value = 1;
+
+};
+
+$object1 = Model::instance();
+$object2 = Model::instance();
+
+$object1->value = 5;
+echo $object2->value;</pre>
+			</article>
+
+			<article class="smaller">
+				<p>Since PHP 5.4 you can use traits to do this:</p>
+
+				<pre>
+trait Singleton {
+    private static $_instance;
+
+    public static function instance() {
+        if (is_null(self::$_instance)) {
+            self::$_instance = new self;
+        }
+
+        return self::$_instance;
+    }
+}
+
+class Model {
+    use Singleton;
+    public $value = 1;
+};
+
+$object1 = Model::instance();
+$object2 = Model::instance();
+
+$object1->value = 5;
+echo $object2->value;</pre>
+			</article>
+
+			<article>
+				<h2>Backward Incompatible Changes</h2>
+			</article>
+
+			<article>
+
+				<ul class="build">
+					<li>
+						Safe mode is no longer supported
+						<pre>safe_mode = Off;</pre>
+					</li>
+					<li>
+						Magic quotes has been removed.
+						<pre>magic_quotes_gpc = On;
+magic_quotes_runtime = Off;</pre>
+					</li>
+				</ul>
+
+			</article>
+			<article>
+				<ul class="build">
+					<li>
+						The <code>register_globals</code> and <code>register_long_arrays</code> php.ini directives have been removed.
+						<section class="build">
+							<pre>if ($password == 'admin1') {
+    $access = true;
+}</pre>
+							<pre>$HTTP_POST_VARS, $HTTP_GET_VARS, ...</pre>
+						</section>
+					</li>
+				</ul>
+			</article>
+			<article>
+				<ul>
+					<li>Call-time pass by reference has been removed.</li>
+					<pre>
+function test(&$a) {
+    $a++;
+}
+
+$a = 1;
+test($a);
+echo $a;</pre>
+					<pre>
+function test($a) {
+    $a++;
+}
+
+$a = 1;
+<del>test(&$a);</del>
+echo $a;</pre>
+				</ul>
+			</article>
+			<article>
+				<ul>
+					<li>
+						The <code>break</code> and <code>continue</code> statements no longer accept variable arguments
+						<pre>
+while (true) {
+    foreach (range(1, 10) as $i) {
+        echo $i . PHP_EOL;
+        <del>break (1 + 1);</del>
+        break 2;
+    }
+}
+</pre>
+					</li>
+				</ul>
+			</article>
+
+			<article>
+				<h3>
+					Thank you!
+				</h3>
+
+				<ul>
+					<li><a href="http://php.net/migration54">http://php.net/migration54</a>
+					<li><a href="http://php.net/manual/en/language.oop5.traits.php">http://php.net/manual/en/language.oop5.traits.php</a>
+					<li><a href="http://css.dzone.com/articles/writing-clean-code-php-54">http://css.dzone.com/articles/writing-clean-code-php-54</a>
+					<li><a href="http://www.webdigi.co.uk/blog/2012/cool-new-stuff-in-php-5-4/">http://www.webdigi.co.uk/blog/2012/cool-new-stuff-in-php-5-4/</a>
+					<li><a href="http://net.tutsplus.com/tutorials/php/php-5-4-is-here-what-you-must-know/">http://net.tutsplus.com/tutorials/php/php-5-4-is-here-what-you-must-know/</a>
+					<li><a href="http://www.youtube.com/watch?v=QnCd0rG4Fvo">http://www.youtube.com/watch?v=QnCd0rG4Fvo/</a>
+				</ul>
+			</article>
+
+			<article>
+				<div style="margin: auto; width: 600px; margin-top: 50px">
+					<img src="images/allegro.jpg" />
+				</div>
+					<div style="margin: auto; width: 200px; margin-top: 50px">
+					<a href="http://kariera.allegro.pl">kariera.allegro.pl</a>
+				</div>
+			</article>
+
+		</section>
+
+	</body>
+</html>
