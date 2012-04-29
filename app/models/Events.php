@@ -188,6 +188,31 @@ class Events extends Base
                     'skill_level'               => 4
                 )
             )
+        ),
+        5 => array(
+            'id'    => 5,
+            'date'  => '19.05.2012',
+            'time'  => '17:00',
+            'description' => 'Starając się utrzymać tempo jednego spotkania na miesiąc, zapraszamy wszystkich na piąte, a równocześnie majowe spotkanie meet.php.',
+            'venue' => array(
+                'address'   => 'Coworking ZOO, Zwierzyniecka 20 (2 piętro), 61-001 Poznań',
+                'map_link'  => 'http://maps.google.pl/maps?f=q&amp;source=s_q&amp;hl=pl&amp;geocode=&amp;q=zwierzyniecka+20&amp;aq=&amp;sll=52.187405,19.204102&amp;sspn=7.478761,19.753418&amp;vpsrc=6&amp;ie=UTF8&amp;hq=&amp;hnear=Zwierzyniecka+20,+Pozna%C5%84,+Wielkopolskie&amp;ll=52.408438,16.908426&amp;spn=0.003789,0.009645&amp;t=m&amp;z=14&amp;output=embed'
+            ),
+            'online' => array(
+                'eventbrite' => 3457271793
+            ),
+            'sponsors' => array(),
+            'talks' => array(
+                array(
+                    'topic'                     => 'Phalcon PHP - The fastest PHP framework yet.',
+                    'description'               => 'Postaram się przedstawić pokrótce architekturę oraz API tego nietypowego (napisanego jako rozszerzenie binarne) frameworka.',
+                    'speaker_name'              => 'Marcin Wawrzyniak',
+                    'speaker_avatar'            => 'http://dl.dropbox.com/u/968868/841abbef94.jpeg',
+                    'speaker_www'               => 'http://www.twitter.com/mailopl',
+                    'slides_link'               => null,
+                    'skill_level'               => 2
+                )
+            )
         )
     );
 
