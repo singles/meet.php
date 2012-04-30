@@ -204,13 +204,22 @@ class Events extends Base
             'sponsors' => array(),
             'talks' => array(
                 array(
-                    'topic'                     => 'Niezłe widoku dla PHP',
+                    'topic'                     => 'Niezłe widoki dla PHP',
                     'description'               => 'Prezentacja przedstawi pokrótce zalety używania szablonów, język szablonów Twig i jego zalety względem alternatywnych rozwiązań dla PHP.',
                     'speaker_name'              => 'Piotr Gabryjeluk',
                     'speaker_avatar'            => 'http://media.linkedin.com/mpr/mpr/shrink_80_80/p/3/000/012/067/386ba7d.jpg',
                     'speaker_www'               => 'http://piotr.gabryjeluk.pl',
                     'slides_link'               => null,
                     'skill_level'               => 2
+                ),
+                array(
+                    'topic'                     => 'Zend Framework 2',
+                    'description'               => 'W prezentacji omówię fundamenty ZF2: system modułów, EventManager, oraz Dependency Injection Container. Wspomnę też o nowym stosie MVC i wydajności.',
+                    'speaker_name'              => 'Mateusz Tymek',
+                    'speaker_avatar'            => 'http://www.gravatar.com/avatar/ea7cfe237f4bf563a30da6b9e3ed3977.png',
+                    'speaker_www'               => 'http://www.goldenline.pl/mateusz-tymek',
+                    'slides_link'               => null,
+                    'skill_level'               => 3
                 ),
                 array(
                     'topic'                     => 'Phalcon PHP - The fastest PHP framework yet.',
