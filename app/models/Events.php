@@ -204,6 +204,15 @@ class Events extends Base
             'sponsors' => array(),
             'talks' => array(
                 array(
+                    'topic'                     => 'Niezłe widoku dla PHP',
+                    'description'               => 'Prezentacja przedstawi pokrótce zalety używania szablonów, język szablonów Twig i jego zalety względem alternatywnych rozwiązań dla PHP.',
+                    'speaker_name'              => 'Piotr Gabryjeluk',
+                    'speaker_avatar'            => 'http://media.linkedin.com/mpr/mpr/shrink_80_80/p/3/000/012/067/386ba7d.jpg',
+                    'speaker_www'               => 'http://piotr.gabryjeluk.pl',
+                    'slides_link'               => null,
+                    'skill_level'               => 2
+                ),
+                array(
                     'topic'                     => 'Phalcon PHP - The fastest PHP framework yet.',
                     'description'               => 'Postaram się przedstawić pokrótce architekturę oraz API tego nietypowego (napisanego jako rozszerzenie binarne) frameworka.',
                     'speaker_name'              => 'Marcin Wawrzyniak',
