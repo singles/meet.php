@@ -316,6 +316,7 @@ header nav a:hover {
 #header-background {
     background: black url(../img/header_background.gif) repeat-x 0 0;
     height: 55px;
+    min-width: 960px;
 }
 /* header end */
 
@@ -323,6 +324,7 @@ header nav a:hover {
 #welcome-background {
     background: black url(../img/blue_background.png) repeat-x 0 0;
     height: 423px;
+    min-width: 960px;
 }
 
 #welcome-small-background {
@@ -404,6 +406,7 @@ header nav a:hover {
 
 #info-background, #paper-background {
     background: transparent url(../img/paper_pattern.gif) repeat 0 0;
+    min-width: 960px;
 }
 
 #info-background {
@@ -529,6 +532,12 @@ header nav a:hover {
     right: 0;
 }
 
+#info-background > aside{
+	position: relative;
+	overflow: hidden;
+	min-height: 400px;
+}
+
 .code-drawing { position: absolute; z-index: 1; display: block;}
 
 .code-drawing.mvc {
@@ -568,6 +577,7 @@ header nav a:hover {
 #footer-background {
     background: #000 url(../img/footer_background.gif) repeat-x 0 0;
     height: 56px;
+    min-width: 960px;
     position: relative;
 }
 
