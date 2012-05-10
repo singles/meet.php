@@ -222,6 +222,15 @@ class Events extends Base
                     'skill_level'               => 3
                 ),
                 array(
+                    'topic'                     => 'Wprowadzenie do DI',
+                    'description'               => 'O Dependency Injection mówi się coraz więcej. Wstęp do tematu (co? jak? po co?) oraz livecoding - pokażę jak stworzyć bardzo prosty kontener DI w ok. 20 linijkach kodu.',
+                    'speaker_name'              => 'Radosław Benkel',
+                    'speaker_avatar'            => 'https://twimg0-a.akamaihd.net/profile_images/1605720400/304109_265882293444507_100000682142964_858395_2624703_n_normal.jpg',
+                    'speaker_www'               => 'http://www.rbenkel.me',
+                    'slides_link'               => null,
+                    'skill_level'               => 3
+                ),
+                array(
                     'topic'                     => 'Phalcon PHP - The fastest PHP framework yet.',
                     'description'               => 'Postaram się przedstawić pokrótce architekturę oraz API tego nietypowego (napisanego jako rozszerzenie binarne) frameworka.',
                     'speaker_name'              => 'Marcin Wawrzyniak',
