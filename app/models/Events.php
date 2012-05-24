@@ -209,8 +209,8 @@ class Events extends Base
                     'speaker_name'              => 'Piotr Gabryjeluk',
                     'speaker_avatar'            => 'http://media.linkedin.com/mpr/mpr/shrink_80_80/p/3/000/012/067/386ba7d.jpg',
                     'speaker_www'               => 'http://piotr.gabryjeluk.pl',
-                    'slides_link'               => null,
-                    'skill_level'               => 'http://www.slideshare.net/piotrgabryjeluk1/twig-nieze-widoki-dla-php'
+                    'slides_link'               => 'http://www.slideshare.net/piotrgabryjeluk1/twig-nieze-widoki-dla-php',
+                    'skill_level'               => 2
                 ),
                 array(
                     'topic'                     => 'Zend Framework 2',
@@ -218,8 +218,8 @@ class Events extends Base
                     'speaker_name'              => 'Mateusz Tymek',
                     'speaker_avatar'            => 'http://www.gravatar.com/avatar/ea7cfe237f4bf563a30da6b9e3ed3977.png',
                     'speaker_www'               => 'http://www.goldenline.pl/mateusz-tymek',
-                    'slides_link'               => null,
-                    'skill_level'               => 'http://www.slideshare.net/MateuszTymek/zend-framework-2-basic-components'
+                    'slides_link'               => 'http://www.slideshare.net/MateuszTymek/zend-framework-2-basic-components',
+                    'skill_level'               => 3
                 ),
                 array(
                     'topic'                     => 'Wprowadzenie do DI',
@@ -227,8 +227,8 @@ class Events extends Base
                     'speaker_name'              => 'Radosław Benkel',
                     'speaker_avatar'            => 'https://twimg0-a.akamaihd.net/profile_images/1605720400/304109_265882293444507_100000682142964_858395_2624703_n_normal.jpg',
                     'speaker_www'               => 'http://www.rbenkel.me',
-                    'slides_link'               => null,
-                    'skill_level'               => 'http://www.slideshare.net/singlespl/introduction-to-dic-13017909'
+                    'slides_link'               => 'http://www.slideshare.net/singlespl/introduction-to-dic-13017909',
+                    'skill_level'               => 3
                 ),
                 array(
                     'topic'                     => 'Phalcon PHP - The fastest PHP framework yet.',
@@ -236,8 +236,8 @@ class Events extends Base
                     'speaker_name'              => 'Marcin Wawrzyniak',
                     'speaker_avatar'            => 'http://dl.dropbox.com/u/968868/841abbef94.jpeg',
                     'speaker_www'               => 'http://www.twitter.com/mailopl',
-                    'slides_link'               => null,
-                    'skill_level'               => 'http://dl.dropbox.com/u/968868/phalcon.html'
+                    'slides_link'               => 'http://dl.dropbox.com/u/968868/phalcon.html',
+                    'skill_level'               => 2
                 )
             )
         )
