@@ -17,4 +17,4 @@ Credits
 
 * Design: [Łukasz Berliński](http://lukaszberlinski.pl/)
 * Backend code: [Radosław Benkel](http://www.rbenkel.me)
-* Frontend code: [Radosław Benkel](http://www.rbenkel.me), [Daniel Mendalka](http://about.me/daniel.mendalka)
+* Frontend code: [Radosław Benkel](http://www.rbenkel.me), [Daniel Mendalka](http://about.me/daniel.mendalka), [Michał Maćkowiak](http://chemikpil.pl/)
