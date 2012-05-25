@@ -920,6 +920,21 @@ code {
     text-align: center;
 }
 
+#big-logo img {
+    display: block;
+    margin: 0 auto;
+    padding: 60px 0 20px 0;    
+}
+
+#big-logo {
+    text-align: center;
+    font-family: 'Segoe Script Regular', sans-serif;
+    font-size: 16px;
+    color: rgb(180, 180, 180);
+    position: relative;
+    z-index: 100;
+}
+
 /* contact end */
 
 /* ==|== non-semantic helper classes ========================================
