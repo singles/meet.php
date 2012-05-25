@@ -30,8 +30,11 @@ $app->view()->appendData(array('WEBROOT' => $app->request()->getRootUri()));
 
 //RB routes
 $app->get('/', function() use ($app) {
+    $logoVersion = $app->request()->get('logo');
+    $templateName = ($logoVersion == 1) ? 'home-logo.twig' : 'home.twig';
+
     $last = Events::fetchLast();
-    $app->render('home.twig', array('last' => $last));
+    $app->render($templateName, array('last' => $last));
 });
 
 $app->get('/events/', function() use ($app) {

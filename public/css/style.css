@@ -416,6 +416,7 @@ header nav a:hover {
 #info {
     position: relative;
     z-index: 5;
+    height: 420px;
 }
 
 #info ul, #events ul {
@@ -533,9 +534,11 @@ header nav a:hover {
 }
 
 #info-background > aside{
-	position: relative;
+	position: absolute;
 	overflow: hidden;
 	min-height: 400px;
+    width: 100%;
+    top: 0;
 }
 
 .code-drawing { position: absolute; z-index: 1; display: block;}
@@ -933,6 +936,14 @@ code {
     color: rgb(180, 180, 180);
     position: relative;
     z-index: 100;
+}
+
+.logo-version {
+    position: absolute;
+    bottom: 0px;
+    display: block;
+    left: 380px;
+    color: rgb(180, 180, 180);
 }
 
 /* contact end */
