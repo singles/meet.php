@@ -240,6 +240,31 @@ class Events extends Base
                     'skill_level'               => 2
                 )
             )
+        ),
+        6 => array(
+            'id'    => 6,
+            'date'  => '11.08.2012',
+            'time'  => '17:00',
+            'description' => 'Jeśli baliście/cieszyliście (haters gonna hate) się, że meet.php przestało funkcjonować - niepotrzebnie. Co prawda po sporej przerwie, ale wracamy!',
+            'venue' => array(
+                'address'   => 'Coworking ZOO, Zwierzyniecka 20 (2 piętro), 61-001 Poznań',
+                'map_link'  => 'http://maps.google.pl/maps?f=q&amp;source=s_q&amp;hl=pl&amp;geocode=&amp;q=zwierzyniecka+20&amp;aq=&amp;sll=52.187405,19.204102&amp;sspn=7.478761,19.753418&amp;vpsrc=6&amp;ie=UTF8&amp;hq=&amp;hnear=Zwierzyniecka+20,+Pozna%C5%84,+Wielkopolskie&amp;ll=52.408438,16.908426&amp;spn=0.003789,0.009645&amp;t=m&amp;z=14&amp;output=embed'
+            ),
+            'online' => array(
+                'eventbrite' => 3939101960
+            ),
+            'sponsors' => array('allegro', 'helion'),
+            'talks' => array(
+                array(
+                    'topic'                     => 'Metryki kodu i aplikacji PHP',
+                    'description'               => 'Każdy projekt można sprowadzić to zestawu metryk, dzięki którym możemy jednoznacznie powiedzieć, czy zespół porusza się we właściwym kierunku. Mierzyć można bardzo wiele parametrów aplikacji, zaczynając od liczby klas, metod oraz ich złożoności cyklomatycznej, a na monitorowaniu zdarzeń biznesowych w środowisku produkcyjnym kończąc. Nie dajcie się zwieść, te z pozoru banalne informacje przetworzone w odpowiedni sposób stanowią bardzo ważne narzędzie analityczne, ważne także dla developerów. W trakcie prezentacji poznamy zestaw narzędzi i technik pomocnych w zbieraniu i wykorzystywaniu metryk aplikacji w projektach PHP.',
+                    'speaker_name'              => 'Mariusz Gil',
+                    'speaker_avatar'            => 'http://0.gravatar.com/avatar/34be88398f623c109b61d23e8215bd23',
+                    'speaker_www'               => 'http://mariuszgil.pl/',
+                    'slides_link'               => null,
+                    'skill_level'               => 2
+                )
+            )
         )
     );
 
