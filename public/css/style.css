@@ -903,6 +903,10 @@ article #registration iframe {
     color: #4b4a4a;
 }
 
+#faq ul {
+    margin-top: -20px;
+}
+
 /* faq end */
 
 /* contact */
