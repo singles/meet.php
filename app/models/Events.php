@@ -263,6 +263,15 @@ class Events extends Base
                     'speaker_www'               => 'http://mariuszgil.pl/',
                     'slides_link'               => null,
                     'skill_level'               => 2
+                ),
+                array(
+                    'topic'                     => 'Dynamiczna analiza aplikacji php z uzyciem Xhprof',
+                    'description'               => 'Większość programistów ma świadomość zalet pomiary wydajności w procesie budowania aplikacji. Dlaczego zatem sporo projektów, które wychodzą spod naszych rąk nie "widziało" profilera? Na podstawie własnych doświadczeń chciałbym zaprezentować jedną z możliwych dróg - jak przygotować Xhprof jako profiler oraz jak podejść do analizy wyników, tak aby małym nakładem pracy uzyskać dobre efekty w poszukiwaniu "ciężkich" fragmentów kodu',
+                    'speaker_name'              => 'Wojciech Stryszyk',
+                    'speaker_avatar'            => 'http://m3.licdn.com/mpr/pub/image-F1XtkI4Zld6aTDY77Lo-VD_oDuggCyvwS1oz574OD4OqdV8wF1XzosAZD_XmdyLhD1vZ/wojciech-stryszyk.jpg',
+                    'speaker_www'               => 'http://www.linkedin.com/in/ambientman',
+                    'slides_link'               => null,
+                    'skill_level'               => 2
                 )
             )
         )
