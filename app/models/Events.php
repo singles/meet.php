@@ -265,6 +265,15 @@ class Events extends Base
                     'skill_level'               => 2
                 ),
                 array(
+                    'topic'                     => 'Rozszerzamy PHP',
+                    'description'               => 'Postaram się przybliżyć słuchaczom podstawy tworzenia rozszerzeń dla PHP. Przeprowadzimy analizę wybranego rozszerzenia ze standardowo dostarczanych i napiszemy własne. Jeśli sprzęt podoła kompilacji (nie będzie zamulał :-)) to będzie hacking live, jak nie to pokażę przygotowane wcześniej gotowce.',
+                    'speaker_name'              => 'Grzegorz Nowicki',
+                    'speaker_avatar'            => 'https://twimg0-a.akamaihd.net/profile_images/1909582304/Gregor_reasonably_small.jpg',
+                    'speaker_www'               => 'http://twitter.com/sp3esu',
+                    'slides_link'               => null,
+                    'skill_level'               => 5
+                ),
+                array(
                     'topic'                     => 'Dynamiczna analiza aplikacji php z uzyciem Xhprof',
                     'description'               => 'Większość programistów ma świadomość zalet pomiary wydajności w procesie budowania aplikacji. Dlaczego zatem sporo projektów, które wychodzą spod naszych rąk nie "widziało" profilera? Na podstawie własnych doświadczeń chciałbym zaprezentować jedną z możliwych dróg - jak przygotować Xhprof jako profiler oraz jak podejść do analizy wyników, tak aby małym nakładem pracy uzyskać dobre efekty w poszukiwaniu "ciężkich" fragmentów kodu',
                     'speaker_name'              => 'Wojciech Stryszyk',
