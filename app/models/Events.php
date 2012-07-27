@@ -274,6 +274,15 @@ class Events extends Base
                     'skill_level'               => 5
                 ),
                 array(
+                    'topic'                     => 'PayPal – jasne i ciemne strony mocy',
+                    'description'               => "Ponad połowa transakcji w sieci odbywa się poprzez system PayPal. Sposobów integracji PayPal'a z własną aplikacją jest całe mnóstwo, zaczynając od prostych PayPal-buttonów po złożone Adaptive Payments skrywające masę opcji i ciekawych smaczków. Na początek całość jest przytłaczająca. W trakcie prezentacji dowiesz się od czego zacząć całą integrację i co musisz przygotować, nie tylko od strony technicznej, żeby na Twoje konto PayPal jak najszybciej mogły wpływać słodkie $$$.",
+                    'speaker_name'              => 'Daniel Mendalka',
+                    'speaker_avatar'            => 'http://a0.twimg.com/profile_images/1272804027/avatar_new_reasonably_small.jpg',
+                    'speaker_www'               => 'http://twitter.com/daniula',
+                    'slides_link'               => null,
+                    'skill_level'               => 2
+                ),
+                array(
                     'topic'                     => 'Dynamiczna analiza aplikacji php z uzyciem Xhprof',
                     'description'               => 'Większość programistów ma świadomość zalet pomiary wydajności w procesie budowania aplikacji. Dlaczego zatem sporo projektów, które wychodzą spod naszych rąk nie "widziało" profilera? Na podstawie własnych doświadczeń chciałbym zaprezentować jedną z możliwych dróg - jak przygotować Xhprof jako profiler oraz jak podejść do analizy wyników, tak aby małym nakładem pracy uzyskać dobre efekty w poszukiwaniu "ciężkich" fragmentów kodu',
                     'speaker_name'              => 'Wojciech Stryszyk',
