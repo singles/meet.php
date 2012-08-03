@@ -235,8 +235,8 @@ class Events extends Base
                     'description'               => 'Postaram się przedstawić pokrótce architekturę oraz API tego nietypowego (napisanego jako rozszerzenie binarne) frameworka.',
                     'speaker_name'              => 'Marcin Wawrzyniak',
                     'speaker_avatar'            => 'http://dl.dropbox.com/u/968868/841abbef94.jpeg',
-                    'speaker_www'               => 'http://www.twitter.com/mailopl',
-                    'slides_link'               => 'http://dl.dropbox.com/u/968868/phalcon.html',
+                    'speaker_www'               => 'http://about.me/mailo',
+                    'slides_link'               => 'http://mailopl.github.com/meetphp5-phalcon/',
                     'skill_level'               => 2
                 )
             )
