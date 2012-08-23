@@ -22,15 +22,21 @@
                                 {{ talk.topic }}
                             </h4>
                             <p>{{ talk.description }}</p>
-                            {% if talk.skill_level is defined %}
+                            {% if talk.skill_level is defined and talk.skill_level %}
                                 <p><strong>Poziom trudności: </strong>
                                 {% autoescape false %}
                                 {{ stars(talk.skill_level) }}
                                 {% endautoescape %}
                             {% endif %}
-                            {% if talk.slides_link %}
+
+                            {% if talk.slides_link is defined and talk.slides_link %}
                                 <p><strong>Prezentacja:</strong> <a href="{{talk.slides_link}}">{{talk.slides_link}}</a></p>
                             {% endif %}
+
+                            {% if talk.video is defined and talk.video %}
+                                <iframe width="780" height="439" src="http://www.youtube.com/embed/{{ talk.video }}" frameborder="0" allowfullscreen></iframe>
+                            {% endif %}
+
                         </li>
                     {% endfor %}
                 </ul>
