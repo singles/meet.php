@@ -261,8 +261,9 @@ class Events extends Base
                     'speaker_name'              => 'Mariusz Gil',
                     'speaker_avatar'            => 'http://0.gravatar.com/avatar/34be88398f623c109b61d23e8215bd23',
                     'speaker_www'               => 'http://mariuszgil.pl/',
-                    'slides_link'               => null,
-                    'skill_level'               => 2
+                    'slides_link'               => 'https://speakerdeck.com/u/mariuszgil/p/metryki-kodu-i-aplikacji-php',
+                    'skill_level'               => 2,
+                    'video'                     => 'U-t59t8MB84'
                 ),
                 array(
                     'topic'                     => 'Rozszerzamy PHP',
@@ -271,7 +272,8 @@ class Events extends Base
                     'speaker_avatar'            => 'https://twimg0-a.akamaihd.net/profile_images/1909582304/Gregor_reasonably_small.jpg',
                     'speaker_www'               => 'http://twitter.com/sp3esu',
                     'slides_link'               => null,
-                    'skill_level'               => 5
+                    'skill_level'               => 5,
+                    'video'                     => 'Xr-Sl2qHAnQ'
                 ),
                 array(
                     'topic'                     => 'PayPal – jasne i ciemne strony mocy',
@@ -279,8 +281,9 @@ class Events extends Base
                     'speaker_name'              => 'Daniel Mendalka',
                     'speaker_avatar'            => 'http://a0.twimg.com/profile_images/1272804027/avatar_new_reasonably_small.jpg',
                     'speaker_www'               => 'http://twitter.com/daniula',
-                    'slides_link'               => null,
-                    'skill_level'               => 2
+                    'slides_link'               => 'http://dl.dropbox.com/u/533407/prezentacje/meetphp-paypal/index.html',
+                    'skill_level'               => 2,
+                    'video'                     => '2KW-30CPA1Q'
                 ),
                 array(
                     'topic'                     => 'Dynamiczna analiza aplikacji php z uzyciem Xhprof',
@@ -288,8 +291,9 @@ class Events extends Base
                     'speaker_name'              => 'Wojciech Stryszyk',
                     'speaker_avatar'            => 'http://m3.licdn.com/mpr/pub/image-F1XtkI4Zld6aTDY77Lo-VD_oDuggCyvwS1oz574OD4OqdV8wF1XzosAZD_XmdyLhD1vZ/wojciech-stryszyk.jpg',
                     'speaker_www'               => 'http://www.linkedin.com/in/ambientman',
-                    'slides_link'               => null,
-                    'skill_level'               => 2
+                    'slides_link'               => 'http://www.slideshare.net/ambientman/profiler-prezentacja-meetphp',
+                    'skill_level'               => 2,
+                    'video'                     => 'iMi-Djvz3p0'
                 )
             )
         )
