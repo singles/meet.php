@@ -296,6 +296,59 @@ class Events extends Base
                     'video'                     => 'iMi-Djvz3p0'
                 )
             )
+        ),
+        7 => array(
+            'id'    => 7,
+            'date'  => '08.12.2012',
+            'time'  => '17:00',
+            'description' => 'Siódmy i ostatni meet.php w tym roku. Nie może Cię zabraknąć!',
+            'venue' => array(
+                'address'   => 'Coworking ZOO, Zwierzyniecka 20 (2 piętro), 61-001 Poznań',
+                'map_link'  => 'http://maps.google.pl/maps?f=q&amp;source=s_q&amp;hl=pl&amp;geocode=&amp;q=zwierzyniecka+20&amp;aq=&amp;sll=52.187405,19.204102&amp;sspn=7.478761,19.753418&amp;vpsrc=6&amp;ie=UTF8&amp;hq=&amp;hnear=Zwierzyniecka+20,+Pozna%C5%84,+Wielkopolskie&amp;ll=52.408438,16.908426&amp;spn=0.003789,0.009645&amp;t=m&amp;z=14&amp;output=embed'
+            ),
+            'online' => array(
+                'eventbrite' => 4852001467
+            ),
+            'sponsors' => array('allegro', 'oktawave', 'megiteam'),
+            'talks' => array(
+                                array(
+                    'topic'                     => 'CI - co, jak i dlaczego?',
+                    'description'               => 'CI = Continous Integration. Czy ciągła integracja kodu jest skomplikowana? Co to w ogóle znaczy "ciągła integracja"? Jak szybko zestawić przyjazne środowisko? Po co dodatkowa infrastruktura, przecież każdy może odpalać testy jednostkowe sam? Postaram się podunąć odpowiedzi na te pytania podczas przeglądu najpopularniejszych obecnie serwerów ciągłej integracji. Przyjrzymy się ich potencjalnym wadom i zaletom. Zastanowimy się jak optymalnie zestawić środowisko przyjazne programistom i do czego może się ono jeszcze przydać.',
+                    'speaker_name'              => 'Grzegorz Nowicki',
+                    'speaker_avatar'            => 'https://twimg0-a.akamaihd.net/profile_images/1909582304/Gregor_reasonably_small.jpg',
+                    'speaker_www'               => 'http://twitter.com/sp3esu',
+                    'slides_link'               => null,
+                    'skill_level'               => 2
+                ),
+                array(
+                    'topic'                     => 'Tabele historyczne w PostgreSQL',
+                    'description'               => 'W prezentacji przedstawię koncepcję tabel historycznych - czyli mechanizmów realizowanych przez aplikację bądź serwer baz danych, a które odpowiadają za archiwizację zmian dokonanych na rekordach w poszczególnych tabelach. Pokażę również przykładową implementację takiego rozwiązania zrealizowaną w oparciu o PostgreSQL z wykorzystaniem triggerów. Opowiem o zaletach stosowania archiwizacji oraz wskażę potencjalne zagrożenia związane z jej używaniem.',
+                    'speaker_name'              => 'Rafał Piechocki',
+                    'speaker_avatar'            => 'http://promet.amuland.pl/Awatar?v=CACACXH0q',
+                    'speaker_www'               => null,
+                    'slides_link'               => null,
+                    'skill_level'               => 3,
+                ),
+                array(
+                    'topic'                     => 'Lithium + REST + ZendServerCE',
+                    'description'               => 'Pokażę jak LithiumPHP wykorzystuje AOP w praktyce aby zgrabnie bez powtarzania zbędnego kodu zRESTować aplikację. Przy okazji warsztatu pokaże jak ZendServerCE i jego narzędzia pomagają w codziennej pracy z kodem.',
+                    'speaker_name'              => 'Andrzej Borkowski',
+                    'speaker_avatar'            => 'http://www.gravatar.com/avatar/ebc48525201d5c5d608cc11ced4dc7b4.png',
+                    'speaker_www'               => 'http://blog.aeonmedia.eu/about',
+                    'slides_link'               => null,
+                    'skill_level'               => 3
+                ),
+                array(
+                    'topic'                     => 'Chmura, która zmienia życie programisty?',
+                    'description'               => 'Słów kilka o zasobach tanich, wydajnych i na żądanie. W prezentacji pokażemy, jak współcześni programiści mogą szybko otrzymać skalowalną i w pełni kontrolowalną infrastrukturę IT, w której mogą: płacić tylko za to, co wykorzystali, testować aplikację na dużą skalę, korzystać z gotowych środowisk, dostać zróżnicowane środowiska.',
+                    'speaker_name'              => 'Maciej Kuźniar',
+                    'speaker_avatar'            => 'http://png.findicons.com/files/icons/753/gnome_desktop/64/gnome_stock_person.png',
+                    'speaker_www'               => 'http://oktawave.com',
+                    'slides_link'               => null,
+                    'skill_level'               => 3,
+                ),
+
+            )
         )
     );
 

@@ -29,6 +29,16 @@ class Sponsors extends Base
             'name'  => '4developers',
             'logo'  => 'sponsor_4dev.png',
             'url'   => 'http://4developers.org.pl/'
+        ),
+        'megiteam'  => array(
+            'name'  => 'megiteam',
+            'logo'  => 'sponsor_megiteam.png',
+            'url'   => 'http://www.megiteam.pl'
+        ),
+        'oktawave'  => array(
+            'name'  => 'oktawave',
+            'logo'  => 'sponsor_oktawave.png',
+            'url'   => 'http://www.oktawave.com'
         )
     );
 }
