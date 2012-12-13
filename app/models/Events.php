@@ -310,23 +310,14 @@ class Events extends Base
                 'eventbrite' => 4852001467
             ),
             'sponsors' => array('allegro', 'oktawave', 'megiteam'),
-            'talks' => array(
-                                array(
-                    'topic'                     => 'CI - co, jak i dlaczego?',
-                    'description'               => 'CI = Continous Integration. Czy ciągła integracja kodu jest skomplikowana? Co to w ogóle znaczy "ciągła integracja"? Jak szybko zestawić przyjazne środowisko? Po co dodatkowa infrastruktura, przecież każdy może odpalać testy jednostkowe sam? Postaram się podunąć odpowiedzi na te pytania podczas przeglądu najpopularniejszych obecnie serwerów ciągłej integracji. Przyjrzymy się ich potencjalnym wadom i zaletom. Zastanowimy się jak optymalnie zestawić środowisko przyjazne programistom i do czego może się ono jeszcze przydać.',
-                    'speaker_name'              => 'Grzegorz Nowicki',
-                    'speaker_avatar'            => 'https://twimg0-a.akamaihd.net/profile_images/1909582304/Gregor_reasonably_small.jpg',
-                    'speaker_www'               => 'http://twitter.com/sp3esu',
-                    'slides_link'               => null,
-                    'skill_level'               => 2
-                ),
+            'talks' => array(                               
                 array(
                     'topic'                     => 'Tabele historyczne w PostgreSQL',
                     'description'               => 'W prezentacji przedstawię koncepcję tabel historycznych - czyli mechanizmów realizowanych przez aplikację bądź serwer baz danych, a które odpowiadają za archiwizację zmian dokonanych na rekordach w poszczególnych tabelach. Pokażę również przykładową implementację takiego rozwiązania zrealizowaną w oparciu o PostgreSQL z wykorzystaniem triggerów. Opowiem o zaletach stosowania archiwizacji oraz wskażę potencjalne zagrożenia związane z jej używaniem.',
                     'speaker_name'              => 'Rafał Piechocki',
                     'speaker_avatar'            => 'http://promet.amuland.pl/Awatar?v=CACACXH0q',
                     'speaker_www'               => null,
-                    'slides_link'               => null,
+                    'slides_link'               => 'http://promet.amuland.pl/Pendrive/Prezentacje/Tabele-historyczne',
                     'skill_level'               => 3,
                 ),
                 array(
@@ -344,7 +335,7 @@ class Events extends Base
                     'speaker_name'              => 'Maciej Kuźniar',
                     'speaker_avatar'            => 'http://png.findicons.com/files/icons/753/gnome_desktop/64/gnome_stock_person.png',
                     'speaker_www'               => 'http://oktawave.com',
-                    'slides_link'               => null,
+                    'slides_link'               => 'http://www.slideshare.net/oktawave/chmura-oktawave-dla-koderw-zoty-sen-programisty-wreszcie-wyniony',
                     'skill_level'               => 3,
                 ),
 
