@@ -362,7 +362,7 @@ class Events extends Base
                     'skill_level'               => 2
                 ),
                 array(
-                    'topic'                     => 'Bingo Mango Mongo',
+                    'topic'                     => 'Bingo Bango Mongo',
                     'description'               => 'Skalowanie MongoDB czyli o tym jak działa replikacja i shardowanie. Odpowiem na pytanie dlaczego MongoDB jest agile i jak z jednej instancji przejść do cluster\'a.',
                     'speaker_name'              => 'Maciej Winnicki ',
                     'speaker_avatar'            => 'https://twimg0-a.akamaihd.net/profile_images/1115951820/macias_reasonably_small.png',
