@@ -310,7 +310,7 @@ class Events extends Base
                 'eventbrite' => 4852001467
             ),
             'sponsors' => array('allegro', 'oktawave', 'megiteam'),
-            'talks' => array(                               
+            'talks' => array(
                 array(
                     'topic'                     => 'Tabele historyczne w PostgreSQL',
                     'description'               => 'W prezentacji przedstawię koncepcję tabel historycznych - czyli mechanizmów realizowanych przez aplikację bądź serwer baz danych, a które odpowiadają za archiwizację zmian dokonanych na rekordach w poszczególnych tabelach. Pokażę również przykładową implementację takiego rozwiązania zrealizowaną w oparciu o PostgreSQL z wykorzystaniem triggerów. Opowiem o zaletach stosowania archiwizacji oraz wskażę potencjalne zagrożenia związane z jej używaniem.',
@@ -339,6 +339,58 @@ class Events extends Base
                     'skill_level'               => 3,
                 ),
 
+            )
+        ),
+        8 => array(
+            'id'    => 8,
+            'date'  => '09.02.2013',
+            'time'  => '17:00',
+            'description' => 'Pierwszy meet.php w nowym roku. Trójka prelegentów jest z nami po raz kolejny z nowym materiałem. Wy też będziecie, prawda?',
+            'venue' => array(
+                'address'   => 'Coworking ZOO, Zwierzyniecka 20 (2 piętro), 61-001 Poznań',
+                'map_link'  => 'http://maps.google.pl/maps?f=q&amp;source=s_q&amp;hl=pl&amp;geocode=&amp;q=zwierzyniecka+20&amp;aq=&amp;sll=52.187405,19.204102&amp;sspn=7.478761,19.753418&amp;vpsrc=6&amp;ie=UTF8&amp;hq=&amp;hnear=Zwierzyniecka+20,+Pozna%C5%84,+Wielkopolskie&amp;ll=52.408438,16.908426&amp;spn=0.003789,0.009645&amp;t=m&amp;z=14&amp;output=embed'
+            ),
+            'online' => array(
+                'eventbrite' => null
+            ),
+            'sponsors' => array('allegro', 'helion'),
+            'talks' => array(
+                array(
+                    'topic'                     => 'CI - co, jak i dlaczego?',
+                    'description'               => 'CI = Continous Integration. Czy ciągła integracja kodu jest skomplikowana? Co to w ogóle znaczy "ciągła integracja"? Jak szybko zestawić przyjazne środowisko? Po co dodatkowa infrastruktura, przecież każdy może odpalać testy jednostkowe sam? Postaram się podunąć odpowiedzi na te pytania podczas przeglądu najpopularniejszych obecnie serwerów ciągłej integracji. Przyjrzymy się ich potencjalnym wadom i zaletom. Zastanowimy się jak optymalnie zestawić środowisko przyjazne programistom i do czego może się ono jeszcze przydać.',
+                    'speaker_name'              => 'Grzegorz Nowicki',
+                    'speaker_avatar'            => 'https://twimg0-a.akamaihd.net/profile_images/1909582304/Gregor_reasonably_small.jpg',
+                    'speaker_www'               => 'http://twitter.com/sp3esu',
+                    'slides_link'               => null,
+                    'skill_level'               => 2
+                ),
+                array(
+                    'topic'                     => 'Bingo Mango Mongo',
+                    'description'               => 'Skalowanie MongoDB czyli o tym jak działa replikacja i shardowanie. Odpowiem na pytanie dlaczego MongoDB jest agile i jak z jednej instancji przejść do cluster\'a.',
+                    'speaker_name'              => 'Maciej Winnicki ',
+                    'speaker_avatar'            => 'https://twimg0-a.akamaihd.net/profile_images/1115951820/macias_reasonably_small.png',
+                    'speaker_www'               => 'http://www.twitter.com/mthenw',
+                    'slides_link'               => null,
+                    'skill_level'               => 3
+                ),
+                array(
+                    'topic'                     => 'Sphinx FTS',
+                    'description'               => 'Wyszukiwanie pełnotekstowe w bazie SQL z wykorzystaniem operatora LIKE, MyISAM FTS MATCH…AGAINST czy PostgreSQL TSearch2 zazwyczaj nie daje satysfakcjonujących rezultatów. Efektywne przeszukiwanie dużych baz danych wymaga często dedykowanych narzędzi funkcjonujących poza serwerem SQL, np. Apache Solr, Lucene, Xapian czy ElasticSearch. Alternatywą jest tu także Sphinx, wydajny i prosty w użyciu engine full-text-search, oferujący m.in. support wielu typów wyszukiwań czy dostępu do danych, morfologię, stemming, MVA, wyszukiwanie rozproszone, etc. W trakcie prezentacji przestawione zostaną możliwości tego rozwiązania jak i jego typowe use-case’y, całość zobrazowana będzie przykładami live opartymi zarówno o SphinxAPI jak i SphinxQL..',
+                    'speaker_name'              => 'Mariusz Gil',
+                    'speaker_avatar'            => 'http://0.gravatar.com/avatar/34be88398f623c109b61d23e8215bd23',
+                    'speaker_www'               => 'http://mariuszgil.pl/',
+                    'slides_link'               => null,
+                    'skill_level'               => 3,
+                ),
+                array(
+                    'topic'                     => 'PHP Startup Prototypes',
+                    'description'               => 'Technicznie i na temat. Jak pokonać przeciwności takie jak brak funduszy, by wystartować z własnym projektem i zacząć na nim kiedyś zarabiać?',
+                    'speaker_name'              => 'Max Małecki',
+                    'speaker_avatar'            => 'http://www.gravatar.com/avatar/bd4f5f0d7159c08a3c639241912e3497.png',
+                    'speaker_www'               => 'http://blog.mmx3.pl/',
+                    'slides_link'               => null,
+                    'skill_level'               => 3,
+                ),
             )
         )
     );
