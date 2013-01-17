@@ -345,7 +345,7 @@ class Events extends Base
             'id'    => 8,
             'date'  => '09.02.2013',
             'time'  => '17:00',
-            'description' => 'Pierwszy meet.php w nowym roku. Trójka prelegentów jest z nami po raz kolejny z nowym materiałem. Wy też będziecie, prawda?',
+            'description' => 'Pierwszy meet.php w nowym roku. Czwórka prelegentów, z czego trójka jest z nami po raz kolejny z nowym materiałem. Wy też będziecie, prawda?',
             'venue' => array(
                 'address'   => 'Coworking ZOO, Zwierzyniecka 20 (2 piętro), 61-001 Poznań',
                 'map_link'  => 'http://maps.google.pl/maps?f=q&amp;source=s_q&amp;hl=pl&amp;geocode=&amp;q=zwierzyniecka+20&amp;aq=&amp;sll=52.187405,19.204102&amp;sspn=7.478761,19.753418&amp;vpsrc=6&amp;ie=UTF8&amp;hq=&amp;hnear=Zwierzyniecka+20,+Pozna%C5%84,+Wielkopolskie&amp;ll=52.408438,16.908426&amp;spn=0.003789,0.009645&amp;t=m&amp;z=14&amp;output=embed'
