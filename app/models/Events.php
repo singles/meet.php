@@ -358,7 +358,7 @@ class Events extends Base
                     'speaker_name'              => 'Grzegorz Nowicki',
                     'speaker_avatar'            => 'https://twimg0-a.akamaihd.net/profile_images/1909582304/Gregor_reasonably_small.jpg',
                     'speaker_www'               => 'http://twitter.com/sp3esu',
-                    'slides_link'               => null,
+                    'slides_link'               => 'https://docs.google.com/presentation/d/1WhH2MGTLcZdrSA0CiUx8t_G-hM05hRj1gl_0bWzhZiw/pub?start=false&loop=false&delayms=15000',
                     'skill_level'               => 2
                 ),
                 array(
@@ -367,7 +367,7 @@ class Events extends Base
                     'speaker_name'              => 'Maciej Winnicki ',
                     'speaker_avatar'            => 'https://twimg0-a.akamaihd.net/profile_images/1115951820/macias_reasonably_small.png',
                     'speaker_www'               => 'http://www.twitter.com/mthenw',
-                    'slides_link'               => null,
+                    'slides_link'               => 'https://speakerdeck.com/mthenw/bingo-bango-mongo',
                     'skill_level'               => 3
                 ),
                 array(
@@ -376,7 +376,7 @@ class Events extends Base
                     'speaker_name'              => 'Mariusz Gil',
                     'speaker_avatar'            => 'http://0.gravatar.com/avatar/34be88398f623c109b61d23e8215bd23',
                     'speaker_www'               => 'http://mariuszgil.pl/',
-                    'slides_link'               => null,
+                    'slides_link'               => 'https://speakerdeck.com/mariuszgil/sphinx-full-text-search',
                     'skill_level'               => 3,
                 ),
                 array(
@@ -385,7 +385,7 @@ class Events extends Base
                     'speaker_name'              => 'Max Małecki',
                     'speaker_avatar'            => 'http://www.gravatar.com/avatar/bd4f5f0d7159c08a3c639241912e3497.png',
                     'speaker_www'               => 'http://blog.mmx3.pl/',
-                    'slides_link'               => null,
+                    'slides_link'               => 'https://speakerdeck.com/emgiezet/meetphp-number-8-php-startups-prototypes',
                     'skill_level'               => 3,
                 ),
             )
