@@ -359,7 +359,8 @@ class Events extends Base
                     'speaker_avatar'            => 'https://twimg0-a.akamaihd.net/profile_images/1909582304/Gregor_reasonably_small.jpg',
                     'speaker_www'               => 'http://twitter.com/sp3esu',
                     'slides_link'               => 'https://docs.google.com/presentation/d/1WhH2MGTLcZdrSA0CiUx8t_G-hM05hRj1gl_0bWzhZiw/pub?start=false&loop=false&delayms=15000',
-                    'skill_level'               => 2
+                    'skill_level'               => 2,
+                    'video'                     => 'GN9A1uF4JFM'
                 ),
                 array(
                     'topic'                     => 'Bingo Bango Mongo',
@@ -368,7 +369,8 @@ class Events extends Base
                     'speaker_avatar'            => 'https://twimg0-a.akamaihd.net/profile_images/1115951820/macias_reasonably_small.png',
                     'speaker_www'               => 'http://www.twitter.com/mthenw',
                     'slides_link'               => 'https://speakerdeck.com/mthenw/bingo-bango-mongo',
-                    'skill_level'               => 3
+                    'skill_level'               => 3,
+                    'video'                     => 'yLd4wW2idrk'
                 ),
                 array(
                     'topic'                     => 'Sphinx FTS',
@@ -378,6 +380,7 @@ class Events extends Base
                     'speaker_www'               => 'http://mariuszgil.pl/',
                     'slides_link'               => 'https://speakerdeck.com/mariuszgil/sphinx-full-text-search',
                     'skill_level'               => 3,
+                    'video'                     => 'yP85Lx6PBuk'
                 ),
                 array(
                     'topic'                     => 'PHP Startup Prototypes',
@@ -387,6 +390,7 @@ class Events extends Base
                     'speaker_www'               => 'http://blog.mmx3.pl/',
                     'slides_link'               => 'https://speakerdeck.com/emgiezet/meetphp-number-8-php-startups-prototypes',
                     'skill_level'               => 3,
+                    'video'                     => 'cYtXXtpQ-4w'
                 ),
             )
         )
