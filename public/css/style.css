@@ -619,8 +619,33 @@ footer #social a {
     margin: 10px 0 0 10px;
 }
 
-footer #social #facebook    { background: transparent url(../img/fb-icon.png) no-repeat 0 0 }
-footer #social #twitter     { background: transparent url(../img/tw-icon.png) no-repeat 0 0 }
+.icon-facebook, .icon-github, .icon-googleplus, .icon-twitter {
+    background: url(../img/icon-sprites.png) no-repeat;
+}
+
+.icon-facebook {
+    background-position: -150px 0;
+    width: 32px;
+    height: 33px;
+}
+
+.icon-github {
+    background-position: -100px 0;
+    width: 32px;
+    height: 33px;
+}
+
+.icon-googleplus {
+    background-position: -50px 0;
+    width: 32px;
+    height: 33px;
+}
+
+.icon-twitter {
+    background-position: 0 0;
+    width: 32px;
+    height: 33px;
+}
 
 footer #credits {
     font-family: 'TitilliumMaps Medium', TrebuchetMS;
