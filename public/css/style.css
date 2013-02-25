@@ -584,7 +584,7 @@ header nav a:hover {
     position: relative;
 }
 
-footer #social, footer #credits, footer #cooperation, footer #partners {
+footer #social, footer #credits {
     z-index: 2;
     position: relative;
 }
@@ -599,7 +599,7 @@ footer aside:last-child {
     padding-bottom: 15px;
 }
 
-footer #social span, footer #cooperation span, footer #partners span {
+footer #social span {
     font-family: 'Segoe Script Regular';
     font-size: 19px;
     color: #f4f4f4;
@@ -610,7 +610,7 @@ footer #social span, footer #cooperation span, footer #partners span {
     width: 180px;
 }
 
-footer #social a, footer #cooperation #zoo, footer #cooperation #akai, footer #partners a {
+footer #social a {
     width: 32px;
     height: 32px;
     display: block;
@@ -621,9 +621,6 @@ footer #social a, footer #cooperation #zoo, footer #cooperation #akai, footer #p
 
 footer #social #facebook    { background: transparent url(../img/fb-icon.png) no-repeat 0 0 }
 footer #social #twitter     { background: transparent url(../img/tw-icon.png) no-repeat 0 0 }
-footer #social #lanyrd      { background: transparent url(../img/lr-icon.png) no-repeat 0 0 }
-footer #social #eventbrite  { background: transparent url(../img/eb-icon.png) no-repeat 0 0; width: 107px }
-footer #social #rss         { background: transparent url(../img/rss-icon.png) no-repeat 0 0 }
 
 footer #credits {
     font-family: 'TitilliumMaps Medium', TrebuchetMS;
@@ -650,13 +647,6 @@ footer #credits a {
 footer #credits a:hover {
     text-decoration: underline;
 }
-
-footer #cooperation #akai     { background: transparent url(../img/logo_akai.png) no-repeat 0 0; width: 32px;}
-footer #cooperation #zoo      { background: transparent url(../img/logo_zoo.png) no-repeat 0 2px; width: 101px; }
-
-footer #partners #webclusters { background: transparent url(../img/logo_webclusters.png) no-repeat 0 0; width: 100px }
-footer #partners #developer_career { background: transparent url(../img/logo_kariera_programisty.png) no-repeat 0 0; width: 100px }
-footer #partners #fordevelopers { background: transparent url(../img/logo_4dev.png) no-repeat 0 0; width:32px; height: 32px }
 
 #footer-background  #background-image-cont {
      background: black url(../img/footer_background_end.gif) repeat-x 0 0;
@@ -935,7 +925,7 @@ code {
 #big-logo img {
     display: block;
     margin: 0 auto;
-    padding: 60px 0 20px 0;    
+    padding: 60px 0 20px 0;
 }
 
 #big-logo {
