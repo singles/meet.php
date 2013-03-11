@@ -889,12 +889,28 @@ article #registration, article #sponsors {
     clear: both;
 }
 
-article #sponsors img {
+article #sponsors a {
     border: 1px solid #A0A09E;
     background-color: #fff;
-    padding: 10px;
-    margin: 10px 20px 10px 0;
+    margin: 10px;
     box-shadow: 0px 0px 8px #A0A09E;
+    width: 48%;
+    height: 100px;
+    line-height: 100px;
+    display: inline-block;
+    text-align: center;
+}
+
+article #sponsors a:nth-of-type(2n+1) {
+    margin-left: 0px;
+}
+
+article #sponsors a:nth-of-type(2n) {
+    margin-right: 0px;
+}
+
+article #sponsors img {
+    vertical-align: middle;
 }
 
 article #registration h2, article #registration iframe {
