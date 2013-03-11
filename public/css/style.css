@@ -913,7 +913,8 @@ article .company-logos a:nth-of-type(2n) {
 
 article .company-logos img {
     vertical-align: middle;
-    max-height: 80px;
+    max-height: 80%;
+    max-width: 80%;
 }
 
 article #registration h2, article #registration iframe {
