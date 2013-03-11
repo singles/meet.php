@@ -285,7 +285,7 @@ header nav ul {
     top: 16px;
     height: 18px;
     right: 15px;
-    width: 350px;
+    width: 420px;
 }
 
 header nav li {
@@ -885,11 +885,11 @@ article #topics li {
     line-height: 1.3;
 }
 
-article #registration, article #sponsors {
+article #registration, article .company-logos {
     clear: both;
 }
 
-article #sponsors a {
+article .company-logos a {
     border: 1px solid #A0A09E;
     background-color: #fff;
     margin: 10px;
@@ -897,20 +897,23 @@ article #sponsors a {
     width: 48%;
     height: 100px;
     line-height: 100px;
-    display: inline-block;
+    display: block;
+    float: left;
     text-align: center;
 }
 
-article #sponsors a:nth-of-type(2n+1) {
+article .company-logos a:nth-of-type(2n+1) {
     margin-left: 0px;
 }
 
-article #sponsors a:nth-of-type(2n) {
+article .company-logos a:nth-of-type(2n) {
     margin-right: 0px;
+    float: right;
 }
 
-article #sponsors img {
+article .company-logos img {
     vertical-align: middle;
+    max-height: 80px;
 }
 
 article #registration h2, article #registration iframe {

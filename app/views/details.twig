@@ -64,10 +64,10 @@
             </section>
 
             {% if event.sponsors is defined %}
-            <section id="sponsors">
+            <section class="company-logos">
                 <h2>Sponsorzy: </h2>
                 {% for name in event.sponsors %}
-                    <a href="{{sponsors[name].url}}"><img src="{{WEBROOT}}/img/{{sponsors[name].logo}}" alt="{{sponsors[name].name}}" height="60"></a>
+                    <a href="{{sponsors[name].url}}"><img src="{{WEBROOT}}/img/{{sponsors[name].logo}}" alt="{{sponsors[name].name}}"></a>
                 {% endfor %}
             </section>
             {% endif %}

@@ -70,6 +70,11 @@ $app->get('/faq/', function() use ($app) {
     $app->render('faq.twig');
 });
 
+$app->get('/partners/', function() use ($app) {
+    require_once APP_PATH . 'models/Sponsors.php';
+    $app->render('partners.twig', array('partners' => Sponsors::fetchPartners()));
+});
+
 $app->get('/contact/', function() use ($app) {
     $app->render('contact.twig');
 });

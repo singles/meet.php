@@ -13,17 +13,20 @@ class Sponsors extends Base
         'allegro' =>  array(
             'name'  =>  'Allegro',
             'logo'  =>  'sponsor_allegro.png',
-            'url'   =>  'http://kariera.allegro.pl'
+            'url'   =>  'http://kariera.allegro.pl',
+            'partner' => true
         ),
         'jetbrains' =>  array(
             'name'  =>  'JetBrains',
             'logo'  =>  'sponsor_jetbrains.gif',
-            'url'   =>  'http://www.jetbrains.com/'
+            'url'   =>  'http://www.jetbrains.com/',
+            'partner' => true
         ),
         'helion'    => array(
             'name'  => 'Helion',
             'logo'  => 'sponsor_helion.gif',
-            'url'   => 'http://www.helion.pl'
+            'url'   => 'http://www.helion.pl',
+            'partner' => true
         ),
         '4developers' => array(
             'name'  => '4developers',
@@ -33,7 +36,8 @@ class Sponsors extends Base
         'megiteam'  => array(
             'name'  => 'megiteam',
             'logo'  => 'sponsor_megiteam.png',
-            'url'   => 'http://www.megiteam.pl'
+            'url'   => 'http://www.megiteam.pl',
+            'partner' => true
         ),
         'oktawave'  => array(
             'name'  => 'oktawave',
@@ -41,4 +45,11 @@ class Sponsors extends Base
             'url'   => 'http://www.oktawave.com'
         )
     );
+
+    public static function fetchPartners()
+    {
+        return array_filter(self::$_data, function ($item) {
+            return isset($item['partner']) && $item['partner'] === true;
+        });
+    }
 }
