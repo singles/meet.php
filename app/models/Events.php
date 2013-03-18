@@ -393,6 +393,59 @@ class Events extends Base
                     'video'                     => 'cYtXXtpQ-4w'
                 ),
             )
+        ),
+        9 => array(
+            'id'    => 9,
+            'date'  => '20.04.2013',
+            'time'  => '17:00',
+            'description' => 'Pierwszy meet.php, w którym odchodzimy trochę od tematów czysto technicznych i wg. Waszych życzeń organizujemy spotkanie na temat start\'upów. Oczywiście, "mięsa" też nie zabraknie!',
+            'venue' => array(
+                'address'   => 'Coworking ZOO, Zwierzyniecka 20 (2 piętro), 61-001 Poznań',
+                'map_link'  => 'http://maps.google.pl/maps?f=q&amp;source=s_q&amp;hl=pl&amp;geocode=&amp;q=zwierzyniecka+20&amp;aq=&amp;sll=52.187405,19.204102&amp;sspn=7.478761,19.753418&amp;vpsrc=6&amp;ie=UTF8&amp;hq=&amp;hnear=Zwierzyniecka+20,+Pozna%C5%84,+Wielkopolskie&amp;ll=52.408438,16.908426&amp;spn=0.003789,0.009645&amp;t=m&amp;z=14&amp;output=embed'
+            ),
+            'sponsors' => array('allegro', 'helion', 'megiteam', 'jetbrains', 'github', 'envato'),
+            'talks' => array(
+                array(
+                    'topic'                     => 'Startup. Fakty i mity',
+                    'description'               => 'Czy da się zrobić startup na pół etatu? Czy inwestor może przeszkadzać? Czy potrzebuję marketingowca? Która technologia jest najlepsza? Arek Hajduk (Huge Thing) postara się odpowiedzieć na prawie wszystkie pytania dotyczące startupowania.',
+                    'speaker_name'              => 'Arek Hajduk',
+                    'speaker_avatar'            => 'https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash4/c44.66.552.552/s160x160/315582_10150388345095272_1554194414_n.jpg',
+                    'speaker_www'               => 'http://http://about.me/ahajduk',
+                    'slides_link'               => null,
+                    'skill_level'               => 1,
+                    'video'                     => null
+                ),
+                array(
+                    'topic'                     => 'Burza w czasie rzeczywistym...',
+                    'description'               => '...aka "Przetwarzanie strumieni danych real-time ze Storm". Świat BigData niemal w całości zdominowany jest przez ekosystem Apache Hadoop i rozwiązania bazujące na JVM. Batchowa charakterystyka Hadoopa nie pozwala go użyć bezpośrednio w systemach real-time, ale na szczęście istnieją narzędzia typu Storm, eliminujące tę lukę. Dodatkowo pozwalają one użyć w szerszym niż Hadoop kontekście innych technologii do przetwarzania danych, w tym także PHP. O czym będzie więc ta prezentacja? O strumieniach danych, topologiach ich przetwarzania, sproutach, boltach, skalowalności, odporności na błędy, realnych zastosowaniach i całej reszcie "burzowej" otoczki… Nie znasz Storma? Nie szkodzi, Twitter też go nie znał, a uczynił z niego jedno z głównych narzędzi do analizy real-time naszych feedów i wykrywania trendów.',
+                    'speaker_name'              => 'Mariusz Gil',
+                    'speaker_avatar'            => 'http://0.gravatar.com/avatar/34be88398f623c109b61d23e8215bd23',
+                    'speaker_www'               => 'http://mariuszgil.pl/',
+                    'slides_link'               => null,
+                    'skill_level'               => 4,
+                    'video'                     => null
+                ),
+                array(
+                    'topic'                     => 'Mądra architektura w Symfony2',
+                    'description'               => 'Sektor aplikacji webowych eksploduje, a systemy z dostępem przez przeglądarkę internetową to aktualnie najpopularniejszy sposób zaspokajania potrzeb biznesowych. Produkt, który ma sprawnie działać długoterminowo wymaga dobrych decyzji architektonicznych i właściwego stosu narzędzi. Symfony2 jest tutaj najlepszym wyborem, jeśli chodzi o framework. W połączeniu z kilkoma nowoczesnymi narzędziami, dobrymi praktykami projektowymi i dobrze ułożoną bazą kodu, tworzy świetne możliwości dla produktu, aby ten był otwarty na rozbudowę, stabilny oraz gotowy na obsługę wzmożonego ruchu. W prezentacji zostaną przedstawione przykłady z życia wzięte, na podstawie działających aplikacji Symfony2, aby zilustrować i nazwać składniki mądrej architektury.',
+                    'speaker_name'              => 'Wojciech Sznapka',
+                    'speaker_avatar'            => 'https://twimg0-a.akamaihd.net/profile_images/1556426008/wowo_internetbeta_kadr_bigger.jpg',
+                    'speaker_www'               => 'http://sznapka.pl/',
+                    'slides_link'               => null,
+                    'skill_level'               => 3,
+                    'video'                     => null
+                ),
+                array(
+                    'topic'                     => 'Pozwól by Twoja aplikacja się nudziła!',
+                    'description'               => 'Czy myślałeś kiedyś o tym, by Twoja aplikacja była cache\'owana zanim przyjdzie do niej request? Symfony2 + Varnish + Esi - czyli jak stworzyć wydajną architekturę na przykładzie strony głównej allegro.pl.',
+                    'speaker_name'              => 'Bartłomiej Ignasiak',
+                    'speaker_avatar'            => 'http://m.c.lnkd.licdn.com/mpr/mpr/shrink_200_200/p/8/000/21f/1c2/1196ac5.jpg',
+                    'speaker_www'               => 'http://www.linkedin.com/pub/bart%C5%82omiej-ignasiak/29/2b7/107',
+                    'slides_link'               => null,
+                    'skill_level'               => 3,
+                    'video'                     => null
+                )
+            )
         )
     );
 
