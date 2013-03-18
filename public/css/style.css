@@ -810,6 +810,7 @@ article #speakers ul li {
     display: block;
     font-size: 15px;
     font-family: "TitilliumMaps Medium";
+    text-align: left;
     line-height: 1.5;
     height: 60px;
     margin: 0 0 15px 0;
