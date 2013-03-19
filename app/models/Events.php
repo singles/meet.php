@@ -420,7 +420,7 @@ class Events extends Base
                     'description'               => '...aka "Przetwarzanie strumieni danych real-time ze Storm". Świat BigData niemal w całości zdominowany jest przez ekosystem Apache Hadoop i rozwiązania bazujące na JVM. Batchowa charakterystyka Hadoopa nie pozwala go użyć bezpośrednio w systemach real-time, ale na szczęście istnieją narzędzia typu Storm, eliminujące tę lukę. Dodatkowo pozwalają one użyć w szerszym niż Hadoop kontekście innych technologii do przetwarzania danych, w tym także PHP. O czym będzie więc ta prezentacja? O strumieniach danych, topologiach ich przetwarzania, sproutach, boltach, skalowalności, odporności na błędy, realnych zastosowaniach i całej reszcie "burzowej" otoczki… Nie znasz Storma? Nie szkodzi, Twitter też go nie znał, a uczynił z niego jedno z głównych narzędzi do analizy real-time naszych feedów i wykrywania trendów.',
                     'speaker_name'              => 'Mariusz Gil',
                     'speaker_avatar'            => 'http://0.gravatar.com/avatar/34be88398f623c109b61d23e8215bd23',
-                    'speaker_www'               => 'http://mariuszgil.pl/',
+                    'speaker_www'               => 'https://twitter.com/mariuszgil',
                     'slides_link'               => null,
                     'skill_level'               => 4,
                     'video'                     => null
