@@ -410,7 +410,7 @@ class Events extends Base
                     'description'               => 'Czy da się zrobić startup na pół etatu? Czy inwestor może przeszkadzać? Czy potrzebuję marketingowca? Która technologia jest najlepsza? Arek Hajduk (Huge Thing) postara się odpowiedzieć na prawie wszystkie pytania dotyczące startupowania.',
                     'speaker_name'              => 'Arek Hajduk',
                     'speaker_avatar'            => 'https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash4/c44.66.552.552/s160x160/315582_10150388345095272_1554194414_n.jpg',
-                    'speaker_www'               => 'http://http://about.me/ahajduk',
+                    'speaker_www'               => 'http://about.me/ahajduk',
                     'slides_link'               => null,
                     'skill_level'               => 1,
                     'video'                     => null
