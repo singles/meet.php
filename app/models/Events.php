@@ -426,16 +426,6 @@ class Events extends Base
                     'video'                     => null
                 ),
                 array(
-                    'topic'                     => 'Mądra architektura w Symfony2',
-                    'description'               => 'Sektor aplikacji webowych eksploduje, a systemy z dostępem przez przeglądarkę internetową to aktualnie najpopularniejszy sposób zaspokajania potrzeb biznesowych. Produkt, który ma sprawnie działać długoterminowo wymaga dobrych decyzji architektonicznych i właściwego stosu narzędzi. Symfony2 jest tutaj najlepszym wyborem, jeśli chodzi o framework. W połączeniu z kilkoma nowoczesnymi narzędziami, dobrymi praktykami projektowymi i dobrze ułożoną bazą kodu, tworzy świetne możliwości dla produktu, aby ten był otwarty na rozbudowę, stabilny oraz gotowy na obsługę wzmożonego ruchu. W prezentacji zostaną przedstawione przykłady z życia wzięte, na podstawie działających aplikacji Symfony2, aby zilustrować i nazwać składniki mądrej architektury.',
-                    'speaker_name'              => 'Wojciech Sznapka',
-                    'speaker_avatar'            => 'https://twimg0-a.akamaihd.net/profile_images/1556426008/wowo_internetbeta_kadr_bigger.jpg',
-                    'speaker_www'               => 'http://sznapka.pl/',
-                    'slides_link'               => null,
-                    'skill_level'               => 3,
-                    'video'                     => null
-                ),
-                array(
                     'topic'                     => 'Pozwól by Twoja aplikacja się nudziła!',
                     'description'               => 'Czy myślałeś kiedyś o tym, by Twoja aplikacja była cache\'owana zanim przyjdzie do niej request? Symfony2 + Varnish + Esi - czyli jak stworzyć wydajną architekturę na przykładzie strony głównej allegro.pl.',
                     'speaker_name'              => 'Bartłomiej Ignasiak',
