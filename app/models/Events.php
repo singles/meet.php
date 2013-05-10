@@ -411,7 +411,7 @@ class Events extends Base
                     'speaker_name'              => 'Arek Hajduk',
                     'speaker_avatar'            => 'https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash4/c44.66.552.552/s160x160/315582_10150388345095272_1554194414_n.jpg',
                     'speaker_www'               => 'http://about.me/ahajduk',
-                    'slides_link'               => null,
+                    'slides_link'               => 'http://www.slideshare.net/mobile/ahajduk/20130420-meetphp',
                     'skill_level'               => 1,
                     'video'                     => null
                 ),
@@ -421,7 +421,7 @@ class Events extends Base
                     'speaker_name'              => 'Mariusz Gil',
                     'speaker_avatar'            => 'http://0.gravatar.com/avatar/34be88398f623c109b61d23e8215bd23',
                     'speaker_www'               => 'http://mariuszgil.pl/',
-                    'slides_link'               => null,
+                    'slides_link'               => 'https://speakerdeck.com/mariuszgil/data-streams-processing-with-php-and-storm',
                     'skill_level'               => 4,
                     'video'                     => null
                 ),
@@ -431,7 +431,7 @@ class Events extends Base
                     'speaker_name'              => 'Bartłomiej Ignasiak',
                     'speaker_avatar'            => 'http://m.c.lnkd.licdn.com/mpr/mpr/shrink_200_200/p/8/000/21f/1c2/1196ac5.jpg',
                     'speaker_www'               => 'http://www.linkedin.com/pub/bart%C5%82omiej-ignasiak/29/2b7/107',
-                    'slides_link'               => null,
+                    'slides_link'               => 'http://prezi.com/opwkiiz09dxa/pozwol-by-twoja-aplikacja-sie-nudzia/',
                     'skill_level'               => 3,
                     'video'                     => null
                 )
