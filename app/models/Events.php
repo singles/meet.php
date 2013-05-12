@@ -8,6 +8,7 @@ class Events extends Base
         1 => array(
             'id'    => 1,
             'date'  => '17.12.2011',
+            'datetime' => '2011-12-17T17:12',
             'time'  => '17:12',
             'description' => 'Zapraszamy na spotkanie inauguracyjne działalność meetPHP w Poznaniu. Wysłuchaj przygotowanych prezentacji, zadaj „niewygodne” pytania pogłębiające temat i zostań na koniec, żeby poznać innych pasjonatów PHP.',
             'venue' => array(
@@ -53,6 +54,7 @@ class Events extends Base
         2 => array(
             'id'    => 2,
             'date'  => '21.01.2012',
+            'datetime' => '2012-01-21T17:00',
             'time'  => '17:00',
             'description' => 'Początek nowego roku, a my kontynuujemy inicjatywę meet.php! Kolejne prezentacje, kolejni prelegenci, ale ta sama świetna atmosfera, która udzieliła się na pierwszym spotkaniu :) Zapraszamy!',
             'venue' => array(
@@ -96,6 +98,7 @@ class Events extends Base
         3 => array(
             'id'    => 3,
             'date'  => '25.02.2012',
+            'datetime' => '2012-02-25T17:00',
             'time'  => '17:00',
             'description' => 'Nie zwalniamy tempa - zapraszamy na trzecie spotkanie. Tym razem będzie m.in o Symfony2 czy też o testowaniu wg metodytki BDD. A na koniec oczywiście after party ;)',
             'venue' => array(
@@ -139,6 +142,7 @@ class Events extends Base
         4 => array(
             'id'    => 4,
             'date'  => '14.04.2012',
+            'datetime' => '2012-04-14T17:00',
             'time'  => '17:00',
             'description' => 'Czwarty miesiąc roku. Cztery prezentacje. Czwórka prelegentów. W skrócie - czas na meet.php#(...sami wiecie który...;)',
             'additional_description' => 'Książkę <a href="http://helion.pl/ksiazki/php-obiekty-wzorce-narzedzia-wydanie-iii-matt-zandstra,phpob3.htm">PHP. Obiekty, wzorce, narzędzia. Wydanie III</a> ufundowało wydawnictwo Helion S.A (pobierz przykładowy <a href="http://pdf.helion.pl/phpob3/phpob3.pdf">rodział</a>).',
@@ -192,6 +196,7 @@ class Events extends Base
         5 => array(
             'id'    => 5,
             'date'  => '19.05.2012',
+            'datetime' => '2012-05-19T17:00',
             'time'  => '17:00',
             'description' => 'Starając się utrzymać tempo jednego spotkania na miesiąc, zapraszamy wszystkich na piąte, a równocześnie majowe spotkanie meet.php.',
             'venue' => array(
@@ -244,6 +249,7 @@ class Events extends Base
         6 => array(
             'id'    => 6,
             'date'  => '11.08.2012',
+            'datetime' => '2012-08-11T17:00',
             'time'  => '17:00',
             'description' => 'Jeśli baliście/cieszyliście (haters gonna hate) się, że meet.php przestało funkcjonować - niepotrzebnie. Co prawda po sporej przerwie, ale wracamy!',
             'venue' => array(
@@ -300,6 +306,7 @@ class Events extends Base
         7 => array(
             'id'    => 7,
             'date'  => '08.12.2012',
+            'datetime' => '2012-12-08T17:00',
             'time'  => '17:00',
             'description' => 'Siódmy i ostatni meet.php w tym roku. Nie może Cię zabraknąć!',
             'venue' => array(
@@ -344,6 +351,7 @@ class Events extends Base
         8 => array(
             'id'    => 8,
             'date'  => '09.02.2013',
+            'datetime' => '2013-02-09T17:00',
             'time'  => '17:00',
             'description' => 'Pierwszy meet.php w nowym roku. Czwórka prelegentów, z czego trójka jest z nami po raz kolejny z nowym materiałem. Wy też będziecie, prawda?',
             'venue' => array(
@@ -397,6 +405,7 @@ class Events extends Base
         9 => array(
             'id'    => 9,
             'date'  => '20.04.2013',
+            'datetime' => '2012-04-20T17:00',
             'time'  => '17:00',
             'description' => 'Pierwszy meet.php, w którym odchodzimy trochę od tematów czysto technicznych i wg. Waszych życzeń organizujemy spotkanie na temat start\'upów. Oczywiście, "mięsa" też nie zabraknie!',
             'venue' => array(
@@ -411,7 +420,7 @@ class Events extends Base
                     'speaker_name'              => 'Arek Hajduk',
                     'speaker_avatar'            => 'https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash4/c44.66.552.552/s160x160/315582_10150388345095272_1554194414_n.jpg',
                     'speaker_www'               => 'http://about.me/ahajduk',
-                    'slides_link'               => null,
+                    'slides_link'               => 'http://www.slideshare.net/mobile/ahajduk/20130420-meetphp',
                     'skill_level'               => 1,
                     'video'                     => null
                 ),
@@ -421,7 +430,7 @@ class Events extends Base
                     'speaker_name'              => 'Mariusz Gil',
                     'speaker_avatar'            => 'http://0.gravatar.com/avatar/34be88398f623c109b61d23e8215bd23',
                     'speaker_www'               => 'http://mariuszgil.pl/',
-                    'slides_link'               => null,
+                    'slides_link'               => 'https://speakerdeck.com/mariuszgil/data-streams-processing-with-php-and-storm',
                     'skill_level'               => 4,
                     'video'                     => null
                 ),
@@ -431,7 +440,7 @@ class Events extends Base
                     'speaker_name'              => 'Bartłomiej Ignasiak',
                     'speaker_avatar'            => 'http://m.c.lnkd.licdn.com/mpr/mpr/shrink_200_200/p/8/000/21f/1c2/1196ac5.jpg',
                     'speaker_www'               => 'http://www.linkedin.com/pub/bart%C5%82omiej-ignasiak/29/2b7/107',
-                    'slides_link'               => null,
+                    'slides_link'               => 'http://prezi.com/opwkiiz09dxa/pozwol-by-twoja-aplikacja-sie-nudzia/',
                     'skill_level'               => 3,
                     'video'                     => null
                 )
