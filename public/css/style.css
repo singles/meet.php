@@ -227,9 +227,9 @@ p {
 	border-bottom: 1px solid #1c7ad0;
 
 	background-color: #010101;
-	background: #010101 -webkit-linear-gradient(top, #2f2f2f 70%, #010101 100%);
-    background: #010101 -moz-linear-gradient(top, #2f2f2f 70%, #010101, 100%);
-    background: #010101 linear-gradient(top, #2f2f2f 70%, #010101, 100%);
+	background: #010101 -webkit-linear-gradient(top, #2f2f2f, #010101);
+    background: #010101 -moz-linear-gradient(top, #2f2f2f, #010101);
+    background: #010101 linear-gradient(top, #2f2f2f, #010101);
     
     color: #fff;
 }
