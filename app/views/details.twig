@@ -1,83 +1,90 @@
 {% extends '_layout.twig' %}
 
 {% block content %}
-    <div id="paper-background">
-        <article>
-            <hgroup>
-                <h1>meet.<span>php</span> <em>#{{ event.id }}</em></h1>
-                <h3>{{ event.date }} o godzinie {{event.time}}</h3>
-            </hgroup>
 
-            <section id="description">
-                <h2>Opis:</h2>
+<!-- Details section -->
+<div class="page clearfix">
+    <div class="inner">
+        <article class="event single-event">
+            <header class="page-header clearfix">
+                <h1>meet.<strong>php</strong> <em>#{{ event.id }}</em></h1>
+                <time datetime="{{ event.datetime }}">{{ event.date }} <span class="desktop">o godzinie</span> {{event.time}}</time>
+            </header>
+            <div class="page-content">
+                <h3>Opis:</h3>
                 <p>{{ event.description}}</p>
                 {% if event.additional_description is defined %}
                 <p class="additional-info">{{ event.additional_description|raw }}
                 {% endif %}
-                <h2>Prezentacje:</h2>
-                <ul>
-                    {% for talk in event.talks %}
-                        <li>
-                            <h4>
-                                {{ talk.topic }}
-                            </h4>
-                            <p>{{ talk.description }}</p>
-                            {% if talk.skill_level is defined and talk.skill_level %}
-                                <p><strong>Poziom trudności: </strong>
-                                {% autoescape false %}
-                                {{ stars(talk.skill_level) }}
-                                {% endautoescape %}
-                            {% endif %}
-
-                            {% if talk.slides_link is defined and talk.slides_link %}
-                                <p><strong>Prezentacja:</strong> <a href="{{talk.slides_link}}">{{talk.slides_link}}</a></p>
-                            {% endif %}
-
-                            {% if talk.video is defined and talk.video %}
-                                <p>
-                                    <iframe width="780" height="439" src="http://www.youtube.com/embed/{{ talk.video }}" frameborder="0" allowfullscreen></iframe>
-                                <p>
-                            {% endif %}
-
-                        </li>
-                    {% endfor %}
-                </ul>
-            </section>
-
-            <section id="map">
-                <h2>Lokalizacja:</h2>
-                <iframe src='http://maps.google.pl/maps?f=q&amp;source=s_q&amp;hl=pl&amp;geocode=&amp;q=zwierzyniecka+20&amp;aq=&amp;sll=52.187405,19.204102&amp;sspn=7.478761,19.753418&amp;vpsrc=6&amp;ie=UTF8&amp;ll=52.408438,16.908426&amp;spn=0.003789,0.009645&amp;t=m&amp;z=14&amp;output=embed'></iframe>
-                <p>{{ event.venue.address }}</p>
-            </section>
-
-            <section id="speakers">
-                <h2>Prelegenci:</h2>
-                <ul>
+                <h3>Prezentacje:</h3>
+                <ul class="schedule">
                     {% for talk in event.talks %}
                     <li>
-                        <img src="{{ talk.speaker_avatar }}" alt="avatar" width="48" height="48">
-                        <h5>{{ talk.topic }}</h5>
-                        <a href="{{ talk.speaker_www}}">{{ talk.speaker_name}}</a>
+                        <h4>{{ talk.topic }}</h4>
+                        <p>{{ talk.description }}</p>
+                        {% if talk.skill_level is defined and talk.skill_level %}
+                            <p class="skill-level">
+                                <strong>Poziom trudności: </strong>
+                                {% autoescape false %}
+                                    {{ stars(talk.skill_level) }}
+                                {% endautoescape %}
+                            </p>
+                        {% endif %}
+
+                        {% if talk.slides_link is defined and talk.slides_link %}
+                            <p class="slide-link"><strong>Prezentacja:</strong> <a href="{{talk.slides_link}}">{{talk.slides_link}}</a></p>
+                        {% endif %}
+
+                        {% if talk.video is defined and talk.video %}
+                            <p class="video-link">
+                                <iframe width="780" height="439" src="http://www.youtube.com/embed/{{ talk.video }}" frameborder="0" allowfullscreen></iframe>
+                            <p>
+                        {% endif %}
                     </li>
                     {% endfor %}
                 </ul>
-            </section>
+            </div>
+            <div class="page-content">
+                <section class="event-speakers">
+                    <h3>Prelegenci:</h3>
+                    <ul>
+                        {% for talk in event.talks %}
+                        <li class="speaker-item">
+                            <img src="{{ talk.speaker_avatar }}" alt="avatar" width="48" height="48">
+                            <h5>{{ talk.topic }}</h5>
+                            <a href="{{ talk.speaker_www}}">{{ talk.speaker_name}}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </section>
 
-            {% if event.sponsors is defined %}
-            <section class="company-logos">
-                <h2>Sponsorzy: </h2>
-                {% for name in event.sponsors %}
-                    <a href="{{sponsors[name].url}}"><img src="{{WEBROOT}}/img/{{sponsors[name].logo}}" alt="{{sponsors[name].name}}"></a>
-                {% endfor %}
-            </section>
-            {% endif %}
+                <section class="event-location">
+                    <h3>Lokalizacja:</h3>
+                    <iframe src='http://maps.google.pl/maps?f=q&amp;source=s_q&amp;hl=pl&amp;geocode=&amp;q=zwierzyniecka+20&amp;aq=&amp;sll=52.187405,19.204102&amp;sspn=7.478761,19.753418&amp;vpsrc=6&amp;ie=UTF8&amp;ll=52.408438,16.908426&amp;spn=0.003789,0.009645&amp;t=m&amp;z=14&amp;output=embed'></iframe>
+                    <p>{{ event.venue.address }}</p>
+                </section>
+                
+                {% if event.sponsors is defined %}
+                <section class="event-sponsors clearfix">
+                    <h3>Sponsorzy:</h3>
+                    <ul>
+                        {% for name in event.sponsors %}
+                        <li><a href="{{sponsors[name].url}}"><img src="{{WEBROOT}}/img/{{sponsors[name].logo}}" alt="{{sponsors[name].name}}"></a></li>
+                        {% endfor %}
+                    </ul>
+                </section>
+                {% endif %}
 
-            {% if event.online.eventbrite is defined %}
-            <section id="registration">
-                <h2>Daj nam znać, że przyjdziesz ;-) </h2>
-                <iframe  src="http://www.eventbrite.com/tickets-external?eid={{ event.online.eventbrite }}&ref=etckt" frameborder="0" height="192" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
-            </section>
-            {% endif %}
+                {% if event.online.eventbrite is defined %}
+                <section id="registration">
+                    <h3>Daj nam znać, że przyjdziesz ;-) </h3>
+                    <iframe  src="http://www.eventbrite.com/tickets-external?eid={{ event.online.eventbrite }}&ref=etckt" frameborder="0" height="192" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
+                </section>
+                {% endif %}
+            </div>
         </article>
     </div>
+</div>
+<!-- End details section -->
+
 {% endblock %}

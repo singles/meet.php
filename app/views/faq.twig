@@ -1,62 +1,66 @@
 {% extends '_layout.twig' %}
 
 {% block content %}
-<div id="paper-background">
-    <article id="faq">
-        <hgroup>
-            <h1>Najczęściej zadawane pytania</h1>
-        </hgroup>
 
-        <h2>Czym jest meet.php?</h2>
-        <p>meet.php to cykliczne spotkania pasjonatów technologii i narzędzi opartych o język PHP.</p>
+<div class="page clearfix">
+    <div class="inner">
+        <article class="event">
+            <header class="page-header clearfix">
+                <h1>Najczęściej zadawane pytania</h1>
+            </header>
+            <div class="page-content">
+                <h3>Czym jest meet.php?</h3>
+                <p>meet.php to cykliczne spotkania pasjonatów technologii i narzędzi opartych o język PHP.</p>
 
-        <h2>Ile kosztuje uczestnictwo w spotkaniach?</h2>
-        <p>Wszystkie spotkania są otwarte i darmowe dla każdego.</p>
+                <h3>Ile kosztuje uczestnictwo w spotkaniach?</h3>
+                <p>Wszystkie spotkania są otwarte i darmowe dla każdego.</p>
 
-        <h2>Jestem początkującym/zaawansowanym programistą PHP - czy tematy nie będą dla mnie za trudne/za łatwe?</h2>
-        <p>Na każdym spotkaniu będą przygotowane co najmniej 3 różne prezentacje. Każda z nich będzie zaczynała się od kilku słów wprowadzenia dla osób niezaznajomionych. Oprócz tego zawsze można dopytać o niezrozumiałe kwestie tuż po prezentacji lub w trakcie afterparty. Na pewno każdy znajdzie coś nowego i ciekawego dla siebie. Dodatkowo, każda z prezentacji ma określony przez prelegenta poziom trudności.</p>
+                <h3>Jestem początkującym/zaawansowanym programistą PHP - czy tematy nie będą dla mnie za trudne/za łatwe?</h3>
+                <p>Na każdym spotkaniu będą przygotowane co najmniej 3 różne prezentacje. Każda z nich będzie zaczynała się od kilku słów wprowadzenia dla osób niezaznajomionych. Oprócz tego zawsze można dopytać o niezrozumiałe kwestie tuż po prezentacji lub w trakcie afterparty. Na pewno każdy znajdzie coś nowego i ciekawego dla siebie. Dodatkowo, każda z prezentacji ma określony przez prelegenta poziom trudności.</p>
 
-        <h2>Mam świetny temat i chciałbym poprowadzić prezentację. Co mam zrobić?</h2>
-        <p>Aby informacje o Twojej prezentacji znalazły się na stronie, potrzebujemy następujacych rzeczy:</p>
-        <ul>
-            <li>tytuł prezentacji</li>
-            <li>krótki opis prezentacji, na 2-3 zdania</li>
-            <li>poziom trudności w skali od 1-5</li>
-            <li>link do swojego avatara</li>
-            <li>adres strony, do której ma linkować informacja o prelegencie (blog, twitter etc..) - nie jest to wymagane, aczkolwiek wskazane</li>
-            <li>rozmiar koszulki i nick, jaki ma się na niej znaleźć (każdy z prelegentów dostaje sygnowaną koszulkę)</li>
-        </ul>
-        <p>Powyższe informacje możesz wysłać do nas na dwa sposoby:</p>
-        <ul>
-            <li>korzystając z adresu email, który znajdziesz w zakładce <a href="{{ WEBROOT }}/contact">Kontakt</a></li>
-            <li>robiąc pull-requesta do <a href="https://github.com/singles/meet.php">naszego repozytorium</a> na GutHubie, umieszczając w kodzie wymagane informację, a rozmiar koszulki i nicka podając w komentarzu</li>
-        </ul>
-        <p>Jeśli temat nam się spodoba, zostajesz wpisany na listę chętnych. Następnie uzgadniamy termin dogodny dla wszystkich prelegentów oraz Twoja prezentacja zostaje oficjalnie ogłoszona różnymi kanałami. A potem czeka Cię wieczna sława ;)</p>
+                <h3>Mam świetny temat i chciałbym poprowadzić prezentację. Co mam zrobić?</h3>
+                <p>Aby informacje o Twojej prezentacji znalazły się na stronie, potrzebujemy następujacych rzeczy:</p>
+                <ul>
+                    <li>tytuł prezentacji</li>
+                    <li>krótki opis prezentacji, na 2-3 zdania</li>
+                    <li>poziom trudności w skali od 1-5</li>
+                    <li>link do swojego avatara</li>
+                    <li>adres strony, do której ma linkować informacja o prelegencie (blog, twitter etc..) - nie jest to wymagane, aczkolwiek wskazane</li>
+                    <li>rozmiar koszulki i nick, jaki ma się na niej znaleźć (każdy z prelegentów dostaje sygnowaną koszulkę)</li>
+                </ul>
+                <p>Powyższe informacje możesz wysłać do nas na dwa sposoby:</p>
+                <ul>
+                    <li>korzystając z adresu email, który znajdziesz w zakładce <a href="/contact">Kontakt</a></li>
+                    <li>robiąc pull-requesta do <a href="https://github.com/singles/meet.php">naszego repozytorium</a> na GutHubie, umieszczając w kodzie wymagane informację, a rozmiar koszulki i nicka podając w komentarzu</li>
+                </ul>
+                <p>Jeśli temat nam się spodoba, zostajesz wpisany na listę chętnych. Następnie uzgadniamy termin dogodny dla wszystkich prelegentów oraz Twoja prezentacja zostaje oficjalnie ogłoszona różnymi kanałami. A potem czeka Cię wieczna sława ;)</p>
 
-        <h2>Czy spotkania mają z góry ustalony termin?</h2>
-        <p>Spotkania będą odbywały się mniej więcej raz w miesiącu, w godzinach wieczornych. Dokładne terminy będziemy z odpowiednim wyprzedzeniem publikować na naszej stronie głównej. Informacje te pojawiają się także na serwsiach: <a href="https://www.facebook.com/pages/meetphp/233447820052211">Facebook</a>, <a href="http://twitter.com/meetphp">Twitter</a>.</p>
+                <h3>Czy spotkania mają z góry ustalony termin?</h3>
+                <p>Spotkania będą odbywały się mniej więcej raz w miesiącu, w godzinach wieczornych. Dokładne terminy będziemy z odpowiednim wyprzedzeniem publikować na naszej stronie głównej. Informacje te pojawiają się także na serwsiach: <a href="https://www.facebook.com/pages/meetphp/233447820052211">Facebook</a>, <a href="http://twitter.com/meetphp">Twitter</a>.</p>
 
-        <h2>Gdzie mogę dostać koszulkę meet.php?</h2>
-        <p>Są dwa sposoby:</p>
-        <ul>
-            <li>zostanie preglentem - w podziękowaniu przysługuje Ci wtedy sygnowana koszulka z własnym nickiem na plecach i rolą: "speaker"</li>
-            <li>zamówić koszulkę przed spotkaniem - na formularzu rejestracji Eventbrite jest odpowiednie pole do tego. Cena? 25-35 zł w zależności od liczby zamówień. Nie zarabiamy na tym, tylko przekazujemy do sprawdzonej "koszulkarni" :) Koszulki tego typu mają nadruk tylko z przodu, bez sygnowanego tyłu. </li>
-        </ul>
+                <h3>Gdzie mogę dostać koszulkę meet.php?</h3>
+                <p>Są dwa sposoby:</p>
+                <ul>
+                    <li>zostanie preglentem - w podziękowaniu przysługuje Ci wtedy sygnowana koszulka z własnym nickiem na plecach i rolą: "speaker"</li>
+                    <li>zamówić koszulkę przed spotkaniem - na formularzu rejestracji Eventbrite jest odpowiednie pole do tego. Cena? 25-35 zł w zależności od liczby zamówień. Nie zarabiamy na tym, tylko przekazujemy do sprawdzonej "koszulkarni" :) Koszulki tego typu mają nadruk tylko z przodu, bez sygnowanego tyłu. </li>
+                </ul>
 
-        <h2>Gdzie mogę dostać kubek meet.php?</h2>
-        <p>Są dwa sposoby:</p>
-        <ul>
-            <li>zostanie preglentem - w podziękowaniu przysługuje Ci wtedy jedyny w swoim rodzaniu, meet.php'owy kubek</li>
-            <li>przyjść na spotkanie i liczyć na szczęście - na spotkaniach losujemy/rozdajemy kilka z nich
-        </ul>
-        <p>Na obecną chwilę nie prowadzimy i nie planujemy sprzedaży kubków.</p>
+                <h3>Gdzie mogę dostać kubek meet.php?</h3>
+                <p>Są dwa sposoby:</p>
+                <ul>
+                    <li>zostanie preglentem - w podziękowaniu przysługuje Ci wtedy jedyny w swoim rodzaniu, meet.php'owy kubek</li>
+                    <li>przyjść na spotkanie i liczyć na szczęście - na spotkaniach losujemy/rozdajemy kilka z nich
+                </li></ul>
+                <p>Na obecną chwilę nie prowadzimy i nie planujemy sprzedaży kubków.</p>
 
-        <h2>Kiedy meet.php będzie w Warszawie, Wrocławiu, Krakowie, [wstaw dowolne]?<h2>
-        <p>Patrz odpowiedź na podobne pytanie <a href="http://www.facebook.com/permalink.php?story_fbid=270196479710678&id=233447820052211">na Facebooku</a>.
-
-        <h2>W czym mogę pomóc?</h2>
-        <p>Spotkania organizujemy w swoim wolnym czasie i dla własnej przyjemności, więc każda pomoc się przyda. Masz pomysł na ciekawe wydarzenie (hackathon – konkurs – konferencje) / chcesz przygotować wykład / pomóc w sprawach organizacyjnych / znasz sponsora, który jest chętny wspierać naszą inicjatywę / przyszło Ci do głowy coś o czym nikt z nas wcześniej nie pomyślał – napisz do nas. Chętnie się spotkamy i zaczniemy współpracę.</p>
-
-    </article>
+                <h3>Kiedy meet.php będzie w Warszawie, Wrocławiu, Krakowie, [wstaw dowolne]?</h3>
+                <p>Patrz odpowiedź na podobne pytanie <a href="http://www.facebook.com/permalink.php?story_fbid=270196479710678&amp;id=233447820052211">na Facebooku</a></p>
+                
+                <h3>W czym mogę pomóc?</h3>
+                <p>Spotkania organizujemy w swoim wolnym czasie i dla własnej przyjemności, więc każda pomoc się przyda. Masz pomysł na ciekawe wydarzenie (hackathon – konkurs – konferencje) / chcesz przygotować wykład / pomóc w sprawach organizacyjnych / znasz sponsora, który jest chętny wspierać naszą inicjatywę / przyszło Ci do głowy coś o czym nikt z nas wcześniej nie pomyślał – napisz do nas. Chętnie się spotkamy i zaczniemy współpracę.</p>
+            </div>
+        </article>
+    </div>
 </div>
+
 {% endblock %}

@@ -2,13 +2,14 @@
 
 {% block content %}
 {% include '_top.twig' %}
-<div id="info-background">
-    <section id="big-logo">
-        <img src="http://symfony.com/logos/symfony_black_01.png?v=2" width="800">
-        (Fabien asked for a bigger logo - we think it looks ok now ;)
-    </section>
 
-    <span id="background-image-info-corner"><a href="https://github.com/singles/meet.php"></a></span>
-    <a href="http://www.phpclasses.org/submit_user_group.html?country=pl" hidden>Polish Resources of Our Country</a>
-</div>
+<section class="page info-section big-logo">
+	<div class="inner clearfix">
+		<img src="http://symfony.com/logos/symfony_black_01.png?v=2" width="800">
+        <p>(Fabien asked for a bigger logo - we think it looks ok now ;)</p>
+    </div>
+	<a href="https://github.com/singles/meet.php" class="github-code"></a>
+	<a href="http://www.phpclasses.org/submit_user_group.html?country=pl" hidden>Polish Resources of Our Country</a>
+</section>
+
 {% endblock %}
