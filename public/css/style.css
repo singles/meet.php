@@ -652,6 +652,11 @@ li.speaker-item {
 	max-height: 80%;
 }
 
+.event-sponsors li a {
+	display: block;
+	height: 100%;
+}
+
 .contact-page p {
 	text-align: center;
 }
@@ -742,6 +747,10 @@ li.speaker-item {
 	.main-logo {
 		width: 150px;
 		margin: 13px 0 10px;
+	}
+
+	.desktop {
+		display: none;
 	}
 }
 
@@ -857,10 +866,6 @@ li.speaker-item {
 
 @media only screen and (max-width: 420px) {
 	.main-footer .social {
-		display: none;
-	}
-
-	.desktop {
 		display: none;
 	}
 }
