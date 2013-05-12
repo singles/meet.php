@@ -1,17 +1,26 @@
 {% extends '_layout.twig' %}
 
 {% block content %}
-<div id="paper-background">
-    <article id="partners">
-        <hgroup>
-            <h1>Partnerzy</h1>
-        </hgroup>
-        <section class="company-logos">
-            {% for partner in partners %}
-            <a href="{{partner.url}}"><img src="{{WEBROOT}}/img/{{partner.logo}}" alt="{{partner.name}}"></a>
-            {% endfor %}
-        </section>
 
-    </article>
+<!-- Partners section -->
+<div class="page clearfix">
+    <div class="inner">
+        <article class="event">
+            <header class="page-header clearfix">
+                <h1>Partnerzy</h1>
+            </header>
+            <div class="page-content">
+                <section class="event-sponsors clearfix">
+                    <ul>
+                        {% for partner in partners %}
+                        <li><a href="{{partner.url}}"><img src="{{WEBROOT}}/img/{{partner.logo}}" alt="{{partner.name}}"></a></li>
+                        {% endfor %}
+                    </ul>
+                </section>
+            </div>
+        </article>
+    </div>
 </div>
+<!-- End partners section -->
+
 {% endblock %}
