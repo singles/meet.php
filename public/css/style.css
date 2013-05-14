@@ -302,7 +302,7 @@ p {
 	position: relative;
 	padding-bottom: 20px;
 
-	background: url(../img/welcome-flash.png) no-repeat right center;
+	background: url(../img/welcome-flash.png) no-repeat center center;
 }
 
 .welcome-section article:after {
@@ -713,16 +713,28 @@ li.speaker-item {
 	.welcome-section > .inner {
 		background: none;
 		height: auto;
+		overflow: hidden;
+	}
+
+	.welcome-section article:after {
+		background-image: none;
 	}
 
 	.welcome-section article {
 		float: none;
-		margin: 0 auto;
+		margin: 0 auto 20px;
+		width: 90%;
 	}
 
 	.logo-version {
 		display: none;
 	}
+
+	.welcome-header {
+		padding-top: 50px;
+	}
+
+
 }
 
 @media only screen and (max-width: 820px) {
@@ -801,13 +813,19 @@ li.speaker-item {
 	}
 
 	.welcome-header {
-		padding-top: 10px;
+		padding: 20px 0 10px;
 	}
 
 	.welcome-header time {
 		display: block;
-		position: static;
-		float: none;
+		font-size: 2em;
+		position: absolute;
+		right: 10px;
+		top: 30px;
+	}
+
+	.welcome-header h1 {
+		font-size: 4.0em;
 	}
 
 	.welcome-section article:after {
