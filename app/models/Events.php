@@ -8,6 +8,7 @@ class Events extends Base
         1 => array(
             'id'    => 1,
             'date'  => '17.12.2011',
+            'datetime' => '2011-12-17T17:12',
             'time'  => '17:12',
             'description' => 'Zapraszamy na spotkanie inauguracyjne działalność meetPHP w Poznaniu. Wysłuchaj przygotowanych prezentacji, zadaj „niewygodne” pytania pogłębiające temat i zostań na koniec, żeby poznać innych pasjonatów PHP.',
             'venue' => array(
@@ -53,6 +54,7 @@ class Events extends Base
         2 => array(
             'id'    => 2,
             'date'  => '21.01.2012',
+            'datetime' => '2012-01-21T17:00',
             'time'  => '17:00',
             'description' => 'Początek nowego roku, a my kontynuujemy inicjatywę meet.php! Kolejne prezentacje, kolejni prelegenci, ale ta sama świetna atmosfera, która udzieliła się na pierwszym spotkaniu :) Zapraszamy!',
             'venue' => array(
@@ -96,6 +98,7 @@ class Events extends Base
         3 => array(
             'id'    => 3,
             'date'  => '25.02.2012',
+            'datetime' => '2012-02-25T17:00',
             'time'  => '17:00',
             'description' => 'Nie zwalniamy tempa - zapraszamy na trzecie spotkanie. Tym razem będzie m.in o Symfony2 czy też o testowaniu wg metodytki BDD. A na koniec oczywiście after party ;)',
             'venue' => array(
@@ -139,6 +142,7 @@ class Events extends Base
         4 => array(
             'id'    => 4,
             'date'  => '14.04.2012',
+            'datetime' => '2012-04-14T17:00',
             'time'  => '17:00',
             'description' => 'Czwarty miesiąc roku. Cztery prezentacje. Czwórka prelegentów. W skrócie - czas na meet.php#(...sami wiecie który...;)',
             'additional_description' => 'Książkę <a href="http://helion.pl/ksiazki/php-obiekty-wzorce-narzedzia-wydanie-iii-matt-zandstra,phpob3.htm">PHP. Obiekty, wzorce, narzędzia. Wydanie III</a> ufundowało wydawnictwo Helion S.A (pobierz przykładowy <a href="http://pdf.helion.pl/phpob3/phpob3.pdf">rodział</a>).',
@@ -192,6 +196,7 @@ class Events extends Base
         5 => array(
             'id'    => 5,
             'date'  => '19.05.2012',
+            'datetime' => '2012-05-19T17:00',
             'time'  => '17:00',
             'description' => 'Starając się utrzymać tempo jednego spotkania na miesiąc, zapraszamy wszystkich na piąte, a równocześnie majowe spotkanie meet.php.',
             'venue' => array(
@@ -244,6 +249,7 @@ class Events extends Base
         6 => array(
             'id'    => 6,
             'date'  => '11.08.2012',
+            'datetime' => '2012-08-11T17:00',
             'time'  => '17:00',
             'description' => 'Jeśli baliście/cieszyliście (haters gonna hate) się, że meet.php przestało funkcjonować - niepotrzebnie. Co prawda po sporej przerwie, ale wracamy!',
             'venue' => array(
@@ -300,6 +306,7 @@ class Events extends Base
         7 => array(
             'id'    => 7,
             'date'  => '08.12.2012',
+            'datetime' => '2012-12-08T17:00',
             'time'  => '17:00',
             'description' => 'Siódmy i ostatni meet.php w tym roku. Nie może Cię zabraknąć!',
             'venue' => array(
@@ -344,6 +351,7 @@ class Events extends Base
         8 => array(
             'id'    => 8,
             'date'  => '09.02.2013',
+            'datetime' => '2013-02-09T17:00',
             'time'  => '17:00',
             'description' => 'Pierwszy meet.php w nowym roku. Czwórka prelegentów, z czego trójka jest z nami po raz kolejny z nowym materiałem. Wy też będziecie, prawda?',
             'venue' => array(
@@ -397,6 +405,7 @@ class Events extends Base
         9 => array(
             'id'    => 9,
             'date'  => '20.04.2013',
+            'datetime' => '2012-04-20T17:00',
             'time'  => '17:00',
             'description' => 'Pierwszy meet.php, w którym odchodzimy trochę od tematów czysto technicznych i wg. Waszych życzeń organizujemy spotkanie na temat start\'upów. Oczywiście, "mięsa" też nie zabraknie!',
             'venue' => array(

@@ -2,33 +2,31 @@
 
 {% block content %}
 {% include '_top.twig' %}
-<div id="info-background">
-    <section id="info">
-        <ul>
-            <li id='info-why'>
-                <h2>Dlaczego meet.php ?</h2>
-            </li>
-            <li id="info-learn">
-                <p><span>Uczysz się</span>
-                Mówimy o tym, co istotne podczas tworzenia aplikacji w PHP - tych małych i dużych.</p>
-            </li>
-            <li id="info-meet">
-                <p>
-                    <span>Poznajesz ludzi</span>
-                    Tych, którzy w PHP programują, ponieważ lubią, a nie dlatego, że muszą.
-                </p>
-            </li>
-            <li id="info-share">
-                <p>
-                    <span>Dzielisz się doświadczeniem</span>
-                    Programiści uczą się cały czas.
-                </p>
-            </li>
-        </ul>
-        <a href="{{ WEBROOT }}?logo=1" class="logo-version">Click for special Fabien's version ;)</a>
-    </section>
-    {% include '_codes.twig' %}
-    <span id="background-image-info-corner"><a href="https://github.com/singles/meet.php"></a></span>
-    <a href="http://www.phpclasses.org/submit_user_group.html?country=pl" hidden>Polish Resources of Our Country</a>
-</div>
+
+<!-- Info section -->
+<section class="page info-section">
+	<div class="inner clearfix">
+		<h1 class="sticker-why">Dlaczego meet.php?</h1>
+
+		<ul>
+			<li class="sticker-learn">
+				<h3>Uczysz się</h3>
+				<p>Mówimy o tym, co istotne podczas tworzenia aplikacji w PHP - tych małych i dużych.</p>
+			</li>
+			<li class="sticker-meet">
+				<h3>Poznajesz ludzi</h3>
+				<p>Tych, którzy w PHP programują, ponieważ lubią, a nie dlatego, że muszą.</p>
+			</li>
+			<li class="sticker-share">
+				<h3>Dzielisz się doświadczeniem</h3>
+				<p>Programiści uczą się cały czas.</p>
+			</li>
+		</ul>
+	</div>
+	<a href="?logo=1" class="logo-version">Click for special Fabien's version ;)</a>
+	<a href="https://github.com/singles/meet.php" class="github-code"></a>
+	<a href="http://www.phpclasses.org/submit_user_group.html?country=pl" hidden>Polish Resources of Our Country</a>
+</section>
+<!-- End info section -->
+
 {% endblock %}

@@ -1,53 +1,65 @@
 <!doctype html>
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
-<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <title>meet.php - darmowe meetupy na temat PHP</title>
-  <meta name="description" content="">
-  <meta name="author" content="Radosław Benkel &amp; AKAI">
-  <!-- <meta name="viewport" content="width=device-width,initial-scale=1"> -->
+  <meta name="author" content="Radosław Benkel &amp; AKAI &amp; Michał Maćkowiak">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="{{ WEBROOT }}/css/normalize.css">
   <link rel="stylesheet" href="{{ WEBROOT }}/css/style.css">
   <!--[if lt IE 9]>
-  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 </head>
 <body>
-    <div id="header-background">
-        <header>
-          <a href="{{ WEBROOT }}/" id="logo">meet.php</a>
-          <nav>
-            <ul>
-                <li><a href="{{ WEBROOT }}/contact">kontakt</a></li>
-                <li><a href="{{ WEBROOT }}/partners">partnerzy</a></li>
-                <li><a href="{{ WEBROOT }}/faq">faq</a></li>
-                <li><a href="{{ WEBROOT }}/events">eventy</a></li>
-                <li><a href="{{ WEBROOT }}/">home</a></li>
-            </ul>
-          </nav>
-        </header>
+    
+  <!-- Header section -->
+  <header class="main-header clearfix" role="banner">
+    <div class="inner">
+      <a href="{{ WEBROOT }}" class="main-logo"><img src="{{ WEBROOT }}/img/logo.png" alt="meet.php - darmowe meetupy na temat PHP"></a>
+
+      <nav id="main-navigation" class="main-navigation" role="navigation">
+        <ul>
+          <li><a href="{{ WEBROOT }}/">home</a></li>
+          <li><a href="{{ WEBROOT }}/events">eventy</a></li>
+          <li><a href="{{ WEBROOT }}/faq">faq</a></li>
+          <li><a href="{{ WEBROOT }}/partners">partnerzy</a></li>
+          <li><a href="{{ WEBROOT }}/contact">kontakt</a></li>
+        </ul>
+
+        <select id="mobile-menu" class="mobile-menu">
+          <option selected>menu</option>
+          <option value="{{ WEBROOT }}/">home</option>
+          <option value="{{ WEBROOT }}/events">eventy</option>
+          <option value="{{ WEBROOT }}/faq">faq</option>
+          <option value="{{ WEBROOT }}/contact">kontakt</option>
+          <option value="{{ WEBROOT }}/partners">partnerzy</option>
+        </select>
+      </nav>
     </div>
-    {% block content %}{% endblock %}
-    <div id="footer-background">
-        <footer>
-            <aside id="credits">
-                <span>Inicjatywa: <a href="http://blog.rbenkel.me">Radosław Benkel</a> &amp; <a href="http://www.twitter.com/daniula">Daniel Mendalka</a> | Design: <a href="http://lifetones.pl">Lifetones</a> </span>
-            </aside>
-            <aside id="social">
-                <span>Jesteśmy też na : </span>
-                <a href="https://www.facebook.com/meet.pehape" class="icon-facebook">Facebook</a>
-                <a href="http://www.twitter.com/meetphp" class="icon-twitter">Twitter</a>
-                <a href="https://plus.google.com/107635603864697450989" class="icon-googleplus">Google+</a>
-                <a href="https://github.com/singles/meet.php" class="icon-github">GitHub</a>
-            </aside>
-        </footer>
-        <span id="background-image-cont"></span>
-    </div>
-    <script type="text/javascript">
+  </header>
+  <!-- End header section -->
+
+  {% block content %}{% endblock %}
+   
+  <!-- Footer section -->
+  <footer class="main-footer inner">
+    <p class="credits">
+      Inicjatywa: <a href="http://blog.rbenkel.me">Radosław Benkel</a> &amp; <a href="http://www.twitter.com/daniula">Daniel Mendalka</a> | Design: <a href="http://lifetones.pl">Lifetones</a>
+    </p>
+
+    <p class="social">
+      Jesteśmy też na :
+      <a href="https://www.facebook.com/meet.pehape" class="icon-facebook">Facebook</a>
+      <a href="http://www.twitter.com/meetphp" class="icon-twitter">Twitter</a>
+      <a href="https://plus.google.com/107635603864697450989" class="icon-googleplus">Google+</a>
+      <a href="https://github.com/singles/meet.php" class="icon-github">GitHub</a>
+    </p>
+  </footer>
+  <!-- End footer section -->  
+  
+  <script src="{{ WEBROOT }}/scripts/script.js"></script>
+  <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-26834397-1']);
     _gaq.push(['_trackPageview']);
@@ -56,6 +68,6 @@
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
-    </script>
+  </script>
 </body>
 </html>
