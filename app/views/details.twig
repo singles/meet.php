@@ -14,7 +14,7 @@
                 <h3>Opis:</h3>
                 <p>{{ event.description}}</p>
                 {% if event.additional_description is defined %}
-                <p class="additional-info">{{ event.additional_description|raw }}
+                <p class="additional-info">{{ event.additional_description }}
                 {% endif %}
                 <h3>Prezentacje:</h3>
                 <ul class="schedule">
@@ -50,7 +50,9 @@
                     <ul>
                         {% for talk in event.talks %}
                         <li class="speaker-item">
+                            {% if talk.speaker_avatar %}
                             <img src="{{ talk.speaker_avatar }}" alt="avatar" width="48" height="48">
+                            {% endif %}
                             <h5>{{ talk.topic }}</h5>
                             <a href="{{ talk.speaker_www}}">{{ talk.speaker_name}}</a>
                         </li>

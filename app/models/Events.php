@@ -445,6 +445,59 @@ class Events extends Base
                     'video'                     => null
                 )
             )
+        ),
+        10 => array(
+            'id'    => 10,
+            'date'  => '22.06.2013',
+            'datetime' => '2012-06-22T17:00',
+            'time'  => '17:00',
+            'description' => 'Jubileuszowy meet.php! Spotykamy się po raz dzięsiąty, lecz tym razem po raz pierwszy zostawiamy miejsce na "lightning talks". Zaprszamy na świętowanie razem z nami!',
+            'venue' => array(
+                'address'   => 'Coworking ZOO, Zwierzyniecka 20 (2 piętro), 61-001 Poznań',
+                'map_link'  => 'http://maps.google.pl/maps?f=q&amp;source=s_q&amp;hl=pl&amp;geocode=&amp;q=zwierzyniecka+20&amp;aq=&amp;sll=52.187405,19.204102&amp;sspn=7.478761,19.753418&amp;vpsrc=6&amp;ie=UTF8&amp;hq=&amp;hnear=Zwierzyniecka+20,+Pozna%C5%84,+Wielkopolskie&amp;ll=52.408438,16.908426&amp;spn=0.003789,0.009645&amp;t=m&amp;z=14&amp;output=embed'
+            ),
+            'sponsors' => array('allegro', 'helion', 'megiteam', 'jetbrains', 'github', 'envato'),
+            'talks' => array(
+                array(
+                    'topic'                     => 'Mądra architektura w Symfony2',
+                    'description'               => 'Sektor aplikacji webowych eksploduje, a systemy z dostępem przez przeglądarkę internetową to aktualnie najpopularniejszy sposób zaspokajania potrzeb biznesowych. Produkt, który ma sprawnie działać długoterminowo wymaga dobrych decyzji architektonicznych i właściwego stosu narzędzi. Symfony2 jest tutaj najlepszym wyborem, jeśli chodzi o framework. W połączeniu z kilkoma nowoczesnymi narzędziami, dobrymi praktykami projektowymi i dobrze ułożoną bazą kodu, tworzy świetne możliwości dla produktu, aby ten był otwarty na rozbudowę, stabilny oraz gotowy na obsługę wzmożonego ruchu. W prezentacji zostaną przedstawione przykłady z życia wzięte, na podstawie działających aplikacji Symfony2, aby zilustrować i nazwać składniki mądrej architektury.',
+                    'speaker_name'              => 'Wojciech Sznapka',
+                    'speaker_avatar'            => 'https://twimg0-a.akamaihd.net/profile_images/1556426008/wowo_internetbeta_kadr_bigger.jpg',
+                    'speaker_www'               => 'http://sznapka.pl/',
+                    'slides_link'               => null,
+                    'skill_level'               => 3,
+                    'video'                     => null
+                ),
+                array(
+                    'topic'                     => 'Zmiany w PHP5.5',
+                    'description'               => 'Nowa duża wersja PHP na horyzoncie. Posłuchaj o tym co dodano, co usunięty, a stało się "passe", czyt. deprecated :).',
+                    'speaker_name'              => 'Radosław Benkel',
+                    'speaker_avatar'            => 'https://twimg0-a.akamaihd.net/profile_images/1605720400/304109_265882293444507_100000682142964_858395_2624703_n_normal.jpg',
+                    'speaker_www'               => 'http://www.rbenkel.me',
+                    'slides_link'               => null,
+                    'skill_level'               => 2
+                ),
+                array(
+                    'topic'                     => 'Burza w czasie rzeczywistym...',
+                    'description'               => 'Projekt Apache Zookeeper w świecie PHP jest prawie całkowicie nieznany, choć jego wykorzystnanie rozwiązuje bardzo wiele typowych problemów. W dużym skrócie, jest to centralna usługa provisionowania informacji konfiguracyjnych oraz rozproszonej synchronizacji i koordynacji serwerów/procesów. Upraszcza ona procesy zarządzania konfiguracją aplikacji, dzięki czemu można zmieniać jej ustawienia i sposób działania w czasie rzeczywistym. Podczas prezentacji przedstawione zostaną typowe przypadki użycia Zookeepera w aplikacjach PHP, zarówno stricte webowych jak i workerów uruchamianych z poziomu CLI. Przyjrzymy się także kilku projektom open-source bazującym na Zookeeperze.',
+                    'speaker_name'              => 'Mariusz Gil',
+                    'speaker_avatar'            => 'http://0.gravatar.com/avatar/34be88398f623c109b61d23e8215bd23',
+                    'speaker_www'               => 'http://mariuszgil.pl/',
+                    'slides_link'               => 'https://speakerdeck.com/mariuszgil/data-streams-processing-with-php-and-storm',
+                    'skill_level'               => 4,
+                    'video'                     => null
+                ),
+                array(
+                    'topic'                     => 'Lightning Talks',
+                    'description'               => 'Znalazłeś jakieś fajne narzędzie, które chciałbyś pokazać innym? A może sam takowe napisałeś? Daj nam znać na początku spotkania, chętnie posłuchamy.',
+                    'speaker_name'              => 'Każdy chętny :)',
+                    'speaker_avatar'            => null,
+                    'speaker_www'               => null,
+                    'slides_link'               => null,
+                    'skill_level'               => null,
+                    'video'                     => null
+                )
+            )
         )
     );
 
