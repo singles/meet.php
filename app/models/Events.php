@@ -478,7 +478,7 @@ class Events extends Base
                     'skill_level'               => 2
                 ),
                 array(
-                    'topic'                     => 'Burza w czasie rzeczywistym...',
+                    'topic'                     => 'Apache Zookeeper',
                     'description'               => 'Projekt Apache Zookeeper w świecie PHP jest prawie całkowicie nieznany, choć jego wykorzystnanie rozwiązuje bardzo wiele typowych problemów. W dużym skrócie, jest to centralna usługa provisionowania informacji konfiguracyjnych oraz rozproszonej synchronizacji i koordynacji serwerów/procesów. Upraszcza ona procesy zarządzania konfiguracją aplikacji, dzięki czemu można zmieniać jej ustawienia i sposób działania w czasie rzeczywistym. Podczas prezentacji przedstawione zostaną typowe przypadki użycia Zookeepera w aplikacjach PHP, zarówno stricte webowych jak i workerów uruchamianych z poziomu CLI. Przyjrzymy się także kilku projektom open-source bazującym na Zookeeperze.',
                     'speaker_name'              => 'Mariusz Gil',
                     'speaker_avatar'            => 'http://0.gravatar.com/avatar/34be88398f623c109b61d23e8215bd23',
