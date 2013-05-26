@@ -483,7 +483,7 @@ class Events extends Base
                     'speaker_name'              => 'Mariusz Gil',
                     'speaker_avatar'            => 'http://0.gravatar.com/avatar/34be88398f623c109b61d23e8215bd23',
                     'speaker_www'               => 'http://mariuszgil.pl/',
-                    'slides_link'               => 'https://speakerdeck.com/mariuszgil/data-streams-processing-with-php-and-storm',
+                    'slides_link'               => null,
                     'skill_level'               => 4,
                     'video'                     => null
                 ),
