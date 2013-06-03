@@ -7,12 +7,13 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="{{ WEBROOT }}/css/normalize.css">
   <link rel="stylesheet" href="{{ WEBROOT }}/css/style.css">
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ WEBROOT }}/feed/">
   <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 </head>
 <body>
-    
+
   <!-- Header section -->
   <header class="main-header clearfix" role="banner">
     <div class="inner">
@@ -41,7 +42,7 @@
   <!-- End header section -->
 
   {% block content %}{% endblock %}
-   
+
   <!-- Footer section -->
   <footer class="main-footer inner">
     <p class="credits">
@@ -56,8 +57,8 @@
       <a href="https://github.com/singles/meet.php" class="icon-github">GitHub</a>
     </p>
   </footer>
-  <!-- End footer section -->  
-  
+  <!-- End footer section -->
+
   <script src="{{ WEBROOT }}/scripts/script.js"></script>
   <script type="text/javascript">
     var _gaq = _gaq || [];

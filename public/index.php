@@ -1,5 +1,6 @@
 <?php
 use Slim\Extras\Views\Twig;
+use Suin\RSSWriter;
 
 define('APP_PATH', __DIR__ . '/../app/');
 
@@ -65,7 +66,7 @@ $app->get('/events/:id/', function($id) use ($app) {
         $data['sponsors'] = Sponsors::fetch();
     }
     $app->render('details.twig', $data);
-});
+})->name('event');
 
 $app->get('/faq/', function() use ($app) {
     $app->render('faq.twig');
@@ -78,6 +79,31 @@ $app->get('/partners/', function() use ($app) {
 
 $app->get('/contact/', function() use ($app) {
     $app->render('contact.twig');
+});
+
+$app->get('/feed/', function() use ($app) {
+    $feed = new RSSWriter\Feed();
+    $channel = new RSSWriter\Channel();
+    $channel->title("meet.php")
+            ->description("meet.php's events feed")
+            ->url($app->request()->getUrl())
+            ->appendTo($feed);
+
+    $events = Events::fetch();
+    $events = array_reverse($events);
+
+    foreach($events as $id => $event) {
+        $item = new RSSWriter\Item();
+        $item->title("meet.php #" . $event['id'])
+         ->description($event['description'])
+         ->url($app->urlFor('event', array('id' => $id)))
+         ->appendTo($channel);
+    }
+
+    $response = $app->response();
+    $response['Content-Type'] = 'application/rss+xml';
+
+    echo $feed;
 });
 
 $errNotFoundFunction = function() use ($app) {

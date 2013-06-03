@@ -4,6 +4,7 @@
     "require": {
         "twig/twig": "1.6.*",
         "slim/slim": "2.2.*",
-        "slim/extras": "2.0.*"
+        "slim/extras": "2.0.*",
+        "suin/php-rss-writer": "1.2"
     }
 }

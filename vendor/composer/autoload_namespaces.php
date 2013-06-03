@@ -8,6 +8,7 @@ $baseDir = dirname($vendorDir);
 return array(
     'Twig_Extensions_' => array($vendorDir . '/slim/extras/Views/Extension'),
     'Twig_' => array($vendorDir . '/twig/twig/lib'),
+    'Suin\\RSSWriter' => array($vendorDir . '/suin/php-rss-writer/Source'),
     'Slim\\Extras' => array($vendorDir . '/slim/extras'),
     'Slim' => array($vendorDir . '/slim/slim'),
 );
