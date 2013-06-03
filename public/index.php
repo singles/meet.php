@@ -1,20 +1,21 @@
 <?php
+use Slim\Extras\Views\Twig;
+
 define('APP_PATH', __DIR__ . '/../app/');
-define('LIB_PATH', __DIR__ . '/../lib/');
+
+require_once '../vendor/autoload.php';
 
 //RB require "model"
 require_once APP_PATH . 'models/Events.php';
 
-//RB configure slim
-require '../lib/Slim/Slim.php';
-$app = new Slim(array(
-    'templates.path' => APP_PATH . 'views/',
-    'view' => 'Slim_View_Twig'
-));
+Twig::$twigOptions = array('strict_variables' => true, 'debug' => true);
+$twigView = new Twig();
 
-//RB init Twig and base variables
-Slim_View_Twig::$twigDirectory = LIB_PATH . 'Twig';
-Slim_View_Twig::$twigOptions = array('strict_variables' => true, 'debug' => true);
+//RB configure slim
+$app = new \Slim\Slim(array(
+    'view' => $twigView,
+    'templates.path' => APP_PATH . 'views'
+));
 
 //force setting templates, to register and extension
 function stars($active, $max = 5) {
@@ -24,7 +25,7 @@ function stars($active, $max = 5) {
     }
     return $txt;
 }
-$app->view()->setTemplatesDirectory(APP_PATH . 'views/');
+
 $app->view()->getEnvironment()->addFunction('stars', new Twig_Function_Function('stars'));
 $app->view()->appendData(array('WEBROOT' => $app->request()->getRootUri()));
 
