@@ -459,16 +459,6 @@ class Events extends Base
             'sponsors' => array('allegro', 'helion', 'megiteam', 'jetbrains', 'github', 'envato'),
             'talks' => array(
                 array(
-                    'topic'                     => 'Mądra architektura w Symfony2',
-                    'description'               => 'Sektor aplikacji webowych eksploduje, a systemy z dostępem przez przeglądarkę internetową to aktualnie najpopularniejszy sposób zaspokajania potrzeb biznesowych. Produkt, który ma sprawnie działać długoterminowo wymaga dobrych decyzji architektonicznych i właściwego stosu narzędzi. Symfony2 jest tutaj najlepszym wyborem, jeśli chodzi o framework. W połączeniu z kilkoma nowoczesnymi narzędziami, dobrymi praktykami projektowymi i dobrze ułożoną bazą kodu, tworzy świetne możliwości dla produktu, aby ten był otwarty na rozbudowę, stabilny oraz gotowy na obsługę wzmożonego ruchu. W prezentacji zostaną przedstawione przykłady z życia wzięte, na podstawie działających aplikacji Symfony2, aby zilustrować i nazwać składniki mądrej architektury.',
-                    'speaker_name'              => 'Wojciech Sznapka',
-                    'speaker_avatar'            => 'https://twimg0-a.akamaihd.net/profile_images/1556426008/wowo_internetbeta_kadr_bigger.jpg',
-                    'speaker_www'               => 'http://sznapka.pl/',
-                    'slides_link'               => null,
-                    'skill_level'               => 3,
-                    'video'                     => null
-                ),
-                array(
                     'topic'                     => 'Zmiany w PHP5.5',
                     'description'               => 'Nowa duża wersja PHP na horyzoncie. Posłuchaj o tym co dodano, co usunięty, a stało się "passe", czyt. deprecated :).',
                     'speaker_name'              => 'Radosław Benkel',
@@ -483,7 +473,7 @@ class Events extends Base
                     'speaker_name'              => 'Mariusz Gil',
                     'speaker_avatar'            => 'http://0.gravatar.com/avatar/34be88398f623c109b61d23e8215bd23',
                     'speaker_www'               => 'http://mariuszgil.pl/',
-                    'slides_link'               => null,
+                    'slides_link'               => 'https://speakerdeck.com/mariuszgil/configuration-provisioning-with-apache-zookeeper',
                     'skill_level'               => 4,
                     'video'                     => null
                 ),
