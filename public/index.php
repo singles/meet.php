@@ -42,7 +42,7 @@ $app->get('/', function() use ($app) {
 $app->get('/events/', function() use ($app) {
     $events = Events::fetch();
     $last = array_pop($events);
-    $events = array_reverse($events);
+    $events = array_reverse($events, true);
     $app->render('events.twig', compact('last', 'events'));
 });
 
@@ -90,7 +90,7 @@ $app->get('/feed/', function() use ($app) {
             ->appendTo($feed);
 
     $events = Events::fetch();
-    $events = array_reverse($events);
+    $events = array_reverse($events, true);
 
     foreach($events as $id => $event) {
         $item = new RSSWriter\Item();
