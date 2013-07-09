@@ -47,13 +47,8 @@ $app->get('/events/', function() use ($app) {
 });
 
 $app->get('/events/:id/', function($id) use ($app) {
-    // TODO deprecated, but leave for a while
-    if ($id === 'next') {
-        $event = Events::fetchLast();
-    } else {
-        $event = Events::fetchOne((int)$id);
-    }
-
+    $event = Events::fetchOne((int)$id);
+    
     if (is_null($event)) {
         $app->notFound();
     }
