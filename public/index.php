@@ -48,7 +48,7 @@ $app->get('/events/', function() use ($app) {
 
 $app->get('/events/:id/', function($id) use ($app) {
     $event = Events::fetchOne((int)$id);
-    
+
     if (is_null($event)) {
         $app->notFound();
     }
@@ -87,11 +87,13 @@ $app->get('/feed/', function() use ($app) {
     $events = Events::fetch();
     $events = array_reverse($events, true);
 
+    $baseUrl = $app->request()->getUrl();
+
     foreach($events as $id => $event) {
         $item = new RSSWriter\Item();
         $item->title("meet.php #" . $event['id'])
          ->description($event['description'])
-         ->url($app->urlFor('event', array('id' => $id)))
+         ->url($baseUrl . $app->urlFor('event', array('id' => $id)))
          ->appendTo($channel);
     }
 
