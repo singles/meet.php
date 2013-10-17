@@ -488,6 +488,61 @@ class Events extends Base
                     'video'                     => null
                 )
             )
+        ),
+        11 => array(
+            'id'    => 11,
+            'date'  => '23.11.2013',
+            'datetime' => '2012-11-23T17:00',
+            'time'  => '17:00',
+            'description' => 'Długo nas nie było. Wakacje, małe problemy organizacyjne i inne rzeczy, które skutecznie odsuwały meet.php na dalszy plan. Ale wracamy i równocześnie zapraszamy na ostatnie meet.php roku 2013!',
+            'venue' => array(
+                'address'   => 'Coworking ZOO, Zwierzyniecka 20 (2 piętro), 61-001 Poznań',
+                'map_link'  => 'http://maps.google.pl/maps?f=q&amp;source=s_q&amp;hl=pl&amp;geocode=&amp;q=zwierzyniecka+20&amp;aq=&amp;sll=52.187405,19.204102&amp;sspn=7.478761,19.753418&amp;vpsrc=6&amp;ie=UTF8&amp;hq=&amp;hnear=Zwierzyniecka+20,+Pozna%C5%84,+Wielkopolskie&amp;ll=52.408438,16.908426&amp;spn=0.003789,0.009645&amp;t=m&amp;z=14&amp;output=embed'
+            ),
+            'sponsors' => array('allegro', 'helion', 'megiteam', 'jetbrains', 'github', 'envato'),
+            'talks' => array(
+                array(
+                    'topic'                     => 'Mądra architektura w Symfony2',
+                    'description'               => 'Sektor aplikacji webowych eksploduje, a systemy z dostępem przez przeglądarkę internetową to aktualnie najpopularniejszy sposób zaspokajania potrzeb biznesowych. Produkt, który ma sprawnie działać długoterminowo wymaga dobrych decyzji architektonicznych i właściwego stosu narzędzi. Symfony2 jest tutaj najlepszym wyborem, jeśli chodzi o framework. W połączeniu z kilkoma nowoczesnymi narzędziami, dobrymi praktykami projektowymi i dobrze ułożoną bazą kodu, tworzy świetne możliwości dla produktu, aby ten był otwarty na rozbudowę, stabilny oraz gotowy na obsługę wzmożonego ruchu. W prezentacji zostaną przedstawione przykłady z życia wzięte, na podstawie działających aplikacji Symfony2, aby zilustrować i nazwać składniki mądrej architektury.',
+                    'speaker_name'              => 'Wojciech Sznapka',
+                    'speaker_avatar'            => 'https://pbs.twimg.com/profile_images/378800000473199330/2516d7301c1dc2a3723d40f983e1e4d2_bigger.jpeg',
+                    'speaker_www'               => 'http://sznapka.pl/',
+                    'slides_link'               => null,
+                    'skill_level'               => 3,
+                    'video'                     => null
+                ),
+                array(
+                    'topic'                     => 'Huston, we have an AirBrake',
+                    'description'               => 'O błędach. Ich śledzeniu, raportowaniu i łapaniu w czasie rozwoju i utrzymania aplikacji. Case study.',
+                    'speaker_name'              => 'Max Małecki',
+                    'speaker_avatar'            => 'http://www.gravatar.com/avatar/bd4f5f0d7159c08a3c639241912e3497.png',
+                    'speaker_www'               => 'http://blog.mmx3.pl/',
+                    'slides_link'               => null,
+                    'skill_level'               => 3,
+                    'video'                     => null
+                ),
+                array(
+                    'topic'                     => 'Testy jednostkowe - jakość i czytelność',
+                    'description'               => 'Powszechnie coraz większy nacisk kładzie się na czytelność i dobre praktyki w kodzie aplikacji. Jedną z dobrych praktyk jest posiadanie testów automatycznych, które uchronią przed wprowadzeniem błędu i zapewnią bezpieczny refactoring. Jak sprawić, aby poza tymi funkcjami testy jednostkowe były też dobrą dokumentacją testowanego kodu? Jak poprawić ich jakość i czytelność? Na te pytania postaram się odpowiedzieć podczas prezentacji bazując na swoim doświadczeniu i spostrzeżeniach.',
+                    'speaker_name'              => 'Wojtek Zieliński',
+                    'speaker_avatar'            => 'http://www.gravatar.com/avatar/1b67c0434c56dc7aa502b8d567e693bb.png',
+                    'speaker_www'               => 'https://twitter.com/_wzielinski',
+                    'slides_link'               => null,
+                    'skill_level'               => 2,
+                    'video'                     => null
+                ),
+                array(
+                    'topic'                     => 'Lightning Talks',
+                    'description'               => 'Znalazłeś jakieś fajne narzędzie, które chciałbyś pokazać innym? A może sam takowe napisałeś? Daj nam znać na początku spotkania, chętnie posłuchamy.',
+                    'speaker_name'              => 'Każdy chętny :)',
+                    'speaker_avatar'            => null,
+                    'speaker_www'               => null,
+                    'slides_link'               => null,
+                    'skill_level'               => null,
+                    'video'                     => null
+                )
+
+            )
         )
     );
 
