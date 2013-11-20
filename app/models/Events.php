@@ -502,16 +502,6 @@ class Events extends Base
             'sponsors' => array('allegro', 'helion', 'megiteam', 'jetbrains', 'github', 'envato'),
             'talks' => array(
                 array(
-                    'topic'                     => 'Mądra architektura w Symfony2',
-                    'description'               => 'Sektor aplikacji webowych eksploduje, a systemy z dostępem przez przeglądarkę internetową to aktualnie najpopularniejszy sposób zaspokajania potrzeb biznesowych. Produkt, który ma sprawnie działać długoterminowo wymaga dobrych decyzji architektonicznych i właściwego stosu narzędzi. Symfony2 jest tutaj najlepszym wyborem, jeśli chodzi o framework. W połączeniu z kilkoma nowoczesnymi narzędziami, dobrymi praktykami projektowymi i dobrze ułożoną bazą kodu, tworzy świetne możliwości dla produktu, aby ten był otwarty na rozbudowę, stabilny oraz gotowy na obsługę wzmożonego ruchu. W prezentacji zostaną przedstawione przykłady z życia wzięte, na podstawie działających aplikacji Symfony2, aby zilustrować i nazwać składniki mądrej architektury.',
-                    'speaker_name'              => 'Wojciech Sznapka',
-                    'speaker_avatar'            => 'https://pbs.twimg.com/profile_images/378800000473199330/2516d7301c1dc2a3723d40f983e1e4d2_bigger.jpeg',
-                    'speaker_www'               => 'http://sznapka.pl/',
-                    'slides_link'               => null,
-                    'skill_level'               => 3,
-                    'video'                     => null
-                ),
-                array(
                     'topic'                     => 'Huston, we have an AirBrake',
                     'description'               => 'O błędach. Ich śledzeniu, raportowaniu i łapaniu w czasie rozwoju i utrzymania aplikacji. Case study.',
                     'speaker_name'              => 'Max Małecki',
