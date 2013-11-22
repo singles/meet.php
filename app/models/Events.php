@@ -522,6 +522,16 @@ class Events extends Base
                     'video'                     => null
                 ),
                 array(
+                    'topic'                     => 'Testy akceptacyjne przy użyciu Menta oraz Selenium2',
+                    'description'               => 'Tematem prezentacji będzie framework Menta wykorzystujący PHPUnit oraz PHPWebdriver do testowania aplikacji internetowych przy użyciu CI.',
+                    'speaker_name'              => 'Macopedia',
+                    'speaker_avatar'            => null,
+                    'speaker_www'               => null,
+                    'slides_link'               => null,
+                    'skill_level'               => null,
+                    'video'                     => null
+                ),
+                array(
                     'topic'                     => 'Lightning Talks',
                     'description'               => 'Znalazłeś jakieś fajne narzędzie, które chciałbyś pokazać innym? A może sam takowe napisałeś? Daj nam znać na początku spotkania, chętnie posłuchamy.',
                     'speaker_name'              => 'Każdy chętny :)',
