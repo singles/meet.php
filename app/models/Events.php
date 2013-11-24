@@ -533,7 +533,7 @@ class Events extends Base
                 ),
                 array(
                     'topic'                     => 'Lightning Talks',
-                    'description'               => 'Znalazłeś jakieś fajne narzędzie, które chciałbyś pokazać innym? A może sam takowe napisałeś? Daj nam znać na początku spotkania, chętnie posłuchamy.<br>Mówiliśmy o: <a href="http://www.zsh.org/">Zsh</a>, <a href="https://github.com/robbyrussell/oh-my-zsh">oh-my-zsh</a>, <a href="https://github.com/sorin-ionescu/prezto">prezto</a>, <a href="http://fishshell.com/">fish</a>.',
+                    'description'               => 'Znalazłeś jakieś fajne narzędzie, które chciałbyś pokazać innym? A może sam takowe napisałeś? Daj nam znać na początku spotkania, chętnie posłuchamy.<br>Mówiliśmy o: <a href="http://www.zsh.org/">Zsh</a>, <a href="https://github.com/robbyrussell/oh-my-zsh">oh-my-zsh</a>, <a href="https://github.com/sorin-ionescu/prezto">prezto</a>, <a href="http://fishshell.com/">fish</a>, <a href="https://github.com/revans/bash-it">bash-it</a>.',
                     'speaker_name'              => 'Każdy chętny :)',
                     'speaker_avatar'            => null,
                     'speaker_www'               => null,
