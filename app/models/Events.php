@@ -507,7 +507,7 @@ class Events extends Base
                     'speaker_name'              => 'Max Małecki',
                     'speaker_avatar'            => 'http://www.gravatar.com/avatar/bd4f5f0d7159c08a3c639241912e3497.png',
                     'speaker_www'               => 'http://blog.mmx3.pl/',
-                    'slides_link'               => null,
+                    'slides_link'               => 'http://www.slideshare.net/MaxMaecki/meetphp-11-huston-we-have-an-airbrake',
                     'skill_level'               => 3,
                     'video'                     => null
                 ),
@@ -517,7 +517,7 @@ class Events extends Base
                     'speaker_name'              => 'Wojtek Zieliński',
                     'speaker_avatar'            => 'http://www.gravatar.com/avatar/1b67c0434c56dc7aa502b8d567e693bb.png',
                     'speaker_www'               => 'https://twitter.com/_wzielinski',
-                    'slides_link'               => null,
+                    'slides_link'               => 'https://speakerdeck.com/codecleaner/clean-and-quality-unit-tests',
                     'skill_level'               => 2,
                     'video'                     => null
                 ),
