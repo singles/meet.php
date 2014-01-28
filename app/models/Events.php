@@ -565,6 +565,16 @@ class Events extends Base
                     'slides_link'               => null,
                     'skill_level'               => 5,
                     'video'                     => null
+                ),
+                array(
+                    'topic'                     => 'Stwórz własną chmurę plików w oparciu o Riak',
+                    'description'               => 'Jesteś ciekaw w jaki sposób efektywnie przechowywać biliony plików? Dowiedz się jak jednocześnie zachować wysoką dostępność oraz optymalną redundancję na przykładzie największych serwisów ogłoszeniowych w Europie.',
+                    'speaker_name'              => 'Łukasz Lato',
+                    'speaker_avatar'            => null,
+                    'speaker_www'               => 'http://allegroclassifieds.com/leadership/',
+                    'slides_link'               => null,
+                    'skill_level'               => 3,
+                    'video'                     => null
                 )                
             )
         )
