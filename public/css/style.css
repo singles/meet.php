@@ -555,7 +555,7 @@ h1.sticker-why{
 }
 
 .event-location {
-	width: 360px;
+	width: 48%;
 	padding-top: 20px;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -564,6 +564,7 @@ h1.sticker-why{
 .event-location iframe {
 	width: 100%;
 	height: 270px;
+	border: 1px solid #6f6f6f;
 }
 
 .event-location p {

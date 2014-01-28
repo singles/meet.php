@@ -62,7 +62,7 @@
 
                 <section class="event-location">
                     <h3>Lokalizacja:</h3>
-                    <iframe src='http://maps.google.pl/maps?f=q&amp;source=s_q&amp;hl=pl&amp;geocode=&amp;q=zwierzyniecka+20&amp;aq=&amp;sll=52.187405,19.204102&amp;sspn=7.478761,19.753418&amp;vpsrc=6&amp;ie=UTF8&amp;ll=52.408438,16.908426&amp;spn=0.003789,0.009645&amp;t=m&amp;z=14&amp;output=embed'></iframe>
+                    <iframe src="{{ event.venue.map_link | raw }}"></iframe>
                     <p>{{ event.venue.address }}</p>
                 </section>
 
