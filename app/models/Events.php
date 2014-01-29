@@ -567,6 +567,16 @@ class Events extends Base
                     'video'                     => null
                 ),
                 array(
+                    'topic'                     => 'PHP + GPIO + RPI',
+                    'description'               => 'Raspberry Pi to rewolucja wśród mikrokontrollerów. Choć określenie mikro-komputer jest znacznie bardziej trafne. Wyróżnia go w pełni funkcjonalny system operacyjny. Z uwagi na niski pobór prądu, wielu używa go jako domowy serwer. Jednak tym co odróżnia go od komputera jest GPIO. Czyli zestaw 26 pinów służących do komunikacji z peryferiami. Mogą zamienić nasz układ w prawdziwego robota. A wszystko to we współpracy ze znanym nam PHP...',
+                    'speaker_name'              => 'Sebastian Pożoga',
+                    'speaker_avatar'            => 'http://www.gravatar.com/avatar/71bd0dbc6da3e6e558e555431a218a25.png',
+                    'speaker_www'               => 'http://pozoga.eu',
+                    'slides_link'               => null,
+                    'skill_level'               => 3,
+                    'video'                     => null
+                ),
+                array(
                     'topic'                     => 'Stwórz własną chmurę plików w oparciu o Riak',
                     'description'               => 'Jesteś ciekaw w jaki sposób efektywnie przechowywać biliony plików? Dowiedz się jak jednocześnie zachować wysoką dostępność oraz optymalną redundancję na przykładzie największych serwisów ogłoszeniowych w Europie.',
                     'speaker_name'              => 'Łukasz Lato',
@@ -575,7 +585,7 @@ class Events extends Base
                     'slides_link'               => null,
                     'skill_level'               => 3,
                     'video'                     => null
-                )                
+                )
             )
         )
     );
