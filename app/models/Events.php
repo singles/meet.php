@@ -546,8 +546,8 @@ class Events extends Base
         ),
         12 => array(
             'id'    => 12,
-            'date'  => 'TBA',
-            'datetime' => '',
+            'date'  => '15.03.2014',
+            'datetime' => '2014-15-03T17:00',
             'time'  => '17:00',
             'description' => 'Idą zmiany! meet.php w innym miejsu - tym razem zapraszamy do Concordii. Dodatkowo, tematyka trochę bardziej zaawansowana niż zwykle - skalowalność, wzorce projektowe, tandem Raspberry PI i PHP. Mamy więcej miejsca, tak więc przyprowadźcie kolegów i koleżanki ;)',
             'venue' => array(
@@ -557,13 +557,13 @@ class Events extends Base
             'sponsors' => array('allegro', 'helion', 'megiteam', 'jetbrains', 'github', 'envato'),
             'talks' => array(
                 array(
-                    'topic'                     => 'Sharding is hard.',
-                    'description'               => 'W momencie gdy ilość danych zaczyna przerastać bazę danych i nie mamy pomysłu na skalowanie do gry może wejść sharding. Będę starał się pokazać jakie algorytmy/metody są wykorzystywane przy shardowaniu danych, co nas czeka i jakie mogą z tego wynikać problemy.',
-                    'speaker_name'              => 'Rafał Malinowski',
-                    'speaker_avatar'            => 'http://dl.dropbox.com/u/719636/avatar/avatar_120.jpg',
-                    'speaker_www'               => 'http://malinowski.be',
+                    'topic'                     => 'Wzorce projektowe',
+                    'description'               => 'O wyciąganiu logiki na wyższy poziom abstrakcji, zachowaniu prostoty oraz o najczęściej popełnianych błędach.',
+                    'speaker_name'              => 'Jarek Romaniuk',
+                    'speaker_avatar'            => 'https://pbs.twimg.com/profile_images/429658463849820160/I5h83GTA_bigger.jpeg',
+                    'speaker_www'               => 'https://twitter.com/_PUBLICIZER_',
                     'slides_link'               => null,
-                    'skill_level'               => 5,
+                    'skill_level'               => 2,
                     'video'                     => null
                 ),
                 array(
@@ -574,6 +574,16 @@ class Events extends Base
                     'speaker_www'               => 'http://pozoga.eu',
                     'slides_link'               => null,
                     'skill_level'               => 3,
+                    'video'                     => null
+                ),
+                array(
+                    'topic'                     => 'Sharding is hard.',
+                    'description'               => 'W momencie gdy ilość danych zaczyna przerastać bazę danych i nie mamy pomysłu na skalowanie do gry może wejść sharding. Będę starał się pokazać jakie algorytmy/metody są wykorzystywane przy shardowaniu danych, co nas czeka i jakie mogą z tego wynikać problemy.',
+                    'speaker_name'              => 'Rafał Malinowski',
+                    'speaker_avatar'            => 'http://dl.dropbox.com/u/719636/avatar/avatar_120.jpg',
+                    'speaker_www'               => 'http://malinowski.be',
+                    'slides_link'               => null,
+                    'skill_level'               => 5,
                     'video'                     => null
                 ),
                 array(
