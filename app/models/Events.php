@@ -549,7 +549,7 @@ class Events extends Base
             'date'  => '15.03.2014',
             'datetime' => '2014-15-03T17:00',
             'time'  => '17:00',
-            'description' => 'Idą zmiany! meet.php w innym miejsu - tym razem zapraszamy do Concordii. Dodatkowo, tematyka trochę bardziej zaawansowana niż zwykle - skalowalność, wzorce projektowe, tandem Raspberry PI i PHP. Mamy więcej miejsca, tak więc przyprowadźcie kolegów i koleżanki ;)',
+            'description' => 'Idą zmiany! meet.php w innym miejscu - tym razem zapraszamy do Concordii. Dodatkowo, tematyka trochę bardziej zaawansowana niż zwykle - skalowalność, wzorce projektowe, tandem Raspberry PI i PHP. Mamy więcej miejsca, tak więc przyprowadźcie kolegów i koleżanki ;)',
             'venue' => array(
                 'address'   => 'Concordia Design, ul. Zwierzyniecka 3, 60-813 Poznań',
                 'map_link'  => 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2433.951759766284!2d16.91109639999999!3d52.40755049999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47045b34c5189d4d%3A0xf54e7e88b257586!2sConcordia+Design%2C+Zwierzyniecka%2C+Pozna%C5%84%2C+Polska!5e0!3m2!1spl!2s!4v1390947217679'
