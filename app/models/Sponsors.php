@@ -60,8 +60,11 @@ class Sponsors extends Base
 
     public static function fetchPartners()
     {
-        return array_filter(self::$_data, function ($item) {
+        $partners = array_filter(self::$_data, function ($item) {
             return isset($item['partner']) && $item['partner'] === true;
         });
+		ksort($partners);
+		
+		return $partners;
     }
 }

@@ -58,8 +58,10 @@ $app->get('/events/:id/', function($id) use ($app) {
     );
     if (array_key_exists('sponsors', $event)) {
         require_once APP_PATH . 'models/Sponsors.php';
-        $data['sponsors'] = Sponsors::fetch();
+        $data['sponsors'] = Sponsors::fetch();		
+		sort($data['event']['sponsors']);
     }
+	
     $app->render('details.twig', $data);
 })->name('event');
 
