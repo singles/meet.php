@@ -56,6 +56,12 @@ class Sponsors extends Base
             'logo' => 'sponsor_oktawave.png',
             'url'  => 'http://www.oktawave.com'
         ),
+		'bitnoise'	=> array(
+			'name'	=> 'bitnoise',
+			'logo'  => 'sponsor_bitnoise.png',
+			'url'   => 'http://bitnoi.se/career',
+			'partner' => true
+		)
     );
 
     public static function fetchPartners()
