@@ -61,7 +61,13 @@ class Sponsors extends Base
 			'logo'  => 'sponsor_bitnoise.png',
 			'url'   => 'http://bitnoi.se/career',
 			'partner' => true
-		)
+		),
+        'espeo'     => array(
+            'name'  => 'espeo',
+            'logo'  => 'sponsor_espeo.png',
+            'url'   => 'http://espeo.pl/',
+            'partner' => false
+        )
     );
 
     public static function fetchPartners()
