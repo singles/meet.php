@@ -562,7 +562,7 @@ class Events extends Base
                     'speaker_name'              => 'Jarek Romaniuk',
                     'speaker_avatar'            => 'https://pbs.twimg.com/profile_images/429658463849820160/I5h83GTA_bigger.jpeg',
                     'speaker_www'               => 'https://twitter.com/_PUBLICIZER_',
-                    'slides_link'               => null,
+                    'slides_link'               => 'http://www.slideshare.net/JaroslawRomaniuk/wzorce-projektowe',
                     'skill_level'               => 2,
                     'video'                     => null
                 ),
@@ -572,7 +572,7 @@ class Events extends Base
                     'speaker_name'              => 'Sebastian Pożoga',
                     'speaker_avatar'            => 'http://www.gravatar.com/avatar/71bd0dbc6da3e6e558e555431a218a25.png',
                     'speaker_www'               => 'http://pozoga.eu',
-                    'slides_link'               => null,
+                    'slides_link'               => 'http://www.slideshare.net/sebastianpozoga/meetphpgpio',
                     'skill_level'               => 3,
                     'video'                     => null
                 ),
@@ -582,7 +582,7 @@ class Events extends Base
                     'speaker_name'              => 'Rafał Malinowski',
                     'speaker_avatar'            => 'http://dl.dropbox.com/u/719636/avatar/avatar_120.jpg',
                     'speaker_www'               => 'http://malinowski.be',
-                    'slides_link'               => null,
+                    'slides_link'               => 'https://speakerdeck.com/afterdesign/sharding-is-hard',
                     'skill_level'               => 5,
                     'video'                     => null
                 )
