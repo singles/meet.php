@@ -28,7 +28,13 @@ function stars($active, $max = 5) {
 }
 
 $app->view()->getEnvironment()->addFunction('stars', new Twig_Function_Function('stars'));
-$app->view()->appendData(array('WEBROOT' => $app->request()->getRootUri()));
+$app->view()->appendData(array(
+    'WEBROOT'           => $app->request()->getRootUri(),
+    'LINK_FB'         => 'https://www.facebook.com/meet.pehape',
+    'LINK_TWITTER'    => 'http://www.twitter.com/meetphp',
+    'LINK_GP'         => 'https://plus.google.com/+MeetphpPl',
+    'LINK_GH'         => 'https://github.com/singles/meet.php'
+));
 
 //RB routes
 $app->get('/', function() use ($app) {
