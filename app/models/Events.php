@@ -592,6 +592,8 @@ class Events extends Base
 
     public static function fetchLast()
     {
-        return array_pop(self::$_data);
+        $data = static::fetch();
+
+        return array_pop($data);
     }
 }

@@ -35,15 +35,21 @@ $app->get('/', function() use ($app) {
     $logoVersion = $app->request()->get('logo');
     $templateName = ($logoVersion == 1) ? 'home-logo.twig' : 'home.twig';
 
-    $last = Events::fetchLast();
-    $app->render($templateName, array('last' => $last));
+    $mostRecentEvent = Events::fetchLast();
+
+    $app->render($templateName, array('mostRecentEvent' => $mostRecentEvent));
 });
 
 $app->get('/events/', function() use ($app) {
     $events = Events::fetch();
-    $last = array_pop($events);
+    $mostRecentEvent = array_pop($events);
+
+    if (!$mostRecentEvent['isFutureEvent']) {
+        $events[] = $mostRecentEvent;
+    }
+
     $events = array_reverse($events, true);
-    $app->render('events.twig', compact('last', 'events'));
+    $app->render('events.twig', compact('mostRecentEvent', 'events'));
 });
 
 $app->get('/events/:id/', function($id) use ($app) {

@@ -369,6 +369,11 @@ p {
 	float: right;
 }
 
+.welcome-entry a {
+    color: white;
+    text-decoration: underline;
+}
+
 /* 4. Info
 ----------------------------------*/
 
