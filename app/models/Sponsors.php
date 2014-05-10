@@ -14,7 +14,7 @@ class Sponsors extends Base
             'name'    => 'Allegro',
             'logo'    => 'sponsor_allegro.png',
             'url'     => 'http://kariera.allegro.pl',
-            'partner' => true
+            'partner' => false
         ),
         'jetbrains'   => array(
             'name'    => 'JetBrains',
@@ -38,7 +38,7 @@ class Sponsors extends Base
             'name'    => 'Helion',
             'logo'    => 'sponsor_helion.gif',
             'url'     => 'http://www.helion.pl',
-            'partner' => true
+            'partner' => false
         ),
         '4developers' => array(
             'name' => '4developers',
@@ -76,7 +76,7 @@ class Sponsors extends Base
             return isset($item['partner']) && $item['partner'] === true;
         });
 		ksort($partners);
-		
+
 		return $partners;
     }
 }
