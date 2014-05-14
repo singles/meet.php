@@ -38,7 +38,7 @@ class Sponsors extends Base
             'name'    => 'Helion',
             'logo'    => 'sponsor_helion.gif',
             'url'     => 'http://www.helion.pl',
-            'partner' => false
+            'partner' => true
         ),
         '4developers' => array(
             'name' => '4developers',
