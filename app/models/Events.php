@@ -587,6 +587,52 @@ class Events extends Base
                     'video'                     => null
                 )
             )
+        ),
+        13 => array(
+            'id'    => 13,
+            'date'  => '12.07.2014',
+            'datetime' => '2014-12-07T17:00',
+            'time'  => '17:00',
+            'description' => 'Tym razem trochę o bezpieczeństwie w kontekście Symfony2, trochę o hicie ostatnich miesięcy czyli Dockerze. Dodatkowo, prezentacja z serii miękkich odnośnie różnicy pomiędzy pracą na etacie a własną działalnością gospodarczą z punktu widzenia programisty. Do zobaczenia!',
+            'venue' => array(
+                'address'   => 'Concordia Design, ul. Zwierzyniecka 3, 60-813 Poznań',
+                'map_link'  => 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2433.951759766284!2d16.91109639999999!3d52.40755049999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47045b34c5189d4d%3A0xf54e7e88b257586!2sConcordia+Design%2C+Zwierzyniecka%2C+Pozna%C5%84%2C+Polska!5e0!3m2!1spl!2s!4v1390947217679'
+            ),
+            'sponsors' => array('helion', 'megiteam', 'jetbrains', 'github', 'envato', 'bitnoise'),
+            'talks' => array(
+                array(
+                    'topic'                     => 'Your own Heroku',
+                    'description'               => 'O wirtualizacji trochę inaczej. Opowiem o tym jak niewielkim kosztem stworzyć PaaSa we własnej infrastrukturze bazując na Dockerze.',
+                    'speaker_name'              => 'Szymon Przybylski',
+                    'speaker_avatar'            => 'https://gravatar.com/userimage/40787402/7ce3743dc0b9afe012e4ea14927bfe95',
+                    'speaker_www'               => 'https://twitter.com/ch4zm',
+                    'slides_link'               => null,
+                    'skill_level'               => 4,
+                    'video'                     => null
+                ),
+                array(
+                    'topic'                     => 'Programista: etat czy B2B?',
+                    'description'               => 'Czy warto przechodzić na działalność gospodarczą? Co zyskuję, co tracę? Co zyskuje, a co traci pracodawca? O co chodzi w tym całym "było taniej, zabrałem na firmę"?<br>
+                                                    Trochę o podatkach i zarobokach w ludzki sposób oraz z punktu widzenia developera.',
+                    'speaker_name'              => 'Radek Benkel',
+                    'speaker_avatar'            => 'https://pbs.twimg.com/profile_images/1605720400/304109_265882293444507_100000682142964_858395_2624703_n_normal.jpg',
+                    'speaker_www'               => 'https://www.twitter.com/singlespl',
+                    'slides_link'               => null,
+                    'skill_level'               => 1,
+                    'video'                     => null
+                ),
+                array(
+                    'topic'                     => 'Bezpieczeństwo projektów opartych o Symfony2',
+                    'description'               => 'Portale informacyjne regularnie straszą nas złymi, zakapturzonymi i skrytymi w cieniu hakerami, którzy nie robią cały dzień nic innego jak tylko dybią na nasze cenne, cyfrowe włości. Jak napisać bezpieczną aplikację opartą o jeden z najpopularniejszych frameworków - Symfony2? Przed jakimi atakami z listy OWASP Top 10 chroni nas sam framework, a czym musimy zająć się sami? Odpowiedzi na te właśnie pytania znajdziecie w tej prezentacji.',
+                    'speaker_name'              => 'Krystian Piwowarczyk',
+                    'speaker_avatar'            => 'http://www.krystianpiwowarczyk.pl/images/bro_mini.jpg',
+                    'speaker_www'               => 'http://www.krystianpiwowarczyk.pl',
+                    'slides_link'               => null,
+                    'skill_level'               => 3,
+                    'video'                     => null
+                ),
+
+            )
         )
     );
 
