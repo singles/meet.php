@@ -593,7 +593,7 @@ class Events extends Base
             'date'  => '12.07.2014',
             'datetime' => '2014-12-07T17:00',
             'time'  => '17:00',
-            'description' => 'Tym razem trochę o bezpieczeństwie w kontekście Symfony2, trochę o hicie ostatnich miesięcy czyli Dockerze. Dodatkowo, prezentacja z serii miękkich odnośnie różnicy pomiędzy pracą na etacie a własną działalnością gospodarczą z punktu widzenia programisty. Do zobaczenia!',
+            'description' => 'Tym razem poruszamy tematy RESTowych API, bezpieczeństwa w kontekście Symfony2 oraz o hitu ostatnich miesięcy czyli Dockerze. Dodatkowo prezentacja z serii miękkich odnośnie różnicy pomiędzy pracą na etacie a własną działalnością gospodarczą z punktu widzenia programisty. Do zobaczenia!',
             'venue' => array(
                 'address'   => 'Concordia Design, ul. Zwierzyniecka 3, 60-813 Poznań',
                 'map_link'  => 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2433.951759766284!2d16.91109639999999!3d52.40755049999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47045b34c5189d4d%3A0xf54e7e88b257586!2sConcordia+Design%2C+Zwierzyniecka%2C+Pozna%C5%84%2C+Polska!5e0!3m2!1spl!2s!4v1390947217679'
@@ -622,6 +622,16 @@ class Events extends Base
                     'video'                     => null
                 ),
                 array(
+                    'topic'                     => 'Can you finally REST?',
+                    'description'               => 'Jak nie zrujnować życia ludziom, który będą korzystać z naszego API? Będzie o podstawowych zasadach, autoryzacji, dokumentacji oraz narzędziach.',
+                    'speaker_name'              => 'Max Małecki',
+                    'speaker_avatar'            => 'http://www.gravatar.com/avatar/bd4f5f0d7159c08a3c639241912e3497.png',
+                    'speaker_www'               => 'http://blog.mmx3.pl/',
+                    'slides_link'               => null,
+                    'skill_level'               => 3,
+                    'video'                     => null
+                ),
+                array(
                     'topic'                     => 'Bezpieczeństwo projektów opartych o Symfony2',
                     'description'               => 'Portale informacyjne regularnie straszą nas złymi, zakapturzonymi i skrytymi w cieniu hakerami, którzy nie robią cały dzień nic innego jak tylko dybią na nasze cenne, cyfrowe włości. Jak napisać bezpieczną aplikację opartą o jeden z najpopularniejszych frameworków - Symfony2? Przed jakimi atakami z listy OWASP Top 10 chroni nas sam framework, a czym musimy zająć się sami? Odpowiedzi na te właśnie pytania znajdziecie w tej prezentacji.',
                     'speaker_name'              => 'Krystian Piwowarczyk',
@@ -630,8 +640,7 @@ class Events extends Base
                     'slides_link'               => null,
                     'skill_level'               => 3,
                     'video'                     => null
-                ),
-
+                )
             )
         )
     );
