@@ -607,7 +607,7 @@ class Events extends Base
                     'speaker_avatar'            => 'https://gravatar.com/userimage/40787402/7ce3743dc0b9afe012e4ea14927bfe95',
                     'speaker_www'               => 'https://twitter.com/ch4zm',
                     'slides_link'               => null,
-                    'skill_level'               => 4,
+                    'skill_level'               => 2,
                     'video'                     => null
                 ),
                 array(
