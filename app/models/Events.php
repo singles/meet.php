@@ -608,6 +608,7 @@ class Events extends Base
                     'speaker_www'               => 'https://twitter.com/ch4zm',
                     'slides_link'               => null,
                     'skill_level'               => 2,
+                    'slides_link'               => 'https://www.dropbox.com/s/if92iwwb1z79hy5/yourownheroku.pdf',
                     'video'                     => null
                 ),
                 array(
@@ -617,7 +618,7 @@ class Events extends Base
                     'speaker_name'              => 'Radek Benkel',
                     'speaker_avatar'            => 'https://pbs.twimg.com/profile_images/1605720400/304109_265882293444507_100000682142964_858395_2624703_n_normal.jpg',
                     'speaker_www'               => 'https://www.twitter.com/singlespl',
-                    'slides_link'               => null,
+                    'slides_link'               => 'http://www.slideshare.net/singlespl/pl-etat-czy-b2b',
                     'skill_level'               => 1,
                     'video'                     => null
                 ),
@@ -627,7 +628,7 @@ class Events extends Base
                     'speaker_name'              => 'Max Małecki',
                     'speaker_avatar'            => 'http://www.gravatar.com/avatar/bd4f5f0d7159c08a3c639241912e3497.png',
                     'speaker_www'               => 'http://blog.mmx3.pl/',
-                    'slides_link'               => null,
+                    'slides_link'               => 'http://www.slideshare.net/MaxMaecki/can-you-finally-rest',
                     'skill_level'               => 3,
                     'video'                     => null
                 ),
@@ -637,7 +638,7 @@ class Events extends Base
                     'speaker_name'              => 'Krystian Piwowarczyk',
                     'speaker_avatar'            => 'http://www.krystianpiwowarczyk.pl/images/bro_mini.jpg',
                     'speaker_www'               => 'http://www.krystianpiwowarczyk.pl',
-                    'slides_link'               => null,
+                    'slides_link'               => 'http://prezi.com/ffilpgezaa35/bezpieczenstwo-symfony2-meetphp13/',
                     'skill_level'               => 3,
                     'video'                     => null
                 )
