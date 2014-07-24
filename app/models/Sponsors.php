@@ -49,7 +49,8 @@ class Sponsors extends Base
             'name'    => 'megiteam',
             'logo'    => 'sponsor_megiteam.png',
             'url'     => 'http://www.megiteam.pl',
-            'partner' => true
+            'partner' => true,
+            'alt'     => 'MEGITEAM - hosting w chmurze dla programistów, agencji, startupów, e-commerce'
         ),
         'oktawave'    => array(
             'name' => 'oktawave',

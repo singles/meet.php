@@ -13,7 +13,7 @@
                 <section class="event-sponsors clearfix">
                     <ul>
                         {% for partner in partners %}
-                        <li><a href="{{partner.url}}"><img src="{{WEBROOT}}/img/{{partner.logo}}" alt="{{partner.name}}"></a></li>
+                        <li><a href="{{partner.url}}"><img src="{{WEBROOT}}/img/{{partner.logo}}" alt="{{partner.alt|default(partner.name)}}"></a></li>
                         {% endfor %}
                     </ul>
                 </section>
