@@ -657,17 +657,15 @@ class Events extends Base
             'sponsors' => array('helion', 'megiteam', 'jetbrains', 'github', 'envato', 'bitnoise'),
             'talks' => array(
                 array(
-                    'topic'                     => 'BDD-Security',
-                    'description'               => 'Zautomatyzowane testy bezpieczeństwa oparte o techniki BDD. Z roku na rok coraz więcej zadań związanych z kontrolą jakości zostaje zautomatyzowanych. Testy jednostkowe i testy akceptacyjne bywają uruchamiane przy najmniejszej zmianie kodu repozytorium pozwalając na utrzymywanie stałego poziomu jakości wytwarzanego oprogramowania. Testy bezpieczeństwa wykonywane mniej lub bardziej regularnie przez zewnętrznych audytorów wydają się być słabym materiałem do zautomatyzowania i wpięcia w Continuous Integration.<br>
-                                                    Czy rzeczywiście tak jest?<br>
-                                                    Jakich narzędzi użyć, o co poprosić Pentestera i czego nauczyć Inżynierów z działu QA, aby każdego ranka cieszyć się z miarodajnego raportu dotyczącego poziomu bezpieczeństwa rozwijanej aplikacji webowej?',
+                    'topic'                     => 'Opancerzanie Symfony2',
+                    'description'               => 'Jak w jeden wieczór znacząco podnieść poziom bezpieczeństwa aplikacji opartej o Symfony2, czyli NelmioSecurityBundle w akcji. Przykłady praktycznego zastosowania bundla w celu zablokowania ataków z listy OWASP Top10.',
                     'speaker_name'              => 'Krystian Piwowarczyk',
                     'speaker_avatar'            => 'http://www.krystianpiwowarczyk.pl/images/bro_mini.jpg',
                     'speaker_www'               => null,
                     'slides_link'               => null,
-                    'skill_level'               => 3,
+                    'skill_level'               => 4,
                     'video'                     => null
-                ),
+                ),                
                 array(
                     'topic'                     => 'Ewolucja PHP: 5.6, 7, HHVM, NG',
                     'description'               => 'W ostatnich miesiącach w świecie PHP dużo się dzieje. Wyszła wersja 5.6 interpretera, do głównego drzewa włączono gałąź PHP-NG, HHVM mocno wyewoluował. Ale o co w tym wszystkim chodzi? Czym różnią się te gałęzie i pakiety? W jaką stronę idzie PHP i czego się spodziewać w najbliższych miesiącach? W czasie wykładu postaram się opowiedzieć co nieco rozjaśnić te kwestie.',
