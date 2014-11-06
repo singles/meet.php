@@ -643,6 +643,60 @@ class Events extends Base
                     'video'                     => null
                 )
             )
+        ),
+        14 => array(
+            'id'    => 14,
+            'date'  => '29.11.2014',
+            'datetime' => '2014-11-29T17:00',
+            'time'  => '17:00',
+            'description' => 'Zapraszamy na ostatnie meet.php w tym roku. Tym razem ponownie trochę o bezpieczeństwie, a także o przyszłości PHP.',
+            'venue' => array(
+                'address'   => 'Concordia Design - sala Congresia 4, ul. Zwierzyniecka 3, 60-813 Poznań',
+                'map_link'  => 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2433.951759766284!2d16.91109639999999!3d52.40755049999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47045b34c5189d4d%3A0xf54e7e88b257586!2sConcordia+Design%2C+Zwierzyniecka%2C+Pozna%C5%84%2C+Polska!5e0!3m2!1spl!2s!4v1390947217679'
+            ),
+            'sponsors' => array('helion', 'megiteam', 'jetbrains', 'github', 'envato', 'bitnoise'),
+            'talks' => array(
+                array(
+                    'topic'                     => 'BDD-Security',
+                    'description'               => 'Zautomatyzowane testy bezpieczeństwa oparte o techniki BDD. Z roku na rok coraz więcej zadań związanych z kontrolą jakości zostaje zautomatyzowanych. Testy jednostkowe i testy akceptacyjne bywają uruchamiane przy najmniejszej zmianie kodu repozytorium pozwalając na utrzymywanie stałego poziomu jakości wytwarzanego oprogramowania. Testy bezpieczeństwa wykonywane mniej lub bardziej regularnie przez zewnętrznych audytorów wydają się być słabym materiałem do zautomatyzowania i wpięcia w Continuous Integration.<br>
+                                                    Czy rzeczywiście tak jest?<br>
+                                                    Jakich narzędzi użyć, o co poprosić Pentestera i czego nauczyć Inżynierów z działu QA, aby każdego ranka cieszyć się z miarodajnego raportu dotyczącego poziomu bezpieczeństwa rozwijanej aplikacji webowej?',
+                    'speaker_name'              => 'Krystian Piwowarczyk',
+                    'speaker_avatar'            => 'http://www.krystianpiwowarczyk.pl/images/bro_mini.jpg',
+                    'speaker_www'               => null,
+                    'slides_link'               => null,
+                    'skill_level'               => 3,
+                    'video'                     => null
+                ),
+                array(
+                    'topic'                     => 'Ewolucja PHP: 5.6, 7, HHVM, NG',
+                    'description'               => 'W ostatnich miesiącach w świecie PHP dużo się dzieje. Wyszła wersja 5.6 interpretera, do głównego drzewa włączono gałąź PHP-NG, HHVM mocno wyewoluował. Ale o co w tym wszystkim chodzi? Czym różnią się te gałęzie i pakiety? W jaką stronę idzie PHP i czego się spodziewać w najbliższych miesiącach? W czasie wykładu postaram się opowiedzieć co nieco rozjaśnić te kwestie.',
+                    'speaker_name'              => 'Leszek Krupiński',
+                    'speaker_avatar'            => 'https://dl.dropboxusercontent.com/u/177181/fb-square.jpg',
+                    'speaker_www'               => 'http://leafnode.pl',
+                    'slides_link'               => null,
+                    'skill_level'               => 3,
+                    'video'                     => null
+                ),
+                array(
+                    'topic'                     => 'Jeszcze nie wiemy...',
+                    'description'               => '',
+                    'speaker_name'              => 'Może Ty? :)',
+                    'speaker_avatar'            => null,
+                    'speaker_www'               => null,
+                    'slides_link'               => null,
+                    'video'                     => null
+                ),
+                array(
+                    'topic'                     => 'Jeszcze nie wiemy...',
+                    'description'               => '',
+                    'speaker_name'              => 'Może Ty? :)',
+                    'speaker_avatar'            => null,
+                    'speaker_www'               => null,
+                    'slides_link'               => null,
+                    'video'                     => null
+                )
+            )
         )
     );
 
