@@ -677,12 +677,13 @@ class Events extends Base
                     'video'                     => null
                 ),
                 array(
-                    'topic'                     => 'Jeszcze nie wiemy...',
-                    'description'               => '',
-                    'speaker_name'              => 'Może Ty? :)',
-                    'speaker_avatar'            => null,
-                    'speaker_www'               => null,
+                    'topic'                     => 'Automatyzacja procesów z Ansible',
+                    'description'               => 'Działające aplikacje to nie tylko kod źródłowy i infrastruktura serwerowa, to także szereg procesów IT. Od instalacji i provisionowania sewerów po drobne, ale cykliczne zadania utrzymaniowe. Ansible jest jedną z opcji dostępną w tym zakresie, jednocześnie bardzo przyjazną użytkownikowi. W trakcie prezentacji zapoznamy z konceptami i możliwościami Ansible i za jego pomocą przygotujemy środowisko dla przykładowej aplikacji w PHP.',
+                    'speaker_name'              => 'Mariusz Gil',
+                    'speaker_avatar'            => 'http://0.gravatar.com/avatar/34be88398f623c109b61d23e8215bd23',
+                    'speaker_www'               => 'http://mariuszgil.pl/',
                     'slides_link'               => null,
+                    'skill_level'               => 3,
                     'video'                     => null
                 ),
                 array(
