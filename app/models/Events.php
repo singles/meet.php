@@ -687,14 +687,17 @@ class Events extends Base
                     'video'                     => null
                 ),
                 array(
-                    'topic'                     => 'Jeszcze nie wiemy...',
-                    'description'               => '',
-                    'speaker_name'              => 'Może Ty? :)',
-                    'speaker_avatar'            => null,
+                    'topic'                     => 'BDD-Security',
+                    'description'               => 'Zautomatyzowane testy bezpieczeństwa oparte o techniki BDD. Z roku na rok coraz więcej zadań związanych z kontrolą jakości zostaje zautomatyzowanych. Testy jednostkowe i testy akceptacyjne bywają uruchamiane przy najmniejszej zmianie kodu repozytorium pozwalając na utrzymywanie stałego poziomu jakości wytwarzanego oprogramowania. Testy bezpieczeństwa wykonywane mniej lub bardziej regularnie przez zewnętrznych audytorów wydają się być słabym materiałem do zautomatyzowania i wpięcia w Continuous Integration.<br>
+                                                    Czy rzeczywiście tak jest?<br>
+                                                    Jakich narzędzi użyć, o co poprosić Pentestera i czego nauczyć Inżynierów z działu QA, aby każdego ranka cieszyć się z miarodajnego raportu dotyczącego poziomu bezpieczeństwa rozwijanej aplikacji webowej?',
+                    'speaker_name'              => 'Krystian Piwowarczyk',
+                    'speaker_avatar'            => 'http://www.krystianpiwowarczyk.pl/images/bro_mini.jpg',
                     'speaker_www'               => null,
                     'slides_link'               => null,
+                    'skill_level'               => 3,
                     'video'                     => null
-                )
+                ),
             )
         )
     );
