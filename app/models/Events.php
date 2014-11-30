@@ -662,7 +662,7 @@ class Events extends Base
                     'speaker_name'              => 'Krystian Piwowarczyk',
                     'speaker_avatar'            => 'http://www.krystianpiwowarczyk.pl/images/bro_mini.jpg',
                     'speaker_www'               => null,
-                    'slides_link'               => null,
+                    'slides_link'               => 'https://prezi.com/v5dr31hnwquv/opancerzanie-symfony2/',
                     'skill_level'               => 4,
                     'video'                     => null
                 ),                
@@ -672,8 +672,18 @@ class Events extends Base
                     'speaker_name'              => 'Leszek Krupiński',
                     'speaker_avatar'            => 'https://dl.dropboxusercontent.com/u/177181/fb-square.jpg',
                     'speaker_www'               => 'http://leafnode.pl',
-                    'slides_link'               => null,
+                    'slides_link'               => 'https://speakerdeck.com/leafnode/ewolucja-php-php-5-dot-6-ng-php-7-hhvm',
                     'skill_level'               => 3,
+                    'video'                     => null
+                ),
+                array(
+                    'topic'                     => 'CodeClub (lightning talk)',
+                    'description'               => 'O klubach kodowania słów kilka.',
+                    'speaker_name'              => 'Wojtek Zieliński',
+                    'speaker_avatar'            => 'http://www.gravatar.com/avatar/1b67c0434c56dc7aa502b8d567e693bb.png',
+                    'speaker_www'               => 'https://twitter.com/codecleaner',
+                    'slides_link'               => 'http://codeclub.org.pl',
+                    'skill_level'               => 1,
                     'video'                     => null
                 ),
                 array(
@@ -682,7 +692,7 @@ class Events extends Base
                     'speaker_name'              => 'Mariusz Gil',
                     'speaker_avatar'            => 'http://0.gravatar.com/avatar/34be88398f623c109b61d23e8215bd23',
                     'speaker_www'               => 'http://mariuszgil.pl/',
-                    'slides_link'               => null,
+                    'slides_link'               => 'http://meetphp.pl/media/ansible/Ansible.pdf',
                     'skill_level'               => 3,
                     'video'                     => null
                 ),
@@ -694,7 +704,7 @@ class Events extends Base
                     'speaker_name'              => 'Krystian Piwowarczyk',
                     'speaker_avatar'            => 'http://www.krystianpiwowarczyk.pl/images/bro_mini.jpg',
                     'speaker_www'               => null,
-                    'slides_link'               => null,
+                    'slides_link'               => 'https://prezi.com/n9jcwu7swbsp/bdd-security/',
                     'skill_level'               => 3,
                     'video'                     => null
                 ),
