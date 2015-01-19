@@ -1,7 +1,8 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
     ],
     "hash": "c6865c87c7cb8736fbb4ca803be6a320",
     "packages": [
@@ -12,12 +13,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/codeguy/Slim-Extras.git",
-                "reference": "2.0.3"
+                "reference": "a022ed23dae94e164000acd891e3394d903f9623"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/codeguy/Slim-Extras/zipball/2.0.3",
-                "reference": "2.0.3",
+                "url": "https://api.github.com/repos/codeguy/Slim-Extras/zipball/a022ed23dae94e164000acd891e3394d903f9623",
+                "reference": "a022ed23dae94e164000acd891e3394d903f9623",
                 "shasum": ""
             },
             "require": {
@@ -61,13 +62,13 @@
             "version": "2.2.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/codeguy/Slim",
-                "reference": "2.2.0"
+                "url": "https://github.com/codeguy/Slim.git",
+                "reference": "b8181de1112a1e2f565b40158b621c34ded38053"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/codeguy/Slim/archive/2.2.0.zip",
-                "reference": "2.2.0",
+                "url": "https://api.github.com/repos/codeguy/Slim/zipball/b8181de1112a1e2f565b40158b621c34ded38053",
+                "reference": "b8181de1112a1e2f565b40158b621c34ded38053",
                 "shasum": ""
             },
             "require": {
@@ -104,13 +105,13 @@
             "version": "1.2",
             "source": {
                 "type": "git",
-                "url": "git://github.com/suin/php-rss-writer.git",
-                "reference": "1.2"
+                "url": "https://github.com/suin/php-rss-writer.git",
+                "reference": "325d2313ebb5d4d76a8f69063bb00c5464ae32f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/suin/php-rss-writer/zipball/1.2",
-                "reference": "1.2",
+                "url": "https://api.github.com/repos/suin/php-rss-writer/zipball/325d2313ebb5d4d76a8f69063bb00c5464ae32f0",
+                "reference": "325d2313ebb5d4d76a8f69063bb00c5464ae32f0",
                 "shasum": ""
             },
             "require": {
@@ -128,7 +129,7 @@
             ],
             "authors": [
                 {
-                    "name": "Hidehito Nozawa aka Suin",
+                    "name": "suin",
                     "email": "suinyeze@gmail.com",
                     "homepage": "https://www.facebook.com/suinyeze",
                     "role": "Developer, Renaming Specialist"
@@ -142,20 +143,20 @@
                 "rss",
                 "writer"
             ],
-            "time": "2012-08-23 00:45:18"
+            "time": "2012-08-23 07:45:18"
         },
         {
             "name": "twig/twig",
             "version": "1.6.5",
             "source": {
                 "type": "git",
-                "url": "git://github.com/fabpot/Twig.git",
-                "reference": "v1.6.5"
+                "url": "https://github.com/twigphp/Twig.git",
+                "reference": "97ade38d5c0b095f8ed9fadb61f71ab79f13d7af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/fabpot/Twig/zipball/v1.6.5",
-                "reference": "v1.6.5",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/97ade38d5c0b095f8ed9fadb61f71ab79f13d7af",
+                "reference": "97ade38d5c0b095f8ed9fadb61f71ab79f13d7af",
                 "shasum": ""
             },
             "require": {
@@ -186,23 +187,15 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2012-04-11 02:00:38"
+            "time": "2012-04-11 09:00:38"
         }
     ],
-    "packages-dev": [
-
-    ],
-    "aliases": [
-
-    ],
+    "packages-dev": [],
+    "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [
-
-    ],
-    "platform": [
-
-    ],
-    "platform-dev": [
-
-    ]
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
 }
