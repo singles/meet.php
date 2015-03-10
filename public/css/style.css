@@ -315,18 +315,6 @@ p {
 	background: url(../img/welcome-flash.png) no-repeat center center;
 }
 
-.welcome-section article:after {
-	content: "";
-	position: absolute;
-	top: 10px;
-	right: -5px;
-	display: block;
-	width: 113px;
-	height: 114px;
-
-	background-image: url(../img/badge.png);
-}
-
 .welcome-header {
 	margin-bottom: 25px;
 	padding-top: 110px;
@@ -338,13 +326,17 @@ p {
     font-family: "TitilliumMaps Medium";
 }
 
-.welcome-header h1 {
+.welcome-header h1, .welcome-header h2 {
 	display: inline-block;
 	margin: 0 0 0 -6px;
 
 	font-family: "TitilliumMaps Thin";
     font-size: 5.0em;
     font-weight: normal;
+}
+
+.welcome-header h2 {
+    font-size: 4.0em;
 }
 
 .welcome-header time {
@@ -903,9 +895,36 @@ li.speaker-item {
 	}
 }
 
-.faq p {
+.faq p, .status_update p {
 	margin: 10px 0;
 }
+
+.status_update code {
+	background-color: #dfdfdf;
+}
+
+.status_update pre {
+	font-size :150%;
+}
+
+.status_update blockquote {
+	font-style: italic;
+	font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+	font-size: 125%;
+	border-left: 5px solid #dfdfdf;
+	margin-left: 0;
+	padding-left: 10%;
+}
+
+.status_update blockquote strong {
+	font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+}
+
+.status_update li {
+	font-size: 1.5em;
+}
+
+
 
 @media only screen and (max-width: 420px) {
 	.main-footer .social {
@@ -926,5 +945,9 @@ li.speaker-item {
 
 	.welcome-header h1 {
 		font-size: 4.5em;
+	}
+
+	.welcome-header h2 {
+		font-size: 4em;
 	}
 }

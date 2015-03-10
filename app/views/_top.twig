@@ -2,29 +2,12 @@
 <section class="welcome-section">
     <div class="inner">
         <article>
-            {% if mostRecentEvent.isFutureEvent %}
             <header class="welcome-header">
-                <h1>meet.<strong>php</strong> <em>#{{ mostRecentEvent.id }}</em></h1>
-                <time datetime="{{ mostRecentEvent.datetime }}">{{ mostRecentEvent.date }}</time>
+                <h2>meet.<strong>php</strong> zawieszone!</h2>
             </header>
             <div class="welcome-entry clearfix">
-                <p>{{ mostRecentEvent.description }}</p>
-                <a href="{{ WEBROOT }}/events/{{ mostRecentEvent.id }}/" class="button">szczegóły</a>
+				<p>Więcej informacji w <a href="{{ WEBROOT }}/suspended">tym poście</a>.</p>
             </div>
-            {% else %}
-            <header class="welcome-header">
-                <h1>meet.<strong>php</strong> <em>#{{ mostRecentEvent.id + 1 }}</em></h1>
-                <time>...TBA</time>
-            </header>
-            <div class="welcome-entry clearfix">
-                <p>Data następnego spotkania nie jest jeszcze ustalona.</p>
-                <p>Jeśli chcesz być na bieżąco, to informacje o kolejnych spotkaniach publikowane są na naszym
-                    <a href="{{ WEBROOT }}/feed">RSSie</a>,
-                    <a href="{{ LINK_FB }}">Facebooku</a>,
-                    <a href="{{ LINK_TWITTER }}">Twitterze</a> oraz
-                    <a href="{{ LINK_GP }}">Google+</a>.
-            </div>
-            {% endif %}
         </article>
     </div>
 </section>

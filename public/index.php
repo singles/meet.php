@@ -90,6 +90,10 @@ $app->get('/contact/', function() use ($app) {
     $app->render('contact.twig');
 });
 
+$app->get('/suspended/', function() use ($app) {
+	$app->render('suspended.twig');
+});
+
 $app->get('/feed/', function() use ($app) {
     $feed = new RSSWriter\Feed();
     $channel = new RSSWriter\Channel();
