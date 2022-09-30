@@ -2,7 +2,7 @@
     "name" : "singles/meet.php",
     "description" : "Website for meet.php meetups",
     "require": {
-        "twig/twig": "1.6.*",
+        "twig/twig": "1.44.*",
         "slim/slim": "2.2.*",
         "slim/extras": "2.0.*",
         "suin/php-rss-writer": "1.2"
